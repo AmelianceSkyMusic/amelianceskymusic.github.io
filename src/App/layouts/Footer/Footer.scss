@@ -3,15 +3,17 @@
 .footer {
 	background-color: var(--color--bg-0);
 	.container {
-		@media (max-width: $screen-md) {
-			padding-bottom: var(--gap);
-		}
+		// @media (max-width: $screen-md) {
+		// 	padding-top: calc(var(--gap) * 10);
+		// 	padding-bottom: var(--gap);
+		// }
 		.footer__icons {
 			display: flex;
 			align-items: center;
 			gap: var(--gap);
 			justify-content: center;
-			@media (max-width: $screen-xs) {
+			@media (max-width: $screen-sm) {
+				gap: 0;
 				justify-content: space-between;
 			}
 		}

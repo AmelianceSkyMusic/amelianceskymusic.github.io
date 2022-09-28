@@ -23,6 +23,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: calc(var(--gap) * 1);
+		opacity: 100%;
 	}
 
 	.section-item {
@@ -105,10 +106,10 @@
 	}
 
 	.telegram-button {
-		background: linear-gradient(-45deg, #338aff, #3cf0c5);
-		color: var(--color--0);
+		background: linear-gradient(-45deg, #2785ff, #34e1ff);
+		color: white;
 		background-size: 600%;
-		animation: telegram-button-animation 16s linear infinite;
+		animation: telegram-button-animation 12s linear infinite;
 	}
 }
 

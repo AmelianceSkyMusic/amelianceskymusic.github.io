@@ -42,7 +42,7 @@ export function BurgerMenu() {
 					<a href="#projects" className="h4" onClick={() => setIsShowMenu(false)}>PROJECTS</a>
 					<a href="#hobbies" className="h4" onClick={() => setIsShowMenu(false)}>HOBBIES</a>
 				</nav>
-				<h4 className="h4 click theme-menu-item" onClick={() => {setTheme(theme === 'dark' ? 'light' : 'dark'); setIsShowMenu(false);}}>
+				<h4 className="h4 click theme-menu-item" onClick={() => {setTheme(theme === 'dark' ? 'light' : 'dark');}}>
 					Theme:
 					{theme === 'dark'
 						? ' Dark'
