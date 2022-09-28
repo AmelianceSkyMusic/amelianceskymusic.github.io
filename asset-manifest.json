@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.359bcec5.css",
-    "main.js": "/static/js/main.9e6eca42.js",
+    "main.css": "/static/css/main.c346ce1f.css",
+    "main.js": "/static/js/main.54f678a8.js",
     "static/js/787.097df76d.chunk.js": "/static/js/787.097df76d.chunk.js",
+    "static/media/shelter.png": "/static/media/shelter.83751b9b705202b1ab09.png",
     "static/media/portfolio.png": "/static/media/portfolio.4553b226bb5f02d40866.png",
     "static/media/movie-app.png": "/static/media/movie-app.74a729b9b08a83091899.png",
     "static/media/cv.png": "/static/media/cv.c5c711ee365f902968db.png",
+    "static/media/online-store.png": "/static/media/online-store.eb4e6504c23314c9b058.png",
+    "static/media/news-portal.png": "/static/media/news-portal.5387be1df45f492011fa.png",
     "static/media/videoplayer.png": "/static/media/videoplayer.174a6f6bc732cd896da4.png",
+    "static/media/css-mem-slider.png": "/static/media/css-mem-slider.eceb3fe0df651fa43da3.png",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.f0963fd9968fbd54cc35.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
+    "static/media/engle.png": "/static/media/engle.a8a13218e9732e52cd6c.png",
+    "static/media/async-race.png": "/static/media/async-race.08e37c4db4447fa67cfe.png",
     "static/media/2048.png": "/static/media/2048.2297fc6bc638eb125a86.png",
+    "static/media/virtual-keyboard.png": "/static/media/virtual-keyboard.613f729069f84a02067a.png",
+    "static/media/icon--codewars.svg": "/static/media/icon--codewars.a293df991b615036ca8c.svg",
     "static/media/icon--linkedin.svg": "/static/media/icon--linkedin.578a335cee858b4f0b94.svg",
     "static/media/icon--behance.svg": "/static/media/icon--behance.ab7773ad1a71ee960ce7.svg",
     "static/media/icon--instagram.svg": "/static/media/icon--instagram.9c37bd2c581bf8b3fea2.svg",
@@ -24,12 +32,12 @@
     "index.html": "/index.html",
     "static/media/icon--menu.svg": "/static/media/icon--menu.e1fafa996a3aefec34d8.svg",
     "static/media/icon--x.svg": "/static/media/icon--x.18b498337bbb08e34075.svg",
-    "main.359bcec5.css.map": "/static/css/main.359bcec5.css.map",
-    "main.9e6eca42.js.map": "/static/js/main.9e6eca42.js.map",
+    "main.c346ce1f.css.map": "/static/css/main.c346ce1f.css.map",
+    "main.54f678a8.js.map": "/static/js/main.54f678a8.js.map",
     "787.097df76d.chunk.js.map": "/static/js/787.097df76d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.359bcec5.css",
-    "static/js/main.9e6eca42.js"
+    "static/css/main.c346ce1f.css",
+    "static/js/main.54f678a8.js"
   ]
 }
