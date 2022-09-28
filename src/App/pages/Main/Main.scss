@@ -1,0 +1,125 @@
+@use "../../../styles/globals" as *;
+
+.root__main-page {
+	.main {
+		background: var(--color--bg-gradient-0);
+
+		.container {
+			// align-items: center;
+			padding-top: calc(var(--gap) * 2);
+			padding-bottom: calc(var(--gap) * 2);
+			row-gap: calc(var(--gap) * 2);
+		}
+	}
+
+	.primary-content,
+	.secondary-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: calc(var(--gap) * 2);
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--gap) * 1);
+	}
+
+	.section-item {
+		display: flex;
+		flex-direction: column;
+		gap: calc(var(--gap) / 2);
+
+		.section-item__container {
+			display: flex;
+			gap: calc(var(--gap) / 2);
+		}
+
+		.section-item__text-content {
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--gap) / 2);
+		}
+
+		.section-item__title-block {
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--gap) / 4);
+		}
+
+		.section-item__description-block {
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--gap) / 4);
+		}
+
+		.section-item__title {
+			display: flex;
+			gap: calc(var(--gap) / 4);
+		}
+
+		.section-item__img-container {
+			width: calc(100% / 5);
+			height: auto;
+		}
+
+		.section-item__img {
+			width: 100%;
+			height: auto;
+			border-radius: 4px;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: filter ease-in-out 0.2s;
+			cursor: pointer;
+			&:hover {
+				-webkit-filter: grayscale(0);
+				filter: grayscale(0);
+			}
+		}
+	}
+
+	.heading {
+		.heading__title-container {
+			display: flex;
+			flex-direction: row;
+			gap: var(--gap);
+		}
+
+		.heading__title-block {
+			display: flex;
+			flex-direction: column;
+			gap: calc(var(--gap) / 2);
+		}
+
+		.heading__photo {
+			height: 80px;
+			border-radius: 50%;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			transition: filter ease-in-out 0.2s;
+			&:hover {
+				-webkit-filter: grayscale(0);
+				filter: grayscale(0);
+			}
+		}
+	}
+
+	.telegram-button {
+		background: linear-gradient(-45deg, #338aff, #3cf0c5);
+		color: var(--color--0);
+		background-size: 600%;
+		animation: telegram-button-animation 16s linear infinite;
+	}
+}
+
+@keyframes telegram-button-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

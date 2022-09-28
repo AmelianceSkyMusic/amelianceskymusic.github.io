@@ -1,0 +1,113 @@
+{
+	// "editor.quickSuggestions": {
+	// 	"strings": true
+	// },
+	// hide folders in search
+	"search.exclude": {
+		"**/node_modules": true
+	},
+
+	// format on save eslint
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	// "editor.lineNumbers": "off",
+	//  "editor.folding": false,
+  	// "editor.glyphMargin": false,
+
+  	// Enable per-language
+	"[scss]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+	},
+	"[css]": {
+		// "editor.formatOnSave": true,
+		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+	},
+	"editor.formatOnPaste": false,
+	"files.eol": "\n",
+	"oneLineComments.customCommentTags": {
+		"javascriptreact": {
+			"outer_start": "{/*",
+			"outer_end": "*/}",
+			"inner_start": "/~~",
+			"inner_end": "~~/"
+		},
+		"typescriptreact": {
+			"outer_start": "{/*",
+			"outer_end": "*/}",
+			"inner_start": "/~~",
+			"inner_end": "~~/"
+		}
+	},
+	"cSpell.language": "ua,en",
+	"explorerExclude.backup": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/_backup": true,
+		"**/_legacy": true,
+		".vscode": true,
+		"build": true,
+		"node_modules": true,
+		"public": true,
+		".editorconfig": true,
+		".eslintrc.js": true,
+		".gitignore": true,
+		"package.json": true,
+		"README.md": true,
+		"tsconfig.json": true,
+		"reportWebVitals.ts": true,
+		"src/reportWebVitals.ts": true,
+		"src/react-app-env.d.ts": true
+	},
+	"cSpell.words": [
+		"amelianceskymusic",
+		"asmlib",
+		"behance",
+		"Bobomuratov",
+		"brandbook",
+		"chordlist",
+		"CONSTS",
+		"dribbble",
+		"envato",
+		"hardskills",
+		"Kanban",
+		"Photoshop",
+		"Rivne",
+		"rsschool",
+		"softskills",
+		"Songlist",
+		"unqa"
+	],
+	"files.exclude": {
+		"**/.git": false,
+		"**/.svn": false,
+		"**/.hg": false,
+		"**/CVS": false,
+		"**/.DS_Store": false,
+		"**/Thumbs.db": false,
+		"**/_backup": false,
+		"**/_legacy": false,
+		".vscode": false,
+		"build": false,
+		"node_modules": false,
+		"public": false,
+		".editorconfig": false,
+		".eslintrc.js": false,
+		".gitignore": false,
+		"package.json": false,
+		"README.md": false,
+		"tsconfig.json": false,
+		"reportWebVitals.ts": false,
+		"src/reportWebVitals.ts": false,
+		"src/react-app-env.d.ts": false
+	}
+
+
+	// "editor.formatOnSave": true,
+	// "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

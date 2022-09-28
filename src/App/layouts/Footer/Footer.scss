@@ -1,0 +1,21 @@
+@use "../../../styles/globals" as *;
+
+.footer {
+	background-color: var(--color--bg-0);
+	.container {
+		@media (max-width: $screen-md) {
+			padding-bottom: var(--gap);
+		}
+		.footer__icons {
+			display: flex;
+			align-items: center;
+			gap: var(--gap);
+			@media (min-width: $screen-lg) {
+				justify-content: center;
+			}
+			@media (min-width: $screen-xs) {
+				justify-content: space-between;
+			}
+		}
+	}
+}
