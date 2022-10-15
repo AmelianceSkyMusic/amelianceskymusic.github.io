@@ -10,7 +10,7 @@ export function Contacts() {
 					<h3 className="h3">Location</h3>
 				</div>
 				<div className="section-item__description-block">
-					<p className="p1">Rivne, remote</p>
+					<a href="https://www.google.com/maps/search/?api=1&query=rivne" className="p1">Rivne, remote</a>
 				</div>
 			</div>
 
@@ -19,7 +19,7 @@ export function Contacts() {
 					<h3 className="h3">Phone</h3>
 				</div>
 				<div className="section-item__description-block">
-					<p className="p1">+380 (97) 123 57 33</p>
+					<a href="tel:+380971235733" className="p1">+380 (97) 123 57 33</a>
 				</div>
 			</div>
 
@@ -28,7 +28,7 @@ export function Contacts() {
 					<h3 className="h3">Telegram</h3>
 				</div>
 				<div className="section-item__description-block">
-					<p className="p1">@amelianceskymusic</p>
+					<a href="https://t.me/AmelianceSkyMusic" className="p1">@amelianceskymusic</a>
 				</div>
 			</div>
 
@@ -37,7 +37,7 @@ export function Contacts() {
 					<h3 className="h3">E-mail</h3>
 				</div>
 				<div className="section-item__description-block">
-					<p className="p1">radzhab@ukr.net</p>
+					<a href="mailto:radzhab@ukr.net" className="p1">radzhab@ukr.net</a>
 				</div>
 			</div>
 
