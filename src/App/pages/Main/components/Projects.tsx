@@ -22,14 +22,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageTwoEngle} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/engle/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageTwoEngle} alt="Engle" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Engle</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/engle" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -42,14 +42,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageTwoAsyncRace} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/async-race/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageTwoAsyncRace} alt="Async Race" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Async Race</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/async-race" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -62,14 +62,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageTwoNewsPortal} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/migration-newip-to-ts/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageTwoNewsPortal} alt="News Portal" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">News Portal</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/migration-newip-to-ts--dev" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -82,14 +82,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageTwoOnlineStore} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/online-store/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageTwoOnlineStore} alt="Online Store" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Online Store</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/online-store-jest" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -103,14 +103,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageOneCssMemSlider} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/cssMemSlider/cssMemSlider/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageOneCssMemSlider} alt="Css Mem Slider" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Css Mem Slider</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/cssMemSlider/tree/gh-pages" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -123,14 +123,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageOneVirtualKeyboard} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/virtual-keyboard/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageOneVirtualKeyboard} alt="Virtual Keyboard" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Virtual Keyboard</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/virtual-keyboard/tree/virtual-keyboard" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -143,14 +143,14 @@ export function Projects() {
 
 			<div className='section-item'>
 				<div className="section-item__container">
-					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageOneShelter} alt="movie-app" />
+					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/shelter/pages/main/" target="_blank" rel="noreferrer">
+						<img className="section-item__img" src={stageOneShelter} alt="Shelter" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
 								<h3 className="h3">Shelter</h3>
-								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
+								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/shelter" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
 						</div>
@@ -165,7 +165,7 @@ export function Projects() {
 			<div className='section-item'>
 				<div className="section-item__container">
 					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageZeroMovieApp} alt="movie-app" />
+						<img className="section-item__img" src={stageZeroMovieApp} alt="Movie App" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
@@ -185,7 +185,7 @@ export function Projects() {
 			<div className='section-item'>
 				<div className="section-item__container">
 					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/random-game" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageZero2048} alt="2048" />
+						<img className="section-item__img" src={stageZero2048} alt="Game 2048" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
@@ -205,7 +205,7 @@ export function Projects() {
 			<div className='section-item'>
 				<div className="section-item__container">
 					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/videoplayer" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageZeroVideoPlayer} alt="video-player" />
+						<img className="section-item__img" src={stageZeroVideoPlayer} alt="Custom Video Player" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
@@ -225,12 +225,12 @@ export function Projects() {
 			<div className='section-item'>
 				<div className="section-item__container">
 					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/portfolio" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageZeroPortfolio} alt="portfolio" />
+						<img className="section-item__img" src={stageZeroPortfolio} alt="Photographers Portfolio" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
 							<div className="section-item__title">
-								<h3 className="h3">Portfolio</h3>
+								<h3 className="h3">Photographer&apos;s Portfolio</h3>
 								<a href="https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/portfolio" target="_blank" className="icon-sm icon--github" rel="noreferrer"></a>
 							</div>
 							<p className="p2">react</p>
@@ -245,7 +245,7 @@ export function Projects() {
 			<div className='section-item'>
 				<div className="section-item__container">
 					<a className="section-item__img-container" href="https://amelianceskymusic.github.io/rs-cv" target="_blank" rel="noreferrer">
-						<img className="section-item__img" src={stageZeroCv} alt="cv" />
+						<img className="section-item__img" src={stageZeroCv} alt="CV" />
 					</a>
 					<div className="section-item__text-content">
 						<div className="section-item__title-block">
