@@ -26,6 +26,7 @@ export function HardSkills() {
 					<li className="p1">Yaml, Ini, Json, Xml, Walter</li>
 					<li className="p1">Notion, Jira, Slack</li>
 					<li className="p1">Studio One, Reaper</li>
+					<li className="p1">Handwrite</li>
 				</ul>
 			</div>
 
