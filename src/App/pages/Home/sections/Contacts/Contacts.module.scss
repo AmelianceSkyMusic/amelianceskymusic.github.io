@@ -1,0 +1,40 @@
+@use "~/asmlib/styles/globals/" as *;
+
+.description {
+	flex-direction: row;
+	gap: 4px;
+	align-items: center;
+}
+
+.telegramButton {
+	background: linear-gradient(-45deg, #278cff, #34b5ff);
+	// color: var(--color--f2-1);
+	border: none;
+	background-size: 600%;
+	animation: telegram-button-animation 12s linear infinite;
+	color: white;
+	@include hover {
+		animation: hover-animation 0.8s linear infinite;
+	}
+}
+
+@keyframes telegram-button-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes hover-animation {
+	0% {
+		box-shadow: 0px 0px 4px 0px rgba(52, 181, 255, 0.8);
+	}
+	100% {
+		box-shadow: 0px 0px 1px 8px rgba(52, 181, 255, 0);
+	}
+}

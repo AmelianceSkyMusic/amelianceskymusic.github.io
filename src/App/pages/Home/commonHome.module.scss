@@ -1,0 +1,23 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) * 1);
+}
+
+.sectionItem {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) / 2.5);
+}
+
+.sectionTitle {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) / 4);
+}
+
+.sectionDescription {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) / 2.5);
+}

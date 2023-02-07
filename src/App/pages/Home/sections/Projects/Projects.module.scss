@@ -1,0 +1,27 @@
+@use "~/asmlib/styles/globals/" as *;
+
+.sectionContainer {
+	display: flex;
+	gap: calc(var(--gap) / 2);
+}
+
+.title {
+	display: flex;
+	gap: calc(var(--gap) / 4);
+}
+
+.exampleLink {
+	height: auto;
+}
+
+.previewImg {
+	width: 126px;
+	height: auto;
+	border-radius: 4px;
+	filter: grayscale(100%);
+	transition: filter ease-in-out 0.2s;
+	cursor: pointer;
+	@include hover {
+		filter: grayscale(0);
+	}
+}

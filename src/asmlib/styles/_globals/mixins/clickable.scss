@@ -1,0 +1,5 @@
+@mixin clickable {
+	@content;
+	cursor: pointer;
+	user-select: none;
+}

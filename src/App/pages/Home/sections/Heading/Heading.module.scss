@@ -1,0 +1,30 @@
+@use "~/asmlib/styles/globals/" as *;
+
+.titleContainer {
+	display: flex;
+	flex-direction: row;
+	gap: var(--gap);
+}
+
+.titleTextContent {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) / 2);
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--gap) / 4);
+}
+
+.photo {
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	transition: filter ease-in-out 0.2s;
+	@include hover {
+		filter: grayscale(0);
+	}
+}
