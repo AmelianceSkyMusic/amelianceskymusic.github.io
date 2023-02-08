@@ -1,21 +1,47 @@
-@use "~/asmlib/styles/globals/" as *;
-@use "~/asmlib/styles/" as *;
+@use "~/asmlib/styles" as *;
 
 html {
 	scroll-padding-top: 32px;
+	background-color: var(--color--b1-0);
 }
 
 body {
 	position: relative;
-	// background: var(--color--bg-0-gradient);
-	// background-attachment: fixed;
-	// background: linear-gradient(to top right, #badaff, #faffc1);
 }
+
+// >----------------------------------------------------------------<
+// >                            ADD ICONS                           <
+// >----------------------------------------------------------------<
+
+$iconPath: "~assets/svg/";
+
+$iconsSet: (
+	icon--alert-circle,
+	icon--alert-triangle,
+	icon--behance,
+	icon--check-circle,
+	icon--codewars,
+	icon--copy,
+	icon--discord,
+	icon--dribble,
+	icon--github,
+	icon--info,
+	icon--instagram,
+	icon--linkedin,
+	icon--menu,
+	icon--moon,
+	icon--sun,
+	icon--telegram,
+	icon--x,
+	icon--x-circle,
+	icon--youtube
+);
+
+@include useSvgIcon($iconPath, $iconsSet);
 
 // >----------------------------------------------------------------<
 // >                       CUSTOMIZING ASMLIB                       <
 // >----------------------------------------------------------------<
-
 :root {
 	// ^------------------------ Typography ------------------------
 	--typography__font-size_h1: 42px;
