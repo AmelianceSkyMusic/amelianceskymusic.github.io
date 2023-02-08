@@ -12,12 +12,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include clickable;
 }
 
-.menuItems {
+.menuContainer {
 	position: absolute;
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
 	background-color: var(--color--b1-2);
 	padding: 16px 0;
 	border-radius: 16px;
@@ -25,7 +26,7 @@
 	@include screen-md {
 		gap: 4px;
 	}
-	transform: scale(90%);
+	transform: scale(50%);
 	animation-name: hide-menu;
 	animation-duration: 0.2s;
 	animation-fill-mode: forwards;
@@ -37,10 +38,21 @@
 	}
 }
 
+.close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+
+.menuItems {
+	list-style: none;
+}
+
 @keyframes show-menu {
 	from {
 		opacity: 0;
-		transform: scale(90%);
+		transform: scale(50%);
 	}
 	to {
 		opacity: 100%;
@@ -55,6 +67,6 @@
 	}
 	to {
 		opacity: 0;
-		transform: scale(90%);
+		transform: scale(50%);
 	}
 }

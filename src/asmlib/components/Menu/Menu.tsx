@@ -4,17 +4,19 @@ import {
 
 import asm from 'asm-ts-scripts';
 
+import { Button } from '../Button/Button';
 import { Portal } from '../Portal';
+import { SvgIcon } from '../SvgIcon/SvgIcon';
 
 import s from './Menu.module.scss';
 
-type ComponentElementType = HTMLAnchorElement;
+type ComponentElementType = HTMLDivElement;
 
-interface Menu extends ReactHTMLElementAttributes<
-ComponentElementType, React.AnchorHTMLAttributes<ComponentElementType>> {
+interface Menu extends ReactHTMLElementAttributes<ComponentElementType> {
 	children: React.ReactNode;
 	isOpen: boolean;
 	onClick: () => void;
+	closeButton?: boolean;
 	preventItemClickClose?: boolean;
 	anchorElement: HTMLElement | null;
 	menuOrigin?: {
@@ -30,6 +32,7 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 	children,
 	isOpen,
 	onClick,
+	closeButton,
 	preventItemClickClose,
 	anchorElement,
 	menuOrigin,
@@ -151,23 +154,38 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 	return (
 		<Portal>
 			{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
-			<nav
+			<div
+				role="navigation"
 				className={asm.join(s.Menu, show)}
 				onClick={handleCloseMenu}
 				ref={ref}
 				{...rest}
 			>
-				{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
-				<ul
+				<nav
 					onAnimationEnd={handleAnimationend}
 					ref={menuRef}
-					className={s.menuItems}
+					// className={s.menuItems}
+					className={s.menuContainer}
 					style={menuPositionStyle}
-					onClick={handleMenuItemClick}
 				>
-					{children}
-				</ul>
-			</nav>
+
+					{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
+					<ul
+						// onAnimationEnd={handleAnimationend}
+						// ref={menuRef}
+						// style={menuPositionStyle}
+						className={s.menuItems}
+						onClick={handleMenuItemClick}
+					>
+						{children}
+					</ul>
+					{closeButton && (
+						<Button className={s.close} onClick={handleCloseMenu} type="secondary" size="small">
+							<SvgIcon size="small" icon="icon--x" />
+						</Button>
+					)}
+				</nav>
+			</div>
 		</Portal>
 	);
 });
