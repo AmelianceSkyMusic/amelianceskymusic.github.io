@@ -11,7 +11,6 @@ import { Typography } from '~/asmlib/components/Typography';
 import { toggleTheme } from '~/asmlib/scripts/toggleTheme';
 import { languageState, themeState } from '~app/state/atoms';
 import { useLang } from '~hooks/useLang';
-import { useLocalStorage } from '~hooks/useLocalStorage';
 
 import { StickyButton } from './StickyButton';
 
@@ -26,16 +25,12 @@ export function MenuMobile() {
 
 	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
 
-	const [, setThemeLocalStorage] = useLocalStorage('app', 'theme');
-	const [, setLangLocalStorage] = useLocalStorage('app', 'lang');
-
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [anchorElement, setAnchorElement] = useState<HTMLElement | null>(null);
 
 	const handleChangeTheme = () => {
 		const newTheme = toggleTheme();
 		setThemeRecoil(newTheme);
-		setThemeLocalStorage(newTheme);
 	};
 
 	const handelIconMenuClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -51,7 +46,6 @@ export function MenuMobile() {
 		const newLang = langRecoil === 'uk' ? 'en' : 'uk';
 		setLangRecoil(newLang);
 		i18n.changeLanguage(newLang);
-		setLangLocalStorage(newLang);
 	};
 
 	return (
