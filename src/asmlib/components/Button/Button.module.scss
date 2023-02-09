@@ -84,13 +84,6 @@
 			width: var(--button__width_large);
 		}
 	}
-
-	@include hover {
-		background-color: var(--button-secondary__background_hover);
-	}
-	@include active {
-		background-color: var(--button-secondary__background_active);
-	}
 }
 
 .secondary {
