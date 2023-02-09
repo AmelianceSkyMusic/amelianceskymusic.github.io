@@ -9,13 +9,9 @@ body {
 	position: relative;
 }
 
-// >----------------------------------------------------------------<
-// >                            ADD ICONS                           <
-// >----------------------------------------------------------------<
-
-$iconPath: "~assets/svg/";
-
-$iconsSet: (
+//* ---- add icons -----
+@include useSvgIcon(
+	"~assets/svg/",
 	icon--alert-circle,
 	icon--alert-triangle,
 	icon--behance,
@@ -37,13 +33,8 @@ $iconsSet: (
 	icon--youtube
 );
 
-@include useSvgIcon($iconPath, $iconsSet);
-
-// >----------------------------------------------------------------<
-// >                       CUSTOMIZING ASMLIB                       <
-// >----------------------------------------------------------------<
+//* ---- customizing asmlib -----
 :root {
-	// ^------------------------ Typography ------------------------
 	--typography__font-size_h1: 42px;
 	--typography__font-size_h2: 24px;
 	--typography__font-size_h3: 18px;
