@@ -14,7 +14,7 @@ export function App() {
 	const [isInitialized, setIsInitialized] = useState(false);
 	useAppInit(setIsInitialized);
 
-	if (!isInitialized) <StartScreen />;
+	if (!isInitialized) return <StartScreen />;
 
 	return (
 		<Routes>
