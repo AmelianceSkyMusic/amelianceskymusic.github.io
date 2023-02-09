@@ -8,7 +8,7 @@ import { NotFound } from '~pages/NotFound';
 import { Home } from './pages/Home';
 import { useAppInit } from './useAppInit';
 
-import './i18n';
+import './translation/i18n';
 
 export function App() {
 	const [isInitialized, setIsInitialized] = useState(false);

@@ -322,4 +322,7 @@ export const uk = {
 		'PROJECTS',
 		'HOBBIES',
 	],
+	notFound: {
+		goHome: 'На домашню сторінку',
+	},
 };

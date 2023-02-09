@@ -18,17 +18,16 @@ i18n
 // init i18next
 // for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
-		debug: true,
+		// debug: true,
 		supportedLngs: ['en', 'uk'],
 		fallbackLng: 'en',
 		// detection: {
-		// 	order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
-		// 	caches: ['cookie'],
+		// 	order: ['path'],
 		// },
 		react: { useSuspense: false },
-		interpolation: {
-			escapeValue: false, // not needed for react as it escapes by default
-		},
+		// interpolation: {
+		// 	escapeValue: false, // not needed for react as it escapes by default
+		// },
 		returnNull: false,
 		resources: {
 			en: {

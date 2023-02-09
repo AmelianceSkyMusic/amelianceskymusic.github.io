@@ -322,4 +322,7 @@ export const en = {
 		'PROJECTS',
 		'HOBBIES',
 	],
+	notFound: {
+		goHome: 'To the home page',
+	},
 };

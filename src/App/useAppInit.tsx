@@ -5,8 +5,8 @@ import { useRecoilState } from 'recoil';
 import { useInitTheme } from '~/asmlib/hooks/useInitTheme';
 import { useViewportHeight } from '~hooks/useViewportHeight';
 
-import i18n from './i18n';
 import { languageState, themeState } from './state/atoms';
+import i18n from './translation/i18n';
 
 export function useAppInit(setInitialized: (arg: boolean) => void) {
 	const [themeRecoil, setThemeRecoil] = useRecoilState(themeState);
