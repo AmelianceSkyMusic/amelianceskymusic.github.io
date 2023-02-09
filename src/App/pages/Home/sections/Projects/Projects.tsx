@@ -1,7 +1,7 @@
 import { Block } from '~/asmlib/components/blocks/Block';
 import { Section } from '~/asmlib/components/blocks/Section';
 import { Img } from '~/asmlib/components/Img';
-import { Link } from '~/asmlib/components/Link';
+import { Link } from '~/asmlib/components/Link/Link';
 import { Typography } from '~/asmlib/components/Typography';
 import { useLang } from '~hooks/useLang';
 

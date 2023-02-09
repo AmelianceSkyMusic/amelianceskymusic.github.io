@@ -6,7 +6,7 @@ import { Block } from '~/asmlib/components/blocks/Block';
 import { Section } from '~/asmlib/components/blocks/Section';
 import { Button } from '~/asmlib/components/Button/Button';
 import { ButtonLink } from '~/asmlib/components/Button/ButtonLink';
-import { Link } from '~/asmlib/components/Link';
+import { Link } from '~/asmlib/components/Link/Link';
 import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
 import { ToastList } from '~/asmlib/components/ToastList/ToastList';
 import { Typography } from '~/asmlib/components/Typography';
