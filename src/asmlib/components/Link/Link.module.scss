@@ -2,9 +2,18 @@
 @use "Link.root" as *;
 
 .Link {
+	position: relative;
 	color: var(--color__link);
-	text-decoration: underline;
-	text-underline-offset: 2px;
+
+	&:before {
+		position: absolute;
+		content: "";
+		bottom: 2px;
+		width: 100%;
+		opacity: 30%;
+		border-bottom: 1px solid var(--color__link);
+		transition: opacity ease-in-out 0.1s;
+	}
 
 	&.noUnderline {
 		text-decoration: none;
@@ -17,7 +26,9 @@
 	@include animation-hover;
 
 	@include hover {
-		color: var(--color__link_hover);
+		&:before {
+			opacity: 60%;
+		}
 		@include inverted {
 			color: var(--color__link-inversion_hover);
 		}
