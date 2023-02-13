@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect } from 'react';
 import { useRecoilState } from 'recoil';
 
 import { useInitTheme } from '~/asmlib/hooks/useInitTheme';
-import { useViewportHeight } from '~hooks/useViewportHeight';
+import { useViewportSize } from '~/asmlib/hooks/useViewportSize';
 
 import { languageState, themeState } from './state/atoms';
 import i18n from './translation/i18n';
@@ -26,7 +26,7 @@ export function useAppInit(setInitialized: (arg: boolean) => void) {
 	}, [langRecoil]);
 
 	// *----- create special css variable to fix mobile viewport height -----
-	useViewportHeight();
+	useViewportSize();
 
 	useLayoutEffect(() => {
 		document.body.classList.add('scroll');
