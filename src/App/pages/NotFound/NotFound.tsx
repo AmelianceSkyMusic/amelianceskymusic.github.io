@@ -21,7 +21,7 @@ export function NotFound() {
 					<Typography component="h1" className={s.title40}>40</Typography>
 					<Typography component="h1" className={s.title4}>4</Typography>
 				</Block>
-				<Button type="text" className={s.goHome} onClick={() => navigate(ROUTES.HOME)}>
+				<Button type="secondary" className={s.goHome} onClick={() => navigate(ROUTES.HOME)}>
 					{t.goHome}
 				</Button>
 			</Container>
