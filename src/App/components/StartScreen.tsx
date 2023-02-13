@@ -7,7 +7,6 @@ import s from './StartScreen.module.scss';
 
 export function StartScreen() {
 	return (
-
 		<Main className={s.StartScreen}>
 			<Container className={s.container} gridContainer>
 				<Typography component="p1" style={{ fontSize: '100px' }}>
@@ -15,6 +14,5 @@ export function StartScreen() {
 				</Typography>
 			</Container>
 		</Main>
-
 	);
 }
