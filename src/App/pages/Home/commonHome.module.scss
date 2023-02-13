@@ -1,23 +1,23 @@
 .section {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--gap) * 1);
+	gap: 36px;
 }
 
 .sectionItem {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--gap) / 2.5);
+	gap: 16px;
 }
 
 .sectionTitle {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--gap) / 4);
+	gap: 8px;
 }
 
 .sectionDescription {
 	display: flex;
 	flex-direction: column;
-	gap: calc(var(--gap) / 2.5);
+	gap: 8px;
 }

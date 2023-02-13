@@ -2,13 +2,12 @@
 
 .description {
 	flex-direction: row;
-	gap: 4px;
+	gap: 8px;
 	align-items: center;
 }
 
 .telegramButton {
 	background: linear-gradient(-45deg, #278cff, #34b5ff);
-	// color: var(--color--f2-1);
 	border: none;
 	background-size: 600%;
 	animation: telegram-button-animation 12s linear infinite;

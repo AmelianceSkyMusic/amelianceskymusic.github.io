@@ -11,14 +11,10 @@
 	@include screen-lg {
 		padding: calc(var(--gap) * 2) 0;
 	}
-
-	@include screen-md {
-		padding: calc(var(--gap) * 1.5) 0;
-	}
 }
 
 .container {
 	display: flex;
 	display: row;
-	row-gap: calc(var(--gap) * 2);
+	row-gap: 72px;
 }
