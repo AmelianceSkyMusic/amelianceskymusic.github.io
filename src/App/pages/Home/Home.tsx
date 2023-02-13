@@ -1,6 +1,6 @@
 import { Container } from '~/asmlib/components/blocks/Container';
 import { Main } from '~/asmlib/components/blocks/Main';
-import { MenuMobile } from '~components/MenuMobile';
+import { BurgerMenu } from '~components/BurgerMenu';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
 import { BottomColumn } from './BottomColumn/BottomColumn';
@@ -25,7 +25,7 @@ export function Home() {
 							<BottomColumn />
 						</>
 					)}
-				<MenuMobile />
+				<BurgerMenu />
 			</Container>
 		</Main>
 	);
