@@ -1,7 +1,8 @@
 import { Block } from '~/asmlib/components/blocks/Block';
-import { Education } from '~pages/Home/sections/Education';
-import { Experience } from '~pages/Home/sections/Experience';
-import { Heading } from '~pages/Home/sections/Heading/Heading';
+
+import { Education } from '../sections/Education';
+import { Experience } from '../sections/Experience';
+import { Summary } from '../sections/Summary/Summary';
 
 import s from './LeftColumn.module.scss';
 
@@ -11,7 +12,7 @@ export function LeftColumn() {
 			className={s.LeftColumn}
 			grid={{ lg: 7, xl: 7, xx: 7 }}
 		>
-			<Heading />
+			<Summary />
 			<Experience />
 			<Education />
 		</Block>

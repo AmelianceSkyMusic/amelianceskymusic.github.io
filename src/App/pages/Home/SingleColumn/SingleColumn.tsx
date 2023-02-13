@@ -1,13 +1,14 @@
 import { Block } from '~/asmlib/components/blocks/Block';
-import { Contacts } from '~pages/Home/sections/Contacts/Contacts';
-import { Education } from '~pages/Home/sections/Education';
-import { Experience } from '~pages/Home/sections/Experience';
-import { HardSkills } from '~pages/Home/sections/HardSkills';
-import { Heading } from '~pages/Home/sections/Heading/Heading';
-import { Hobbies } from '~pages/Home/sections/Hobbies';
-import { Languages } from '~pages/Home/sections/Languages';
-import { Projects } from '~pages/Home/sections/Projects/Projects';
-import { SoftSkills } from '~pages/Home/sections/SoftSkills';
+
+import { Contacts } from '../sections/Contacts/Contacts';
+import { Education } from '../sections/Education';
+import { Experience } from '../sections/Experience';
+import { HardSkills } from '../sections/HardSkills';
+import { Hobbies } from '../sections/Hobbies';
+import { Languages } from '../sections/Languages';
+import { Projects } from '../sections/Projects/Projects';
+import { SoftSkills } from '../sections/SoftSkills';
+import { Summary } from '../sections/Summary/Summary';
 
 import s from './SingleColumn.module.scss';
 
@@ -17,7 +18,7 @@ export function SingleColumn() {
 			className={s.SingleColumn}
 			grid={{ md: 12 }}
 		>
-			<Heading />
+			<Summary />
 			<Contacts />
 			<Experience />
 			<Education />
