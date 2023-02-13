@@ -25,6 +25,17 @@ export const Typography = forwardRef<ComponentElementType, Typography>(({
 	if (component === 'h6') return <h6 {...attributes}>{children}</h6>;
 	if (component === 'p1') return <p {...attributes}>{children}</p>;
 	if (component === 'p2') return <p {...attributes}>{children}</p>;
+	if (component === 'subtitle1') return <p {...attributes}>{children}</p>;
+	if (component === 'subtitle2') return <p {...attributes}>{children}</p>;
+	if (component === 'caption') return <p {...attributes}>{children}</p>;
+	if (component === 'overline') return <p {...attributes}>{children}</p>;
+	if (component === 'button') return <p {...attributes}>{children}</p>;
+	if (component === 'button-sm') return <p {...attributes}>{children}</p>;
+	if (component === 'button-icon') return <p {...attributes}>{children}</p>;
+	if (component === 'button-icon-sm') return <p {...attributes}>{children}</p>;
+	if (component === 'link') return <p {...attributes}>{children}</p>;
+	if (component === 'link-sm') return <p {...attributes}>{children}</p>;
+	if (component === 'input') return <p {...attributes}>{children}</p>;
 	return null;
 });
 

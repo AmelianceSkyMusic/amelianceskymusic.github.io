@@ -10,26 +10,38 @@ interface Link extends ReactHTMLElementAttributes<
 ComponentElementType, React.AnchorHTMLAttributes<ComponentElementType>> {
 	display?: TypographyVariants;
 	noUnderline?: boolean;
+	blank?: boolean;
 }
 
 export const Link = forwardRef<ComponentElementType, Link>(({
 	display,
 	noUnderline,
 	children,
-	target = '_blank',
-	rel = 'noreferrer noopener',
+	blank,
 	className,
 	...rest
-}, ref) => (
-	<a
-		className={asm.join(s.Link, className, display, 'link', noUnderline && s.noUnderline)}
-		ref={ref}
-		target={target}
-		rel={rel}
-		{...rest}
-	>
-		{children}
-	</a>
-));
+}, ref) => {
+	// *----- create class from props -----
+	const componentClass = [
+		display || 'link',
+		noUnderline && s.noUnderline,
+	];
+
+	const blankAttributes = blank && {
+		target: '_blank',
+		rel: 'noreferrer noopener',
+	};
+
+	return (
+		<a
+			className={asm.join(s.Link, className, componentClass)}
+			ref={ref}
+			{...blankAttributes}
+			{...rest}
+		>
+			{children}
+		</a>
+	);
+});
 
 Link.displayName = 'Link';

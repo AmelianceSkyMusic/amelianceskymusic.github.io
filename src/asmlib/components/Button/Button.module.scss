@@ -31,11 +31,7 @@
 
 	@include animation-hover;
 
-	@include disabled {
-		opacity: 60%;
-		cursor: not-allowed;
-		pointer-events: none;
-	}
+	@include disabled;
 
 	@include hover {
 		background-color: var(--button__background_hover);

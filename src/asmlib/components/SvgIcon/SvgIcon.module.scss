@@ -37,7 +37,16 @@
 	}
 
 	@include clickable {
-		@include hover;
+		@include hover {
+			background-color: var(--icon__color_hover);
+		}
+
+		@include animation-hover;
+
+		@include active {
+			background-color: var(--icon__color_active);
+		}
 	}
+
 	@include disabled;
 }

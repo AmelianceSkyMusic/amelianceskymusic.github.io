@@ -10,6 +10,7 @@ interface SvgIcon extends ReactHTMLElementAttributes<ComponentElementType> {
 	icon: string;
 	size?: ComponentSizes;
 	customSize?: number;
+	clickable?: boolean;
 	disabled?: boolean;
 	inverted?: boolean;
 	className?: string;
@@ -19,6 +20,7 @@ export const SvgIcon = forwardRef<HTMLSpanElement, SvgIcon>(({
 	icon,
 	size,
 	customSize,
+	clickable,
 	disabled,
 	inverted,
 	children,
@@ -27,7 +29,7 @@ export const SvgIcon = forwardRef<HTMLSpanElement, SvgIcon>(({
 }: SvgIcon, ref) => {
 	const componentClass = [
 		size && s[size],
-		rest.onClick && 'clickable',
+		(clickable || rest.onClick) && s.clickable,
 		disabled && s.disabled,
 		inverted && s.inverted,
 	];

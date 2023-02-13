@@ -12,14 +12,14 @@ ComponentElementType, React.AnchorHTMLAttributes<ComponentElementType>> {
 	customSize?: number | [number, number];
 	disabled?: boolean;
 	type?: 'primary' | 'secondary' | 'text';
+	blank?: boolean;
 }
 
 export const ButtonLink = forwardRef<ComponentElementType, ButtonLink>(({
 	size,
 	customSize,
 	type = 'primary',
-	target = '_blank',
-	rel = 'noreferrer noopener',
+	blank,
 	children,
 	className,
 	...rest
@@ -33,6 +33,11 @@ export const ButtonLink = forwardRef<ComponentElementType, ButtonLink>(({
 		type && s[type],
 		!hasLabel && s.icon,
 	];
+
+	const blankAttributes = blank && {
+		target: '_blank',
+		rel: 'noreferrer noopener',
+	};
 
 	let sizeStyle = {};
 
@@ -53,8 +58,7 @@ export const ButtonLink = forwardRef<ComponentElementType, ButtonLink>(({
 			className={asm.join(s.Button, className, componentClass)}
 			style={sizeStyle}
 			ref={ref}
-			target={target}
-			rel={rel}
+			{...blankAttributes}
 			{...rest}
 		>
 			<span className={asm.join(s.label, 'button')}>
