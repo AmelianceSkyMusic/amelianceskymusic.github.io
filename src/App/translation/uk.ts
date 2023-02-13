@@ -1,5 +1,5 @@
 export const uk = {
-	heading: {
+	summary: {
 		name: 'Бобомуратов Раджаб',
 		position: 'Junior Front End Developer',
 		description: [
@@ -313,15 +313,15 @@ export const uk = {
 			},
 		},
 	},
-	navigation: [
-		'SUMMARY',
-		'CONTACTS',
-		'EXPERIENCE',
-		'SOFT SKILLS',
-		'HARD SKILLS',
-		'PROJECTS',
-		'HOBBIES',
-	],
+	navigation: {
+		summary: 'Про мене',
+		contacts: 'Контакти',
+		experience: 'Досвід',
+		softSkills: 'Людські якості',
+		hardSkills: 'Технічні навички',
+		projects: 'Проєкти',
+		hobbies: 'Хобі',
+	},
 	notFound: {
 		goHome: 'На домашню сторінку',
 	},

@@ -1,5 +1,5 @@
 export const en = {
-	heading: {
+	summary: {
 		name: 'Bobomuratov Rajab',
 		position: 'Junior Front End Developer',
 		description: [
@@ -295,33 +295,32 @@ export const en = {
 		],
 	},
 	menu: {
-		navigation: [],
 		toggles: {
 			language: {
-				name: 'Мова',
+				name: 'Language',
 				state: {
-					uk: 'Укр',
-					en: 'Анг',
+					uk: 'Ukr',
+					en: 'Eng',
 				},
 			},
 			theme: {
-				name: 'Тема',
+				name: 'Theme',
 				state: {
-					dark: 'Темна',
-					light: 'Світла',
+					dark: 'Dark',
+					light: 'Light',
 				},
 			},
 		},
 	},
-	navigation: [
-		'SUMMARY',
-		'CONTACTS',
-		'EXPERIENCE',
-		'SOFT SKILLS',
-		'HARD SKILLS',
-		'PROJECTS',
-		'HOBBIES',
-	],
+	navigation: {
+		summary: 'Summary',
+		contacts: 'Contacts',
+		experience: 'Experience',
+		softSkills: 'Soft Skills',
+		hardSkills: 'Hard Skills',
+		projects: 'Projects',
+		hobbies: 'Hobbies',
+	},
 	notFound: {
 		goHome: 'To the home page',
 	},
