@@ -4,7 +4,6 @@ import asm from 'asm-ts-scripts';
 
 import { Block } from '~/asmlib/components/blocks/Block';
 import { Section } from '~/asmlib/components/blocks/Section';
-import { Button } from '~/asmlib/components/Button/Button';
 import { ButtonLink } from '~/asmlib/components/Button/ButtonLink';
 import { Link } from '~/asmlib/components/Link/Link';
 import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
@@ -65,7 +64,7 @@ export function Contacts() {
 	return (
 		<Section id="contacts" className={cs.section}>
 
-			<ButtonLink href="https://t.me/AmelianceSkyMusic" className={asm.join(s.telegramButton)}>
+			<ButtonLink href="https://t.me/AmelianceSkyMusic" className={asm.join(s.telegramButton)} blank>
 				{t.telegramButton}
 			</ButtonLink>
 
@@ -74,7 +73,7 @@ export function Contacts() {
 					{(section.title || section.subTitle) && (
 						<Block className={cs.sectionTitle}>
 							{section.title && <Typography component="h3">{section.title}</Typography>}
-							{section.subTitle && <Typography component="p2">{section.subTitle}</Typography>}
+							{section.subTitle && <Typography component="subtitle1">{section.subTitle}</Typography>}
 						</Block>
 					)}
 					{section.descriptions.length > 0 && section.descriptions.length > 0
@@ -83,11 +82,9 @@ export function Contacts() {
 								className={asm.join(s.description, cs.sectionDescription)}
 								key={description}
 							>
-								<Link href={contactsList[i].contactLink} display="p1">{description}</Link>
+								<Link href={contactsList[i].contactLink} display="p1" blank>{description}</Link>
 								{contactsList[i].copyIcon && (
-									<Button onClick={handleCopyButtonClick} type="text" size="small">
-										<SvgIcon size="small" icon="icon--copy" />
-									</Button>
+									<SvgIcon size="small" onClick={handleCopyButtonClick} icon="icon--copy" />
 								)}
 							</Block>
 						))}

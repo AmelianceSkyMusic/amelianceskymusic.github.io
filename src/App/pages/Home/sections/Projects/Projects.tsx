@@ -1,7 +1,9 @@
 import { Block } from '~/asmlib/components/blocks/Block';
 import { Section } from '~/asmlib/components/blocks/Section';
+import { ButtonLink } from '~/asmlib/components/Button/ButtonLink';
 import { Img } from '~/asmlib/components/Img';
 import { Link } from '~/asmlib/components/Link/Link';
+import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
 import { Typography } from '~/asmlib/components/Typography';
 import { useLang } from '~hooks/useLang';
 
@@ -20,7 +22,7 @@ export function Projects() {
 
 			{t.sections.map((section, i) => (
 				<Block className={s.sectionContainer} key={section.title + section.subTitle}>
-					<Link className={s.exampleLink} href={projectsList[i].example.deployLink}>
+					<Link className={s.exampleLink} href={projectsList[i].example.deployLink} blank>
 						<Img
 							className={s.previewImg}
 							src={projectsList[i].example.previewImg}
@@ -34,7 +36,9 @@ export function Projects() {
 									&& (
 										<Block className={s.title}>
 											<Typography component="h3">{section.title}</Typography>
-											<Link href={projectsList[i].codeLink} className="icon-sm icon--github" />
+											<Link href={projectsList[i].codeLink} blank>
+												<SvgIcon size="small" icon="icon--github" clickable />
+											</Link>
 										</Block>
 									)}
 								{section.subTitle && <Typography component="p2">{section.subTitle.join(', ')}</Typography>}
