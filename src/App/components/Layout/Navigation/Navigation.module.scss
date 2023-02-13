@@ -1,3 +1,5 @@
+@use "~/asmlib/styles/globals/" as *;
+
 .Navigation {
 	overflow: visible;
 	position: sticky;
@@ -11,5 +13,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: calc(var(--gap) / 4) 0;
+	padding: calc(var(--gap) / 2) 0;
+	text-transform: uppercase;
+
+	.link {
+		line-height: 100%;
+	}
 }
