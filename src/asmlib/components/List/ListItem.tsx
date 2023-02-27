@@ -1,9 +1,5 @@
 import { forwardRef } from 'react';
 
-import asm from 'asm-ts-scripts';
-
-import s from './ListItem.module.scss';
-
 type ComponentElementType = HTMLLIElement;
 
 type ListItem = ReactHTMLElementAttributes<ComponentElementType>;
@@ -14,7 +10,7 @@ export const ListItem = forwardRef<ComponentElementType, ListItem>(({
 	...rest
 }: ListItem, ref) => (
 	<li
-		className={asm.join(s.ListItem, className)}
+		className={className}
 		ref={ref}
 		{...rest}
 	>

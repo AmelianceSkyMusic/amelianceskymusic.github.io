@@ -5,9 +5,15 @@
 }
 
 .unordered {
-	row-gap: 4px;
 	& > * {
 		list-style-type: disc;
+		color: var(--color--f1-1);
+		margin-left: 36px;
+	}
+}
+
+.custom {
+	& > * {
 		color: var(--color--f1-1);
 		margin-left: 36px;
 	}
