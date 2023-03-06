@@ -1,175 +1,224 @@
 export const uk = {
 	summary: {
-		name: 'Бобомуратов Раджаб',
-		position: 'Junior Front End Developer',
-		description: [
-			'Я пишу код незалежно від того, що я роблю. Якщо я пишу музику, займаюся дизайном, відео або просто виконую рутинну роботу, я пишу скрипти або навіть цілі інструменти, щоб спростити свою роботу. Мені це подобається',
-			'Маю досвід розробки та написання скриптів та інструментів різної складності на різних мовах (Javascript: After Effects, Figma, Illustrator, Studio One, Lua: Reaper, AHK: автоматизація Windows тощо)',
-		],
+		name: 'Раджаб Бобомуратов',
+		position: 'Junior Front-end Developer',
+		description: {
+			part1: 'Я React Front-end розробник з досвідом роботи в UX/UI дизайні та знаннями QA Manual.',
+			part2: 'Нещодавно закінчив курси по JavaScript та React розробці, однією з головних особливостей яких був великий акцент на самонавчанні. Там отримав базу по роботі з JS, React, Redux / RTK, REST API, MUI та іншому.',
+			part3: 'Під час навчання постійно намагався використовувати додаткові технології, що не входили до плану курсу.',
+			part4: 'Також паралельно працював і працюю далі над:',
+			part4List: {
+				list1: 'UI бібліотекою, яку використовував для персональних завдань та в якості основної UI бібліотеки в одному з фінальних командних завдань;',
+				list2: 'Npm бібліотекою TS скриптів, куди я виношу специфічні функції або функції, якими часто користуюсь;',
+				list3: 'Telegram ботом для шкільного чату, написаному на фреймворку Telegraf;',
+				list4: 'Набором api функцій написаному на Google Apps Script — псевдобеком для роботи з гугл таблицями через REST API;',
+				list5: 'Окремим пет-проектом, яким зараз користуються мої друзі та над котрим я багато експериментую, пробую додактові технології та відточую навички які вже маю.',
+			},
+			part5: 'В командних завданнях був тімлідом, налаштовував проєкти, організовував процеси та комунікацію.',
+			part6: 'На курсі мав певний статус «rs-activists», за допомогу іншим студентам та модерування україномовного чату в Телеграм.',
+			part7: 'Під час навчання почав вести конспект в notion, який перетворився у міні енциклопедію, яким часом користуються близькі одногрупники або люди які про нього знають.',
+			part8: 'Окрім цього маю некомерційний/напівкомерційний досвід розробки скриптів та інструментів на JS (Figma, After Effects, Studio One), Lua (Reaper DAW), AHK (Windows OS) та деяких інших мовах.',
+			part9: 'Люблю експериментувати та постійно знаходжуся в процесі вивчення чогось нового. Не боюсь використовувати нові підходи та змінювати звички, якщо бачу в цьому логіку та ріст для себе.',
+		},
 	},
 	experience: {
-		title: 'EXPERIENCE',
+		title: 'ДОСВІД',
 		sections: [
 			{
-				title: 'UX/UI Designer',
-				subTitle: 'APR 2021 - JUL 2021 // unqa.agency (agency, Rivne)',
+				title: 'Junior UX/UI Дизайнер',
+				subTitle: 'КВІТЕНЬ 2021 - ЛИПЕНЬ 2021 // unqa.agency (agency, Rivne)',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Веб-дизайн, дизайн фірмових стилів та логотипів',
+					'Презентація проєктів перед замовником',
 				],
 			},
 			{
-				title: 'Graphic Designer',
-				subTitle: 'JUN 2020 - DEC 2020 // Champion Group (advertising agency, Odessa)',
+				title: 'Графічний Дизайнер',
+				subTitle: 'ГРУДЕНЬ 2011 - СІЧЕНЬ 2015 // Бюро МарТ (рекламно консалтингове агентство, Rivne)',
 				descriptions: [
-					'Logos, corporate styles, outdoor advertising, printing, souvenirs and other',
-				],
-			},
-			{
-				title: 'Composer, Sound Producer / Graphic Designer',
-				subTitle: '2016 - 2020 // envato, pond5, freelance',
-				descriptions: [
-					'Working with audio stocks',
-					'Own projects (theme interface design, vst design, script design, digital design, motion design)',
-					'Freelance (digital design, graphic design)',
-				],
-			},
-			{
-				title: 'Graphic Designer',
-				subTitle: 'DEC 2011 - JAN 2015 // Bureau MarT (advertising consulting agency, Rivne)',
-				descriptions: [
-					'Logos, corporate styles, outdoor advertising, printing, souvenirs and other',
-				],
-			},
-			{
-				title: 'Designer',
-				subTitle: 'JUL 2011 - NOV 2011 // DX-Studio (printing company, Rivne)',
-				descriptions: [
-					'Print design',
-					'Plotter cutting',
+					'Дизайн логотипів, корпоративних стилів, зовнішньої реклами, друкованої та сувенірної продукції',
 				],
 			},
 		],
 	},
 	education: {
-		title: 'EDUCATION',
+		title: 'НАВЧАННЯ',
 		sections: [
 			{
-				title: 'React 2022Q3',
-				subTitle: 'SEPT 2021 // RS School',
+				title: 'React',
+				subTitle: 'ВЕРЕСЕНЬ 2022 - ГРУДЕНЬ 2022 // The Rolling Scopes School',
 				descriptions: [
-					'In progress...',
+					'React, Redux Toolkit, React API. 6 завдань, включно з командним',
 				],
 			},
 			{
-				title: 'JavaScript/Front-end 2022Q1',
-				subTitle: 'MAR 2022 - SEPT 20 // RS School',
+				title: 'JavaScript/Front-end',
+				subTitle: 'БЕРЕЗЕНЬ 2022 - ВЕРЕСЕНЬ 2022 // The Rolling Scopes School',
 				descriptions: [
-					'Markdown / Git, Chrome Dev Tools, Visual Studio Code, Terminal, HTML Basics, CSS Basics, JS Basics, JS Types, JS Scope / Functions, JavaScript. Evolution, CSS Grid, CSS Positioning / Flexbox, Figma, Preprocessors. SASS, CSS Grid Layout. SCSS, Media Queries / Responsive, HTML Form, JavaScript. DOM / Events, Bootstrap, Algorithms / Data structures, Modules in JavaScript, Webpack, CSS advanced, Client - Server interaction, Node.js, Clean code, Git Recap, Classes / Prototypes, OOP Basic, TypScript Basic, TypScript Advanced, WebStorage, Async JS, Event Loop / Animation, Functional Programming Basics, RESTful API Style, HTTP/HTTPS, Error handling, Scrum. Kanban, Design Patterns, How Browsers Work. Rendering Flow, Team Work',
-					'Self-study and usage in school tasks: React, Redux (vanilla), Axios, Lottie animation, Create own library and npm package, Web Animations API',
+					'База JavaScript, TypeScript, верстка, алгоритми, розробка під наглядом ментора. Більше 7-ми завдань, включаючи командне завдання',
+					'Курс побудований на самонавчанні',
+					'Самостійно пробував використовувати: React, Redux (vanilla), Axios, Lottie animation, Web Animations API та інше. Протягом курсу створив власну UI бібліотеку та бібліотеку скриптів, яку використовував у всіх завданнях',
 				],
 			},
 			{
-				title: 'JS/FE Pre-School 2022',
-				subTitle: 'DEC 2021 - FEB 2022 // RS School',
+				title: 'JS/FE Pre-School',
+				subTitle: 'ГРУДЕНЬ 2022 - БЕРЕЗЕНЬ 2022 // The Rolling Scopes School',
 				descriptions: [
-					'Chrome Dev Tools / Visual Studio Code, Markdown / Git / Github, HTML/CSS Basics, CSS Flex, JS Basics, JS Functions, JS Objects and Arrays, DOM API / DOM Events, Algorithms and Data Structures,',
+					'Підготовчий курс до JavaScript/Front-end',
+					'На курсі вивчили початкові основи JS, HTML, CSS, git. Спробували розробити власний сайт, гру, попрацювати з RestAPI. Більше 5-ти персональних проєктів',
 				],
 			},
 			{
-				title: 'Self-study',
-				subTitle: '2006 - 2022',
+				title: 'UX Design',
+				subTitle: '2021 // bangbangeducation',
 				descriptions: [
-					'JavaScript, HTML, CSS, Git/GitHub, Visual Studio Code',
-					'Lua, AHK, Yaml, Ini, Json, Xml, Walter',
+					'Відеокурс по дизайну інтерфейсів',
+				],
+			},
+			{
+				title: 'Основи QA Manual',
+				subTitle: 'СЕРПЕНЬ 2020 // QATestLab',
+				descriptions: [
+					'Місячний курс з основ ручного тестування QA',
+				],
+			},
+			{
+				title: 'UX/UI Design',
+				subTitle: '2019 // WDIR',
+				descriptions: [
+					'Відеокурс з веб-дизайну та дизайну інтерфейсів. Все від роботи з клієнтом до готового дизайну',
 				],
 			},
 		],
 	},
 	projects: {
-		title: 'PROJECTS',
+		title: 'ПРОЄКТИ',
 		sections: [
 			{
-				title: 'Engle',
-				subTitle: ['react'],
+				title: 'CV',
+				subTitle: 'React, TypeScript, Recoil, SCSS Modules, Vite, ESLint, Autoprefixer, Asmlib, ASM TS Scripts, I18next, React Responsive, React Router DOM',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Моє CV',
+					'Проект був зроблений на React, щоб не зайвий раз попрактикуватися в роботі з React, спробувати щось нове і відточити навички',
+				],
+			},
+			{
+				title: 'AW',
+				subTitle: 'React, TypeScript, Redux, SCSS Modules, Vite, ESLint, Autoprefixer, Firebase, React Hook Form, Asmlib, ASM TS Scripts, React Responsive, React Router DOM, React Showfall, Google Apps Script',
+				descriptions: [
+					'Пет проєкт',
+					'Односторінковий додаток для використання між учасниками музичного гурту. Додаток містить список пісень, акордів та чат для спілкування. Функціонал додатку включає можливість створення списку пісень та транспонування акордів',
+					'Проект був розпочатий на початку мого навчання на JavaScript, а пізніше переписаний на React. Частина функціоналу знаходиться в процесі перенесення на React',
+				],
+			},
+			{
+				title: 'Project Manager App',
+				subTitle: 'React, TypeScript, Redux, Axios, Lodash, MUI, Create React App, I18next, ESLint, React Hook Form, React Responsive, React Router Dom, React DND',
+				descriptions: [
+					'SPA, що допомагає окремій людині в команді або групі розробників досягти своїх цілей',
+					'Фінальне завдання курсу React виконувала команда з 3-х осіб. Через відсутність електрики та розбіжності в графіку подачі електроенергії комунікація була поганою та часу було менше ніж у команд не з України',
+					'Мій внесок: Тімлід команди, організація роботи та комунікації в команді. UX/UI дизайн додатку. Налаштування проєкту, встановлення пакетів. Створення гайду по налаштуванню IDE та управлінню проєктом для команди з описом всього, що є в проекті, які бібліотеки використовуються і як ми їх використовуємо. Розробка стану додатка. Налаштування MUI, компонентів MUI, сітки, додавання світлої та темної тем. Верстка: головна сторінка, вхід, реєстрація. Валідація форм',
+				],
+			},
+			{
+				title: 'RS School React',
+				subTitle: 'React, TypeScript, Redux, Axios, Create React App, ESLint, Prettier, Rest API, React Hook Form, React Router DOM',
+				descriptions: [
+					'Навчальний SPA-проект курсу React, на якому ми практикували свої навички: '
+					+ 'класові і функціональні компоненти; '
+					+ 'методи життєвого циклу; '
+					+ 'React Router DOM; '
+					+ 'React Hooks; '
+					+ 'React Hook Form; '
+					+ 'Стан: useProvider, useReducer; '
+					+ 'Redux RTK; '
+					+ 'React Testing Library',
+				],
+			},
+			{
+				title: 'Engle',
+				subTitle: 'React, TypeScript, Redux Vanilla, Axios, SCSS, Create React App, ESLint, React Responsive, React Router DOM, asmlib',
+				descriptions: [
+					'SPA для вивчення найпопулярніших англійських слів за допомогою двох ігор. Користувачі можуть мати власний обліковий запис, власний словник та статистику',
+					'Фінальне завдання курсу JavaScript/Front end виконувала команда з 3-х осіб. Хоча курс був присвячений JavaScript, з дозволу ментора ми вперше спробували попрацювати з React та Redux. Було дуже складно, але ми це зробили',
+					'Мій внесок: Тімлід команди, організація роботи та комунікації в команді. UX/UI дизайн додатку. Налаштування проєкту, встановлення пакетів. Розробка стору додатка. Створення ui компонентів. Зміна тем. Реалізація гри "Аудіо Виклик". Верстка: хедер, футер, гра "Аудіо Виклик", домашня сторінка',
 				],
 			},
 			{
 				title: 'Async Race',
-				subTitle: ['react'],
+				subTitle: 'TypeScript, HTML, SCSS, Rest API, ESLint, Prettier, Lottie, Web Animation API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Перший проєкт на TypeScript, де ми поглиблено навчалися працювати з Rest API. Тут я спробував декомпозиційний підхід. Також спробував попрацювати з Lottie анімацією та API Web Animations',
 				],
 			},
 			{
 				title: 'News Portal',
-				subTitle: ['react'],
+				subTitle: 'TypeScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Сайт з новинами. Завдання полягало в тому, щоб переписати код, що вже існує з JavaScript на TypeScript. Додатково зробити верстку',
 				],
 			},
 			{
 				title: 'Online Store',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Міні-магазин. Робота з фільтрами. Робота з MVC',
 				],
 			},
 			{
 				title: 'Css Mem Slider',
-				subTitle: ['react'],
+				subTitle: 'CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Поглиблена робота з CSS',
 				],
 			},
 			{
 				title: 'Virtual Keyboard',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Робота з подіями клавіатури. Робота зі звуком, створення різних тем',
 				],
 			},
 			{
 				title: 'Shelter',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Верстка багатосторінкового сайту. Створення нескінченної каруселі та пагінації',
 				],
 			},
 			{
 				title: 'Movie App',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Робота з Rest API. Розширена робота з елементами інтерфейсу',
 				],
 			},
 			{
 				title: 'Game 2048',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Робота з алгоритмами. Зміна теми. Створення ігрового стану',
 				],
 			},
 			{
 				title: 'Custom Video Player',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Кастомізація стандартних елементів. Робота зі звуком',
 				],
 			},
 			{
 				title: 'Photographer\'s Portfolio',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Верстка односторінкового сайту. Робота з даними. Змінити мову. Змінити тему',
 				],
 			},
 			{
 				title: 'CV',
-				subTitle: ['react'],
+				subTitle: 'HTML, CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Верстка з використанням HTML CSS',
 				],
 			},
 		],
@@ -177,6 +226,8 @@ export const uk = {
 	contacts: {
 		title: 'CONTACTS',
 		telegramButton: 'Написати мені в Telegram',
+		toastTitle: 'Скопійовано до буфера обміну',
+		toastErrorTitle: 'Щось пішло не так=(',
 		sections: [
 			{
 				title: 'Локація',
@@ -206,96 +257,118 @@ export const uk = {
 					'radzhab@ukr.net',
 				],
 			},
+			{
+				title: 'GitHub',
+				subTitle: '',
+				descriptions: [
+					'github.com',
+				],
+			},
+			{
+				title: 'LinkedIn',
+				subTitle: '',
+				descriptions: [
+					'linkedin.com',
+				],
+			},
 		],
 	},
 	softSkills: {
-		title: 'SOFT SKILLS',
+		title: 'ЛЮДСЬКІ ЯКОСТІ',
 		sections: [
 			{
 				title: '',
 				subTitle: '',
 				descriptions: [
-					'Adaptability',
-					'Critical thinking',
-					'Focus on results',
-					'Friendly',
-					'Honesty',
-					'Perfectionism',
-					'Self-development',
-					'Stress tolerance',
+					'Адаптивність',
+					'Критичне мислення',
+					'Націленість на результат',
+					'Доброзичливість',
+					'Чесність',
+					'Перфекціонізм',
+					'Самонавчання',
+					'Стресостійкість',
 				],
 			},
 		],
 	},
 	hardSkills: {
-		title: 'HARD SKILLS',
-		sections: [
-			{
-				title: 'Basic',
-				subTitle: '',
-				descriptions: [
-					'JavaScript',
-					'HTML',
-					'CSS',
-					'Git/GitHub',
-					'Visual Studio Code',
-				],
-			},
-			{
-				title: 'Other',
-				subTitle: '',
-				descriptions: [
-					'Figma, Photoshop, Illustrator, etc',
-					'Lua, AHK, Apps Script',
-					'Yaml, Ini, Json, Xml, Walter',
-					'Notion, Jira, Slack',
-					'Studio One, Reaper',
-					'Handwrite',
-				],
-			},
-		],
-	},
-	languages: {
-		title: 'LANGUAGES',
-		sections: [
-			{
-				title: 'English',
-				subTitle: '',
-				descriptions: [
-					'A0-A1',
-				],
-			},
-			{
-				title: 'Polish',
-				subTitle: '',
-				descriptions: [
-					'A0-A1',
-				],
-			},
-			{
-				title: 'Ukrainian',
-				subTitle: '',
-				descriptions: [
-					'Native',
-				],
-			},
-		],
-	},
-	hobbies: {
-		title: 'HOBBIES',
+		title: 'ТЕХНІЧНІ НАВИЧКИ',
 		sections: [
 			{
 				title: '',
 				subTitle: '',
 				descriptions: [
-					'I am musician.\nI play musical instruments and compose music.',
-					'In my free time I like to write code to automate routine tasks, ride a bike, take pictures',
+					'React',
+					'TypeScript',
+					'JavaScript',
+					'Redux / RTK',
+					'HTML',
+					'CSS / SCSS / SCSS Modules',
+					'MUI',
+					'Webpack',
+					'Vite',
+					'Create React App',
+					'ESLint / Prettier',
+					'Git / GitHub',
+					'React Hook Form',
+					'React Router Dom',
+					'Rest API',
+				],
+			},
+			{
+				title: 'Інші',
+				subTitle: '',
+				descriptions: [
+					'Visual Studio Code',
+					'Figma, Photoshop, Illustrator',
+					'Json, Yaml, Ini',
+					'Notion, Jira, Slack',
+					'Писання від руки',
+				],
+			},
+		],
+	},
+	languages: {
+		title: 'МОВИ',
+		sections: [
+			{
+				title: 'Англійська',
+				subTitle: '',
+				descriptions: [
+					'A1',
+				],
+			},
+			{
+				title: 'Польська',
+				subTitle: '',
+				descriptions: [
+					'A1',
+				],
+			},
+			{
+				title: 'Українська',
+				subTitle: '',
+				descriptions: [
+					'Рідна',
+				],
+			},
+		],
+	},
+	hobbies: {
+		title: 'ХОБІ',
+		sections: [
+			{
+				title: '',
+				subTitle: '',
+				descriptions: [
+					'Музикант. Граю на музичних інструментах і пишу музику',
+					'У вільний час люблю писати код, автоматизувати рутинну роботу, кататися на велосипеді',
 				],
 			},
 		],
 	},
 	menu: {
-		navigation: [],
 		toggles: {
 			language: {
 				name: 'Мова',
@@ -312,15 +385,22 @@ export const uk = {
 				},
 			},
 		},
+		pdf: 'Відкрити PDF',
 	},
 	navigation: {
 		summary: 'Про мене',
 		contacts: 'Контакти',
 		experience: 'Досвід',
+		education: 'Навчання',
 		softSkills: 'Людські якості',
 		hardSkills: 'Технічні навички',
 		projects: 'Проєкти',
 		hobbies: 'Хобі',
+	},
+	welcomeScreen: {
+		continue: 'Продовжити на сайті',
+		or: 'або',
+		pdf: 'Відкрити PDF',
 	},
 	notFound: {
 		goHome: 'На домашню сторінку',

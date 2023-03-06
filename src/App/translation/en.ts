@@ -1,51 +1,42 @@
 export const en = {
 	summary: {
-		name: 'Bobomuratov Rajab',
-		position: 'Junior Front End Developer',
-		description: [
-			'I write code no matter what I do. If I’m writing music, doing design, video, or just doing routine work I write scripts or even entire tools to simplify my work. I like it',
-			'I have experience in developing and writing scripts and tools of different complexity in different languages (Javascript: After Effects, Figma, Illustrator, Studio One, Lua: Reaper, AHK: windows automation, etc.)',
-		],
+		name: 'Rajab Bobomuratov',
+		position: 'Junior Front-end Developer',
+		description: {
+			part1: 'I\'m a React Front-end developer with experience in UX/UI design and knowledge of QA Manual.',
+			part2: 'I recently completed a course on JavaScript and React development, one of the main features of which was a large emphasis on self-study. There I got a base for working with JS, React, Redux/RTK, REST API, MUI, and more.',
+			part3: 'During my studies, I constantly tried to use additional technologies that were not included in the course plan.',
+			part4: 'I also worked and continue to work on the:',
+			part4List: {
+				list1: 'UI library, which I used for personal tasks and as the main UI library in one of the final team tasks;',
+				list2: 'Npm library of TS scripts, where I put specific functions or functions that I use often;',
+				list3: 'Telegram bot for school chat, written on the Telegraf framework;',
+				list4: 'A set of api functions written in Google Apps Script — a pseudo-backend for working with Google Spreadsheets via REST API;',
+				list5: 'Pet project, which my friends are currently using and on which I am experimenting a lot, trying out application technologies and honing the skills I already have.',
+			},
+			part5: 'In team tasks, I was a team leader, setting up projects, organizing processes and communication.',
+			part6: 'During the course, I held the status of \'rs-activist\' for helping other students and moderating a Ukrainian-language chat on Telegram.',
+			part7: 'During my studies, I started taking notes in notion, which turned into a mini encyclopedia that is sometimes used by close classmates or people who know about it.',
+			part8: 'I also have non-commercial / semi-commercial experience in developing scripts and tools in JS (Figma, After Effects, Studio One), Lua (Reaper DAW), AHK (Windows OS) and some other languages.',
+			part9: 'I love to experiment and am always in the process of learning something new. I am not afraid to use new approaches and change my habits if I see logic and growth for myself.',
+		},
 	},
 	experience: {
 		title: 'EXPERIENCE',
 		sections: [
 			{
-				title: 'UX/UI Designer',
+				title: 'Junior UX/UI Designer',
 				subTitle: 'APR 2021 - JUL 2021 // unqa.agency (agency, Rivne)',
 				descriptions: [
-					'Web design, brandbook, logo',
-				],
-			},
-			{
-				title: 'Graphic Designer',
-				subTitle: 'JUN 2020 - DEC 2020 // Champion Group (advertising agency, Odessa)',
-				descriptions: [
-					'Logos, corporate styles, outdoor advertising, printing, souvenirs and other',
-				],
-			},
-			{
-				title: 'Composer, Sound Producer / Graphic Designer',
-				subTitle: '2016 - 2020 // envato, pond5, freelance',
-				descriptions: [
-					'Working with audio stocks',
-					'Own projects (theme interface design, vst design, script design, digital design, motion design)',
-					'Freelance (digital design, graphic design)',
+					'Web design, corporate identity and logo design',
+					'Presentation of projects to the customer',
 				],
 			},
 			{
 				title: 'Graphic Designer',
 				subTitle: 'DEC 2011 - JAN 2015 // Bureau MarT (advertising consulting agency, Rivne)',
 				descriptions: [
-					'Logos, corporate styles, outdoor advertising, printing, souvenirs and other',
-				],
-			},
-			{
-				title: 'Designer',
-				subTitle: 'JUL 2011 - NOV 2011 // DX-Studio (printing company, Rivne)',
-				descriptions: [
-					'Print design',
-					'Plotter cutting',
+					'Logos design, corporate styles, outdoor advertising, printed and souvenir products',
 				],
 			},
 		],
@@ -54,33 +45,48 @@ export const en = {
 		title: 'EDUCATION',
 		sections: [
 			{
-				title: 'React 2022Q3',
-				subTitle: 'SEPT 2021 // RS School',
+				title: 'React',
+				subTitle: 'SEP 2022 - DEC 2022 // The Rolling Scopes School',
 				descriptions: [
-					'In progress...',
+					'React, Redux Toolkit, React API. 6 tasks, including a team task',
 				],
 			},
 			{
-				title: 'JavaScript/Front-end 2022Q1',
-				subTitle: 'MAR 2022 - SEPT 20 // RS School',
+				title: 'JavaScript/Front-end',
+				subTitle: 'MAR 2022 - SEP 2022 // The Rolling Scopes School',
 				descriptions: [
-					'Markdown / Git, Chrome Dev Tools, Visual Studio Code, Terminal, HTML Basics, CSS Basics, JS Basics, JS Types, JS Scope / Functions, JavaScript. Evolution, CSS Grid, CSS Positioning / Flexbox, Figma, Preprocessors. SASS, CSS Grid Layout. SCSS, Media Queries / Responsive, HTML Form, JavaScript. DOM / Events, Bootstrap, Algorithms / Data structures, Modules in JavaScript, Webpack, CSS advanced, Client - Server interaction, Node.js, Clean code, Git Recap, Classes / Prototypes, OOP Basic, TypScript Basic, TypScript Advanced, WebStorage, Async JS, Event Loop / Animation, Functional Programming Basics, RESTful API Style, HTTP/HTTPS, Error handling, Scrum. Kanban, Design Patterns, How Browsers Work. Rendering Flow, Team Work',
-					'Self-study and usage in school tasks: React, Redux (vanilla), Axios, Lottie animation, Create own library and npm package, Web Animations API',
+					'Core JavaScript, TypeScript, layout, algorithms, development under the supervision of a mentor. More than 7 projects, including a team task',
+					'The course is based on self-study',
+					'I tried to use it myself: React, Redux (vanilla), Axios, Lottie animation, Web Animations API, etc. During the course, I created my own UI library and scripting library, which I used in all assignments',
 				],
 			},
 			{
-				title: 'JS/FE Pre-School 2022',
-				subTitle: 'DEC 2021 - FEB 2022 // RS School',
+				title: 'JS/FE Pre-School',
+				subTitle: 'DEC 2021 - MAR 2022 // The Rolling Scopes School',
 				descriptions: [
-					'Chrome Dev Tools / Visual Studio Code, Markdown / Git / Github, HTML/CSS Basics, CSS Flex, JS Basics, JS Functions, JS Objects and Arrays, DOM API / DOM Events, Algorithms and Data Structures,',
+					'Preparatory course for JavaScript/Front-end',
+					'During the course, we learned the basic basics of JS, HTML, CSS, and git. We tried to develop our own website, game, and work with RestAPI. Over than 5 personal projects',
 				],
 			},
 			{
-				title: 'Self-study',
-				subTitle: '2006 - 2022',
+				title: 'UX Design',
+				subTitle: '2021 // bangbangeducation',
 				descriptions: [
-					'JavaScript, HTML, CSS, Git/GitHub, Visual Studio Code',
-					'Lua, AHK, Yaml, Ini, Json, Xml, Walter',
+					'A video course on interface design',
+				],
+			},
+			{
+				title: 'Basics of QA Manual',
+				subTitle: 'AUG 2021 - AUG 2022 // QATestLab',
+				descriptions: [
+					'A month-long course on the basics of QA manual testing',
+				],
+			},
+			{
+				title: 'UX/UI Design',
+				subTitle: '2019 // WDIR',
+				descriptions: [
+					'A video course on web and interface design. Everything from working with a client to the finished design',
 				],
 			},
 		],
@@ -89,87 +95,130 @@ export const en = {
 		title: 'PROJECTS',
 		sections: [
 			{
-				title: 'Engle',
-				subTitle: ['react'],
+				title: 'CV',
+				subTitle: 'React, TypeScript, Recoil, SCSS Modules, Vite, ESLint, Autoprefixer, Asmlib, ASM TS Scripts, I18next, React Responsive, React Router DOM',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'My CV',
+					'The project was made on React to practice working with React once again, try something new and hone my skills',
+				],
+			},
+			{
+				title: 'AW',
+				subTitle: 'React, TypeScript, Redux, SCSS Modules, Vite, ESLint, Autoprefixer, Firebase, React Hook Form, Asmlib, ASM TS Scripts, React Responsive, React Router DOM, React Showfall, Google Apps Script',
+				descriptions: [
+					'Pet Project',
+					'Single Page Application for use within a music group. The application contains a list of songs, chords, and a chat for communication. The app\'s functionality includes the ability to create a song list and transpose chords',
+					'The project was started at the beginning of my studies in vanilla JavaScript and later rewritten in React. Some of the functionality is in the process of being ported to React',
+				],
+			},
+			{
+				title: 'Project Manager App',
+				subTitle: 'React, TypeScript, Redux, Axios, Lodash, MUI, Create React App, I18next, ESLint, React Hook Form, React Responsive, React Router Dom, React DND',
+				descriptions: [
+					'SPA that helps an individual in a team or group of developers achieve their goals',
+					'The final task of the React course was performed by a team of 3 people. Due to the lack of electricity and differences in the electricity supply schedule, communication was poor, and the time was less than for teams from outside Ukraine',
+					'My contribution: Team lead, organization of work and communication in the team. UX/UI design of the application. Project setup, installation of packages. Creating an IDE setup and project management guide for the team describing everything in the project, what libraries are used, and how we use them. Development of the application state. Setting up MUI, MUI components, grid, adding light and dark themes. Layout: home page, login, registration. Validation of forms',
+				],
+			},
+			{
+				title: 'RS School React',
+				subTitle: 'React, TypeScript, Redux, Axios, Create React App, ESLint, Prettier, Rest API, React Hook Form, React Router DOM',
+				descriptions: [
+					'A training SPA project of the React course where we practiced our skills: '
+					+ 'React Class and Functional components; '
+					+ 'React lifecycle methods; '
+					+ 'React Router DOM; '
+					+ 'React Hooks; '
+					+ 'React Hook Form; '
+					+ 'State: useProvider, useReducer; '
+					+ 'Redux RTK; '
+					+ 'React Testing Library',
+				],
+			},
+			{
+				title: 'Engle',
+				subTitle: 'React, TypeScript, Redux Vanilla, Axios, SCSS, Create React App, ESLint, React Responsive, React Router DOM, asmlib',
+				descriptions: [
+					'SPA for learning the most popular English words through two games. Users can have their own account, their own dictionary and statistics',
+					'The final task of the JavaScript/Front end course was performed by a team of 3 people. Although the course was on JavaScript, with the permission of the mentor, we tried to work with React and Redux for the first time. It was very difficult, but we did it',
+					'My contribution: Team leader, organization of work and communication in the team. UX/UI design of the application. Setting up the project, installing packages. Development of the app store. Creating ui components. Light and dark themes. Implementation of the "Audio Challenge" game. Layout: header, footer, audio challenge game, home scree',
 				],
 			},
 			{
 				title: 'Async Race',
-				subTitle: ['react'],
+				subTitle: 'TypeScript, HTML, SCSS, Rest API, ESLint, Prettier, Lottie, Web Animation API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'The first TypeScript project where we learned to work with the Rest API in depth. Here I tried a decomposition approach. I also tried working with Lottie animation and the Web Animations API',
 				],
 			},
 			{
 				title: 'News Portal',
-				subTitle: ['react'],
+				subTitle: 'TypeScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'A website with news. The task was to rewrite the existing code from JavaScript to TypeScript and make a layout of the design',
 				],
 			},
 			{
 				title: 'Online Store',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Mini-store. Working with filters. Working with MVC',
 				],
 			},
 			{
 				title: 'Css Mem Slider',
-				subTitle: ['react'],
+				subTitle: 'CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Advanced work with CSS',
 				],
 			},
 			{
 				title: 'Virtual Keyboard',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Work with keyboard events. Working with audio, creating different themes',
 				],
 			},
 			{
 				title: 'Shelter',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Layout of a multi-page website. Creating an endless carousel and pagination',
 				],
 			},
 			{
 				title: 'Movie App',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS, Rest API',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Working with the Rest API. Advanced work with UI elements',
 				],
 			},
 			{
 				title: 'Game 2048',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Working with algorithms. Change the topic. Creating a game state',
 				],
 			},
 			{
 				title: 'Custom Video Player',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, SCSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Customization of standard controls. Working with audio',
 				],
 			},
 			{
 				title: 'Photographer\'s Portfolio',
-				subTitle: ['react'],
+				subTitle: 'JavaScript, HTML, CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Layout of a one-page website. Work with data. Change the language. Change the theme',
 				],
 			},
 			{
 				title: 'CV',
-				subTitle: ['react'],
+				subTitle: 'HTML, CSS',
 				descriptions: [
-					'Web design, brandbook, logo',
+					'Layout using HTML CSS',
 				],
 			},
 		],
@@ -177,6 +226,8 @@ export const en = {
 	contacts: {
 		title: 'CONTACTS',
 		telegramButton: 'Message me on Telegram',
+		toastTitle: 'Copied to the clipboard',
+		toastErrorTitle: 'Something went wrong=(',
 		sections: [
 			{
 				title: 'Location',
@@ -206,6 +257,20 @@ export const en = {
 					'radzhab@ukr.net',
 				],
 			},
+			{
+				title: 'GitHub',
+				subTitle: '',
+				descriptions: [
+					'github.com',
+				],
+			},
+			{
+				title: 'LinkedIn',
+				subTitle: '',
+				descriptions: [
+					'linkedin.com',
+				],
+			},
 		],
 	},
 	softSkills: {
@@ -231,25 +296,34 @@ export const en = {
 		title: 'HARD SKILLS',
 		sections: [
 			{
-				title: 'Basic',
+				title: '',
 				subTitle: '',
 				descriptions: [
+					'React',
+					'TypeScript',
 					'JavaScript',
+					'Redux / RTK',
 					'HTML',
-					'CSS',
-					'Git/GitHub',
-					'Visual Studio Code',
+					'CSS / SCSS / SCSS Modules',
+					'MUI',
+					'Webpack',
+					'Vite',
+					'Create React App',
+					'ESLint / Prettier',
+					'Git / GitHub',
+					'React Hook Form',
+					'React Router Dom',
+					'Rest API',
 				],
 			},
 			{
 				title: 'Other',
 				subTitle: '',
 				descriptions: [
-					'Figma, Photoshop, Illustrator, etc',
-					'Lua, AHK, Apps Script',
-					'Yaml, Ini, Json, Xml, Walter',
+					'Visual Studio Code',
+					'Figma, Photoshop, Illustrator',
+					'Json, Yaml, Ini',
 					'Notion, Jira, Slack',
-					'Studio One, Reaper',
 					'Handwrite',
 				],
 			},
@@ -262,14 +336,14 @@ export const en = {
 				title: 'English',
 				subTitle: '',
 				descriptions: [
-					'A0-A1',
+					'A1',
 				],
 			},
 			{
 				title: 'Polish',
 				subTitle: '',
 				descriptions: [
-					'A0-A1',
+					'A1',
 				],
 			},
 			{
@@ -288,8 +362,8 @@ export const en = {
 				title: '',
 				subTitle: '',
 				descriptions: [
-					'I am musician.\nI play musical instruments and compose music.',
-					'In my free time I like to write code to automate routine tasks, ride a bike, take pictures',
+					'I am musician.\nI play musical instruments and compose music',
+					'In my free time I like to write code, automate routine tasks, ride a bike',
 				],
 			},
 		],
@@ -311,15 +385,22 @@ export const en = {
 				},
 			},
 		},
+		pdf: 'Open PDF',
 	},
 	navigation: {
 		summary: 'Summary',
 		contacts: 'Contacts',
 		experience: 'Experience',
+		education: 'Education',
 		softSkills: 'Soft Skills',
 		hardSkills: 'Hard Skills',
 		projects: 'Projects',
 		hobbies: 'Hobbies',
+	},
+	welcomeScreen: {
+		continue: 'Continue on website',
+		or: 'or',
+		pdf: 'Open PDF',
 	},
 	notFound: {
 		goHome: 'To the home page',
