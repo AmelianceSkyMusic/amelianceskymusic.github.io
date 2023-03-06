@@ -20,4 +20,12 @@ export const contactsList: ContactsListItem[] = [
 		contactLink: 'mailto:radzhab@ukr.net',
 		copyIcon: true,
 	},
+	{
+		contactLink: 'https://github.com/AmelianceSkyMusic',
+		copyIcon: true,
+	},
+	{
+		contactLink: 'https://www.linkedin.com/in/radzhab/',
+		copyIcon: true,
+	},
 ];

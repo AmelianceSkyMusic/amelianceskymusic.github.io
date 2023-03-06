@@ -22,11 +22,11 @@ export function SingleColumn() {
 			<Contacts />
 			<Experience />
 			<Education />
-			<Projects />
-			<SoftSkills />
 			<HardSkills />
+			<SoftSkills />
 			<Languages />
 			<Hobbies />
+			<Projects />
 		</Block>
 	);
 }

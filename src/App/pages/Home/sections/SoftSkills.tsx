@@ -17,7 +17,7 @@ export function SoftSkills() {
 					{(section.title || section.subTitle) && (
 						<Block className={cs.sectionTitle}>
 							{section.title && <Typography component="h3">{section.title}</Typography>}
-							{section.subTitle && <Typography component="p2">{section.subTitle}</Typography>}
+							{section.subTitle && <Typography component="subtitle1">{section.subTitle}</Typography>}
 						</Block>
 					)}
 					{section.descriptions.length > 0 && (

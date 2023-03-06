@@ -13,11 +13,11 @@ export function Experience() {
 			<Typography component="h2">{t.title}</Typography>
 
 			{t.sections.map((section) => (
-				<Block className={cs.sectionItem} key={section.title + section.subTitle}>
+				<Block className={cs.sectionItem} key={section.title}>
 					{(section.title || section.subTitle) && (
 						<Block className={cs.sectionTitle}>
 							{section.title && <Typography component="h3">{section.title}</Typography>}
-							{section.subTitle && <Typography component="p2">{section.subTitle}</Typography>}
+							{section.subTitle && <Typography component="subtitle1">{section.subTitle}</Typography>}
 						</Block>
 					)}
 					{section.descriptions.length > 0 && (
@@ -33,3 +33,21 @@ export function Experience() {
 		</Section>
 	);
 }
+
+// {t.sections.map((section) => (
+// 	<Block className={cs.sectionItem} key={section.title + section.subTitle}>
+// 		{(section.title || section.subTitle) && (
+// 			<Block className={cs.sectionTitle}>
+// 				{section.title && <Typography component="h3">{section.title}</Typography>}
+// 				{section.subTitle && <Typography component="p2">{section.subTitle}</Typography>}
+// 			</Block>
+// 		)}
+// 		{section.descriptions.length > 0 && (
+// 			<Block className={cs.sectionDescription}>
+// 				{section.descriptions.length > 0 && section.descriptions.map((description) => (
+// 					<Typography component="p1" key={description}>{description}</Typography>
+// 				))}
+// 			</Block>
+// 		)}
+// 	</Block>
+// ))}

@@ -14,8 +14,8 @@ export function RightColumn() {
 			grid={{ lg: 5, xl: 4, xx: 3 }}
 		>
 			<Contacts />
-			<SoftSkills />
 			<HardSkills />
+			<SoftSkills />
 			<Languages />
 			<Hobbies />
 		</Block>

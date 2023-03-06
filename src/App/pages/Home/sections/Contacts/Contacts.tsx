@@ -40,7 +40,7 @@ export function Contacts() {
 			try {
 				await navigator.clipboard.writeText(text);
 				setToast((prev) => ({
-					title: 'Copied to the clipboard:',
+					title: `${t.toastTitle}:`,
 					message: `${text}`,
 					id: (+prev.id + 1).toString(),
 				}));
@@ -48,7 +48,7 @@ export function Contacts() {
 			} catch (error) {
 				setToast((prev) => ({
 					title: '',
-					message: 'Something went wrong=(',
+					message: t.toastErrorTitle,
 					type: 'error',
 					id: (+prev.id + 1).toString(),
 				}));
