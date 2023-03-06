@@ -42,7 +42,7 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 }: Menu, ref) => {
 	const menuRef = useRef<HTMLUListElement>(null);
 
-	const [show, setShow] = useState('show');
+	const [show, setShow] = useState(true);
 	const [menuPositionStyle, setMenuPositionStyle] = useState<Record<string, number | string>>({});
 
 	const { lockScroll, unlockScroll } = useScrollLock();
@@ -56,7 +56,7 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 	}, [isOpen]);
 
 	useEffect(() => {
-		setShow('show');
+		setShow(true);
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isOpen]);
 
@@ -137,11 +137,11 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 	if (!isOpen) return null;
 
 	const handleCloseMenu = () => {
-		setShow('');
+		setShow(false);
 	};
 
 	const handleAnimationend = () => {
-		if (show !== 'show') {
+		if (!show) {
 			onClick();
 			unlockScroll();
 		}
@@ -166,7 +166,7 @@ export const Menu = forwardRef<ComponentElementType, Menu>(({
 			<nav
 				onAnimationEnd={handleAnimationend}
 				ref={menuRef}
-				className={asm.join(s.Menu, show)}
+				className={asm.join(s.Menu, show && s.show)}
 				style={menuPositionStyle}
 			>
 
