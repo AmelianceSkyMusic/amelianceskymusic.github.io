@@ -25,8 +25,7 @@
 	@include hover {
 		filter: grayscale(0);
 	}
-}
-
-.section {
-	gap: 36px;
+	&.noLink {
+		cursor: auto;
+	}
 }
