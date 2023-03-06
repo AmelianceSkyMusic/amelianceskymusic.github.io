@@ -4,7 +4,6 @@ import { BurgerMenu } from '~components/BurgerMenu';
 import { WelcomeScreen } from '~components/WelcomeScreen';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
-import { BottomColumn } from './BottomColumn/BottomColumn';
 import { LeftColumn } from './LeftColumn/LeftColumn';
 import { RightColumn } from './RightColumn/RightColumn';
 import { SingleColumn } from './SingleColumn/SingleColumn';
@@ -24,7 +23,6 @@ export function Home() {
 							<>
 								<LeftColumn />
 								<RightColumn />
-								<BottomColumn />
 							</>
 						)}
 					<BurgerMenu />

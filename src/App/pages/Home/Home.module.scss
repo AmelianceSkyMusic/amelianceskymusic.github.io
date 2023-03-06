@@ -2,7 +2,7 @@
 
 .Home {
 	background: var(--color--bg-0-gradient);
-	padding-top: calc(var(--gap) * 4);
+	padding: calc(var(--gap) * 4) 0;
 
 	@include screen-xl {
 		padding: calc(var(--gap) * 3) 0;

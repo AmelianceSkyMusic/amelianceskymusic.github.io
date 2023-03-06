@@ -2,6 +2,7 @@ import { Block } from '~/asmlib/components/blocks/Block';
 
 import { Education } from '../sections/Education';
 import { Experience } from '../sections/Experience';
+import { Projects } from '../sections/Projects/Projects';
 import { Summary } from '../sections/Summary/Summary';
 
 import s from './LeftColumn.module.scss';
@@ -15,6 +16,7 @@ export function LeftColumn() {
 			<Summary />
 			<Experience />
 			<Education />
+			<Projects />
 		</Block>
 	);
 }
