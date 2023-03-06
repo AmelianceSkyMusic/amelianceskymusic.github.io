@@ -3,6 +3,9 @@
 .sectionContainer {
 	display: flex;
 	gap: 12px;
+	@include screen-md {
+		flex-direction: column;
+	}
 }
 
 .title {
