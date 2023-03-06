@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useRecoilState } from 'recoil';
 
 import { Button } from '~/asmlib/components/Button/Button';
+import { Link } from '~/asmlib/components/Link/Link';
 import { Menu } from '~/asmlib/components/Menu/Menu';
 import { MenuContainer } from '~/asmlib/components/Menu/MenuContainer';
 import { MenuDivider } from '~/asmlib/components/Menu/MenuDivider';
@@ -60,6 +61,12 @@ export function BurgerMenu() {
 					menuOrigin={{ horizontal: 'right', vertical: 'bottom' }}
 					preventItemClickClose
 				>
+					<MenuItem>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov.pdf" blank noUnderline>
+							<Typography component="p1">{t.pdf}</Typography>
+						</Link>
+					</MenuItem>
+					<MenuDivider />
 					<MenuItem onClick={handleLanguageClick}>
 						<Typography component="p1">
 							{`${t.toggles.language.name}: ${t.toggles.language.state[langRecoil as 'uk' | 'en']}`}
@@ -77,8 +84,9 @@ export function BurgerMenu() {
 							<MenuItem><a href="#summary" className="p1">{navigation.summary}</a></MenuItem>
 							<MenuItem><a href="#contacts" className="p1">{navigation.contacts}</a></MenuItem>
 							<MenuItem><a href="#experience" className="p1">{navigation.experience}</a></MenuItem>
-							<MenuItem><a href="#soft-skills" className="p1">{navigation.softSkills}</a></MenuItem>
+							<MenuItem><a href="#education" className="p1">{navigation.education}</a></MenuItem>
 							<MenuItem><a href="#hard-skills" className="p1">{navigation.hardSkills}</a></MenuItem>
+							<MenuItem><a href="#soft-skills" className="p1">{navigation.softSkills}</a></MenuItem>
 							<MenuItem><a href="#projects" className="p1">{navigation.projects}</a></MenuItem>
 							<MenuItem><a href="#hobbies" className="p1">{navigation.hobbies}</a></MenuItem>
 						</>
