@@ -1,6 +1,7 @@
 import { Container } from '~/asmlib/components/blocks/Container';
 import { Main } from '~/asmlib/components/blocks/Main';
 import { BurgerMenu } from '~components/BurgerMenu';
+import { WelcomeScreen } from '~components/WelcomeScreen';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
 import { BottomColumn } from './BottomColumn/BottomColumn';
@@ -14,19 +15,22 @@ export function Home() {
 	const { isScreenMD } = useScreenQuery();
 
 	return (
-		<Main className={s.Home}>
-			<Container className={s.container} gridContainer>
-				{isScreenMD
-					? <SingleColumn />
-					: (
-						<>
-							<LeftColumn />
-							<RightColumn />
-							<BottomColumn />
-						</>
-					)}
-				<BurgerMenu />
-			</Container>
-		</Main>
+		<>
+			<Main className={s.Home}>
+				<Container className={s.container} gridContainer>
+					{isScreenMD
+						? <SingleColumn />
+						: (
+							<>
+								<LeftColumn />
+								<RightColumn />
+								<BottomColumn />
+							</>
+						)}
+					<BurgerMenu />
+				</Container>
+			</Main>
+			<WelcomeScreen />
+		</>
 	);
 }
