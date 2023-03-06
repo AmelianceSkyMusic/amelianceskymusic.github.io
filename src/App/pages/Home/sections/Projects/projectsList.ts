@@ -1,0 +1,139 @@
+import stageZero2048 from '~assets/img/2048.png';
+import stageTwoAsyncRace from '~assets/img/async-race.png';
+import petAW from '~assets/img/aw.png';
+import stageOneCssMemSlider from '~assets/img/css-mem-slider.png';
+import cv from '~assets/img/cv.png';
+import stageZeroCv from '~assets/img/cv-rss.png';
+import stageTwoEngle from '~assets/img/engle.png';
+import stageZeroMovieApp from '~assets/img/movie-app.png';
+import stageTwoNewsPortal from '~assets/img/news-portal.png';
+import stageTwoOnlineStore from '~assets/img/online-store.png';
+import stageReactPMA from '~assets/img/pma.png';
+import stageZeroPortfolio from '~assets/img/portfolio.png';
+import stageReactRSS from '~assets/img/react.png';
+import stageOneShelter from '~assets/img/shelter.png';
+import stageZeroVideoPlayer from '~assets/img/videoplayer.png';
+import stageOneVirtualKeyboard from '~assets/img/virtual-keyboard.png';
+
+interface ProjectListItem {
+	codeLink: string;
+	example: {
+		deployLink: string;
+		previewImg: string;
+	};
+}
+
+export const projectsList: ProjectListItem[] = [
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/rs-cv',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/rs-cv',
+			previewImg: stageZeroCv,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/portfolio',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/portfolio',
+			previewImg: stageZeroPortfolio,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/videoplayer',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/videoplayer',
+			previewImg: stageZeroVideoPlayer,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/random-game',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/random-game',
+			previewImg: stageZero2048,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app',
+			previewImg: stageZeroMovieApp,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/shelter',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/shelter/pages/main/',
+			previewImg: stageOneShelter,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/virtual-keyboard/tree/virtual-keyboard',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/virtual-keyboard/',
+			previewImg: stageOneVirtualKeyboard,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/cssMemSlider/tree/gh-pages',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/cssMemSlider/cssMemSlider/',
+			previewImg: stageOneCssMemSlider,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/online-store-jest',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/online-store/',
+			previewImg: stageTwoOnlineStore,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/migration-newip-to-ts--dev',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/migration-newip-to-ts/',
+			previewImg: stageTwoNewsPortal,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/async-race',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/async-race/',
+			previewImg: stageTwoAsyncRace,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/engle',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/engle/',
+			previewImg: stageTwoEngle,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-REACT2022Q3',
+		example: {
+			deployLink: 'https://rss-react-06-redux.netlify.app/',
+			previewImg: stageReactRSS,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/project-management-app',
+		example: {
+			deployLink: '',
+			previewImg: stageReactPMA,
+		},
+	},
+	{
+		codeLink: '',
+		example: {
+			deployLink: '',
+			previewImg: petAW,
+		},
+	},
+	{
+		codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic.github.io',
+		example: {
+			deployLink: 'https://amelianceskymusic.github.io/',
+			previewImg: cv,
+		},
+	},
+].reverse();

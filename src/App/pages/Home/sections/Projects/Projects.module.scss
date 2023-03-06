@@ -1,0 +1,34 @@
+@use "~/asmlib/styles/globals/" as *;
+
+.sectionContainer {
+	display: flex;
+	gap: 12px;
+	@include screen-md {
+		flex-direction: column;
+	}
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.exampleLink {
+	height: auto;
+}
+
+.previewImg {
+	width: 126px;
+	height: auto;
+	border-radius: 4px;
+	filter: grayscale(100%);
+	transition: filter ease-in-out 0.2s;
+	cursor: pointer;
+	@include hover {
+		filter: grayscale(0);
+	}
+	&.noLink {
+		cursor: auto;
+	}
+}

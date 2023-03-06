@@ -1,12 +1,56 @@
-@use "./asmlib/asm-ui/styles/globals/" as *;
-@use "./asmlib/asm-ui/styles/" as *;
-@use "./styles/" as *;
+@use "~/asmlib/styles" as *;
 
 html {
 	scroll-padding-top: 32px;
+	background-color: var(--color--b1-0);
 }
 
-#root {
-	gap: var(--gap);
-	background-color: var(--color--bg-0);
+body {
+	position: relative;
+}
+
+//* ---- add icons -----
+@include useSvgIcon(
+	"~assets/svg/",
+	icon--alert-circle,
+	icon--alert-triangle,
+	icon--behance,
+	icon--check-circle,
+	icon--codewars,
+	icon--copy,
+	icon--discord,
+	icon--dribble,
+	icon--github,
+	icon--info,
+	icon--instagram,
+	icon--linkedin,
+	icon--menu,
+	icon--moon,
+	icon--sun,
+	icon--telegram,
+	icon--x,
+	icon--x-circle,
+	icon--youtube,
+	icon--chevron-down
+);
+
+//* ---- customizing asmlib -----
+:root {
+	--typography__font-size_h1: 42px;
+	--typography__font-size_h2: 24px;
+	--typography__font-size_h3: 18px;
+	--typography__font-size_h4: 14px;
+	--typography__font-size_p1: 16px;
+	--typography__font-size_p2: 12px;
+	--typography__font-size_button: 16px;
+	--typography__font-size_button-sm: 12px;
+	--typography__font-size_button-icon: 16px;
+	--typography__font-size_button-icon-sm: 12px;
+	--typography__font-size_link: 16px;
+	--typography__font-size_link-sm: 12px;
+	--typography__font-size_input: 16px;
+
+	@include screen-md {
+		--typography__font-size_h1: 38px;
+	}
 }

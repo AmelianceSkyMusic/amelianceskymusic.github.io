@@ -1,0 +1,52 @@
+@use "~/asmlib/styles/globals/" as *;
+
+.titleContainer {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	gap: 48px;
+	@include screen-xl {
+		gap: 24px;
+		width: auto;
+	}
+	@include screen-lg {
+		gap: 24px;
+	}
+}
+
+.title {
+	display: flex;
+	overflow-wrap: break-word;
+}
+
+.subtitle {
+	display: flex;
+}
+
+.titleTextContent {
+	width: max-content;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.photo {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+
+	@include screen-lg {
+		height: 80px;
+		width: 80px;
+	}
+
+	@include screen-xs {
+		display: none;
+	}
+
+	filter: grayscale(100%);
+	transition: filter ease-in-out 0.2s;
+	@include hover {
+		filter: grayscale(0);
+		cursor: auto;
+	}
+}

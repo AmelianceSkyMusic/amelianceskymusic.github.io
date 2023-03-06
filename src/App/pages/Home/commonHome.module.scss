@@ -1,0 +1,23 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+}
+
+.sectionItem {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.sectionTitle {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.sectionDescription {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}

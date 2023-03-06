@@ -21,7 +21,7 @@
 		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
 	},
 	"[css]": {
-		// "editor.formatOnSave": true,
+		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
 	},
 	"editor.formatOnPaste": false,
@@ -40,49 +40,65 @@
 			"inner_end": "~~/"
 		}
 	},
-	"cSpell.language": "ua,en",
-	"explorerExclude.backup": {
-		"**/.git": true,
-		"**/.svn": true,
-		"**/.hg": true,
-		"**/CVS": true,
-		"**/.DS_Store": true,
-		"**/Thumbs.db": true,
-		"**/_backup": true,
-		"**/_legacy": true,
-		".vscode": true,
-		"build": true,
-		"node_modules": true,
-		"public": true,
-		".editorconfig": true,
-		".eslintrc.js": true,
-		".gitignore": true,
-		"package.json": true,
-		"README.md": true,
-		"tsconfig.json": true,
-		"reportWebVitals.ts": true,
-		"src/reportWebVitals.ts": true,
-		"src/react-app-env.d.ts": true
-	},
+	"cSpell.language": "en,uk,en-US",
 	"cSpell.words": [
+		"акаунт",
 		"amelianceskymusic",
+		"amelianceworship",
+		"appsscript",
 		"asmlib",
-		"behance",
-		"Bobomuratov",
 		"brandbook",
-		"chordlist",
-		"codewars",
-		"CONSTS",
-		"dribbble",
-		"envato",
-		"hardskills",
-		"Kanban",
-		"Photoshop",
+		"chordslist",
+		"Engle",
+		"Firestore",
+		"fullwidth",
+		"ipify",
 		"Rivne",
-		"rsschool",
-		"softskills",
-		"Songlist",
+		"sheetbest",
+		"signup",
+		"songslist",
+		"testid",
 		"unqa"
+	],
+	// "editor.formatOnSave": true,
+	// "editor.defaultFormatter": "esbenp.prettier-vscode"
+	"multiCommand.commands": [
+		{
+		  "command": "multiCommand.consoleLog",
+		  "sequence": [
+			 "editor.action.clipboardCopyAction",
+			 "editor.action.insertLineAfter",
+			 {
+				"command": "editor.action.insertSnippet",
+				"args": {
+				  "snippet": "console.log('$CLIPBOARD: ', $CLIPBOARD);"
+				}
+			 },
+		  ]
+		},
+		{
+		  "command": "multiCommand.createReactFC",
+		  "sequence": [
+				{
+					"command": "editor.action.insertSnippet",
+					"args": {
+						"snippet": {
+							"body": [
+								"export function ${1:${TM_FILENAME_BASE}}() {",
+								"\treturn (",
+									"\t\t<div className=\"${2:${TM_FILENAME_BASE/(.*)/${1:/downcase}/}}\">${3:${TM_FILENAME_BASE}}</div>",
+								"\t);",
+								"}"
+							],
+						}
+					}
+				},
+		  ]
+		},
+	],
+	"css.lint.validProperties": ["composes"],
+	"scss.lint.validProperties": [
+		"composes"
 	],
 	"files.exclude": {
 		"**/.git": false,
@@ -91,24 +107,51 @@
 		"**/CVS": false,
 		"**/.DS_Store": false,
 		"**/Thumbs.db": false,
-		"**/_backup": false,
-		"**/_legacy": false,
-		".vscode": false,
-		"build": false,
+		"_backup": false,
 		"node_modules": false,
-		"public": false,
+		".vscode": false,
 		".editorconfig": false,
-		".eslintrc.js": false,
+		".eslintignore": false,
+		".eslintrc-typescript.cjs": false,
+		".eslintrc.cjs": false,
 		".gitignore": false,
 		"package.json": false,
-		"README.md": false,
+		"postcss.config.cjs": false,
 		"tsconfig.json": false,
-		"reportWebVitals.ts": false,
-		"src/reportWebVitals.ts": false,
-		"src/react-app-env.d.ts": false
-	}
-
-
-	// "editor.formatOnSave": true,
-	// "editor.defaultFormatter": "esbenp.prettier-vscode"
+		"vite.config.ts": false,
+		"public": false,
+		"index.html": false,
+		"vite-env.d.ts": false,
+		"src/vite-env.d.ts": false,
+		"src/assets": false
+	},
+	"explorerExclude.backup": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"_backup": true,
+		"node_modules": true,
+		".vscode": true,
+		".editorconfig": true,
+		".eslintignore": true,
+		".eslintrc-typescript.cjs": true,
+		".eslintrc.cjs": true,
+		".gitignore": true,
+		"package.json": true,
+		"postcss.config.cjs": true,
+		"tsconfig.json": true,
+		"vite.config.ts": true,
+		"public": true,
+		"index.html": true,
+		"vite-env.d.ts": true,
+		"src/vite-env.d.ts": true,
+		"src/assets": true
+	},
+	// "typescript.referencesCodeLens.enabled": true,
+	// "typescript.referencesCodeLens.showOnAllFunctions": true,
+	// "javascript.referencesCodeLens.enabled": true,
+	// "javascript.referencesCodeLens.showOnAllFunctions": true
 }
