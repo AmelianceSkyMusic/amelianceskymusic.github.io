@@ -2,7 +2,7 @@ import { forwardRef, useEffect, useState } from 'react';
 
 import asm from 'asm-ts-scripts';
 
-import { AccordionItem } from './AccordionItem';
+import { AccordionListItem } from './AccordionListItem';
 
 import s from './AccordionList.module.scss';
 
@@ -73,7 +73,7 @@ export const AccordionList = forwardRef<ComponentElementType, AccordionList>(({
 			{...rest}
 		>
 			{contentWithId && contentWithId.map((item) => (
-				<AccordionItem
+				<AccordionListItem
 					headingComponent={headingComponent}
 					textComponent={textComponent}
 					heading={item.heading}

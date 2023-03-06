@@ -6,11 +6,11 @@ import { Block } from '../blocks/Block';
 import { SvgIcon } from '../SvgIcon/SvgIcon';
 import { Typography } from '../Typography';
 
-import s from './AccordionItem.module.scss';
+import s from './AccordionListItem.module.scss';
 
-type ComponentElementType = HTMLDivElement;
+type ComponentElementType = HTMLLIElement;
 
-interface AccordionItem extends ReactHTMLElementAttributes<ComponentElementType> {
+interface AccordionListItem extends ReactHTMLElementAttributes<ComponentElementType> {
 	heading: string | string[];
 	text?: string | string[];
 	headingComponent?: TypographyVariants;
@@ -22,7 +22,7 @@ interface AccordionItem extends ReactHTMLElementAttributes<ComponentElementType>
 	disabled?: boolean;
 }
 
-export const AccordionItem = forwardRef<ComponentElementType, AccordionItem>(({
+export const AccordionListItem = forwardRef<ComponentElementType, AccordionListItem>(({
 	heading,
 	text,
 	headingComponent,
@@ -35,7 +35,7 @@ export const AccordionItem = forwardRef<ComponentElementType, AccordionItem>(({
 	className,
 	children,
 	...rest
-}: AccordionItem, ref) => {
+}: AccordionListItem, ref) => {
 	const textContentRef = useRef<HTMLDivElement>(null);
 
 	const componentClass = [
@@ -49,8 +49,8 @@ export const AccordionItem = forwardRef<ComponentElementType, AccordionItem>(({
 		: { height: '0px' };
 
 	return (
-		<div
-			className={asm.join(s.AccordionItem, className, componentClass)}
+		<li
+			className={asm.join(s.AccordionListItem, className, componentClass)}
 			ref={ref}
 			{...rest}
 		>
@@ -75,8 +75,8 @@ export const AccordionItem = forwardRef<ComponentElementType, AccordionItem>(({
 				))}
 				{text && typeof text === 'string' && <Typography component={textComponent || 'p1'}>{text}</Typography>}
 			</Block>
-		</div>
+		</li>
 	);
 });
 
-AccordionItem.displayName = 'AccordionItem';
+AccordionListItem.displayName = 'AccordionListItem';
