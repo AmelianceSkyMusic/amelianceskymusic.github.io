@@ -1,7 +1,7 @@
 import { analyticsApi } from './analyticsApi';
 import { getClientInfo } from './getClientInfo';
 
-const GOOGLE_ANALYTICS = import.meta.env.VITE_GOOGLE_ANALYTICS;
+const GOOGLE_ANALYTICS_TABLE_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_TABLE_ID;
 
 export async function sendAnalyticsData() {
 	const response = await getClientInfo();
@@ -21,7 +21,7 @@ export async function sendAnalyticsData() {
 	} = response;
 
 	await analyticsApi.appsscript.postTitledColumnsDataByTitles({
-		spreadsheetId: GOOGLE_ANALYTICS,
+		spreadsheetId: GOOGLE_ANALYTICS_TABLE_ID,
 		titlesParams: {
 			ip,
 			page,
