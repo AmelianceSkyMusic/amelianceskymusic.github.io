@@ -18,11 +18,12 @@ export const Backdrop = forwardRef<ComponentElementType, Backdrop>(({
 	show,
 	opacity,
 	...rest
-}: Backdrop) => {
+}: Backdrop, ref) => {
 	const backdropRef = useRef<HTMLButtonElement>(null);
 
 	useEffect(() => {
 		if (backdropRef && opacity) backdropRef.current?.style.setProperty('--backdrop-opacity', `${opacity}%`);
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [backdropRef]);
 
 	const componentClass = [
@@ -34,7 +35,7 @@ export const Backdrop = forwardRef<ComponentElementType, Backdrop>(({
 		<button
 			type="button"
 			className={asm.join(s.Backdrop, className, componentClass)}
-			ref={backdropRef}
+			ref={{ ...backdropRef, ...ref }}
 			{...rest}
 		>
 			{}
