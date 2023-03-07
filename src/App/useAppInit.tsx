@@ -4,6 +4,7 @@ import { useRecoilState } from 'recoil';
 
 import { useInitTheme } from '~/asmlib/hooks/useInitTheme';
 import { useViewportSize } from '~/asmlib/hooks/useViewportSize';
+import { sendAnalyticsData } from '~utils/analytics/sendAnalyticsData';
 
 import { languageState, themeState } from './state/atoms';
 import i18n from './translation/i18n';
@@ -36,6 +37,10 @@ export function useAppInit(setInitialized: (arg: boolean) => void) {
 
 	useEffect(() => {
 		setInitialized(true);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
+		const initFetch = async () => {
+			await sendAnalyticsData();
+		};
+		initFetch();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 }
