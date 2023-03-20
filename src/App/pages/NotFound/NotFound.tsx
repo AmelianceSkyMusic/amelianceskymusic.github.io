@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Container } from '~/asmlib/components/blocks/Container';
-import { Main } from '~/asmlib/components/blocks/Main';
-import { Button } from '~/asmlib/components/Button/Button';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Container } from '~/ameliance-ui/components/blocks/Container';
+import { Main } from '~/ameliance-ui/components/blocks/Main';
+import { Button } from '~/ameliance-ui/components/Button/Button';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { ROUTES } from '~constants/ROUTES';
 import { useLang } from '~hooks/useLang';
 

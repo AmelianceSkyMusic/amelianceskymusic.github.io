@@ -3,7 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 import { isMatchPath } from '~utils/isMatchPath';
 
-import { FooterLayout } from './FooterLayout/FooterLayout';
+import { Footer } from './Footer/Footer';
 import { Navigation } from './Navigation/Navigation';
 
 export function Layout() {
@@ -14,7 +14,7 @@ export function Layout() {
 		<>
 			<Outlet />
 			{!isScreenMD && isHome && <Navigation />}
-			<FooterLayout />
+			<Footer />
 		</>
 	);
 }

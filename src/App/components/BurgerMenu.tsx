@@ -3,15 +3,15 @@ import { useTranslation } from 'react-i18next';
 
 import { useRecoilState } from 'recoil';
 
-import { Button } from '~/asmlib/components/Button/Button';
-import { Link } from '~/asmlib/components/Link/Link';
-import { Menu } from '~/asmlib/components/Menu/Menu';
-import { MenuContainer } from '~/asmlib/components/Menu/MenuContainer';
-import { MenuDivider } from '~/asmlib/components/Menu/MenuDivider';
-import { MenuItem } from '~/asmlib/components/Menu/MenuItem';
-import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
-import { Typography } from '~/asmlib/components/Typography';
-import { toggleTheme } from '~/asmlib/scripts/toggleTheme';
+import { Button } from '~/ameliance-ui/components/Button/Button';
+import { MenuIcon } from '~/ameliance-ui/components/icons/MenuIcon';
+import { Link } from '~/ameliance-ui/components/Link/Link';
+import { Menu } from '~/ameliance-ui/components/Menu/Menu';
+import { MenuContainer } from '~/ameliance-ui/components/Menu/MenuContainer';
+import { MenuDivider } from '~/ameliance-ui/components/Menu/MenuDivider';
+import { MenuItem } from '~/ameliance-ui/components/Menu/MenuItem';
+import { Typography } from '~/ameliance-ui/components/Typography';
+import { toggleTheme } from '~/ameliance-ui/scripts/toggleTheme';
 import { languageState, themeState } from '~app/state/atoms';
 import { useLang } from '~hooks/useLang';
 import { useScreenQuery } from '~hooks/useScreenQuery';
@@ -62,7 +62,7 @@ export function BurgerMenu() {
 					preventItemClickClose
 				>
 					<MenuItem>
-						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov.pdf" blank noUnderline>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov.pdf" blank underline={false}>
 							<Typography component="p1">{t.pdf}</Typography>
 						</Link>
 					</MenuItem>
@@ -93,7 +93,7 @@ export function BurgerMenu() {
 					)}
 				</Menu>
 				<Button size="medium" type="secondary" onClick={handelIconMenuClick}>
-					<SvgIcon icon="icon--menu" />
+					<MenuIcon />
 				</Button>
 			</MenuContainer>
 		</StickyButton>

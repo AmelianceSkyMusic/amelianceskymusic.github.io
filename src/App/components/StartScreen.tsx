@@ -1,4 +1,4 @@
-import { Typography } from '~/asmlib/components/Typography';
+import { Typography } from '~/ameliance-ui/components/Typography';
 
 import s from './StartScreen.module.scss';
 

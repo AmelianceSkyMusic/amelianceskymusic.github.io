@@ -1,4 +1,4 @@
-@use "~/asmlib/styles" as *;
+@use "~/ameliance-ui/styles" as *;
 
 html {
 	scroll-padding-top: 32px;
@@ -8,31 +8,6 @@ html {
 body {
 	position: relative;
 }
-
-//* ---- add icons -----
-@include useSvgIcon(
-	"~assets/svg/",
-	icon--alert-circle,
-	icon--alert-triangle,
-	icon--behance,
-	icon--check-circle,
-	icon--codewars,
-	icon--copy,
-	icon--discord,
-	icon--dribble,
-	icon--github,
-	icon--info,
-	icon--instagram,
-	icon--linkedin,
-	icon--menu,
-	icon--moon,
-	icon--sun,
-	icon--telegram,
-	icon--x,
-	icon--x-circle,
-	icon--youtube,
-	icon--chevron-down
-);
 
 //* ---- customizing asmlib -----
 :root {

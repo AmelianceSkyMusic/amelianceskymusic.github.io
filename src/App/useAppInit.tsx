@@ -2,8 +2,8 @@ import { useEffect, useLayoutEffect } from 'react';
 
 import { useRecoilState } from 'recoil';
 
-import { useInitTheme } from '~/asmlib/hooks/useInitTheme';
-import { useViewportSize } from '~/asmlib/hooks/useViewportSize';
+import { useInitTheme } from '~/ameliance-ui/hooks/useInitTheme';
+import { useViewportSize } from '~/ameliance-ui/hooks/useViewportSize';
 import { sendAnalyticsData } from '~utils/analytics/sendAnalyticsData';
 
 import { languageState, themeState } from './state/atoms';

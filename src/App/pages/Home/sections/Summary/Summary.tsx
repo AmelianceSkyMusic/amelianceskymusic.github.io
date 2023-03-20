@@ -1,8 +1,8 @@
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Section } from '~/asmlib/components/blocks/Section';
-import { List } from '~/asmlib/components/List/List';
-import { ListItem } from '~/asmlib/components/List/ListItem';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Section } from '~/ameliance-ui/components/blocks/Section';
+import { List } from '~/ameliance-ui/components/List/List';
+import { ListItem } from '~/ameliance-ui/components/List/ListItem';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import photo from '~assets/img/photo.png';
@@ -26,7 +26,7 @@ export function Summary() {
 				<Typography component="p1">{t.description.part1}</Typography>
 				<Typography component="p1">{t.description.part2}</Typography>
 				<Typography component="p1">{t.description.part3}</Typography>
-				<List type="custom" margin={0}>
+				<List type="unordered">
 					<Typography component="p1">{t.description.part4}</Typography>
 					<ListItem>
 						<Typography component="p1">{t.description.part4List.list1}</Typography>
@@ -39,9 +39,6 @@ export function Summary() {
 					</ListItem>
 					<ListItem>
 						<Typography component="p1">{t.description.part4List.list4}</Typography>
-					</ListItem>
-					<ListItem>
-						<Typography component="p1">{t.description.part4List.list5}</Typography>
 					</ListItem>
 				</List>
 				<Typography component="p1">{t.description.part5}</Typography>

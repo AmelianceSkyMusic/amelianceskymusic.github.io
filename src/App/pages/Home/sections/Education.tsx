@@ -1,6 +1,6 @@
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Section } from '~/asmlib/components/blocks/Section';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Section } from '~/ameliance-ui/components/blocks/Section';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import cs from '~pages/Home/commonHome.module.scss';

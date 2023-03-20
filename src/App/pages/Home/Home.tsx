@@ -1,5 +1,5 @@
-import { Container } from '~/asmlib/components/blocks/Container';
-import { Main } from '~/asmlib/components/blocks/Main';
+import { Container } from '~/ameliance-ui/components/blocks/Container';
+import { Main } from '~/ameliance-ui/components/blocks/Main';
 import { BurgerMenu } from '~components/BurgerMenu';
 import { WelcomeScreen } from '~components/WelcomeScreen';
 import { useScreenQuery } from '~hooks/useScreenQuery';
