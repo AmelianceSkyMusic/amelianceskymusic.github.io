@@ -1,7 +1,7 @@
-import type { SvgIconProps } from '../SvgIcon';
-import { SvgIcon } from '../SvgIcon';
+import type { SvgIconProps } from '~/ameliance-ui/components/SvgIcon';
+import { SvgIcon } from '~/ameliance-ui/components/SvgIcon';
 
-export function DribbleIcon(props: SvgIconProps) {
+export function DribbleLogoIcon(props: SvgIconProps) {
 	return (
 		<SvgIcon
 			size="custom"

@@ -2,10 +2,10 @@ import asm from 'asm-ts-scripts';
 
 import { Block } from '~/ameliance-ui/components/blocks/Block';
 import { Section } from '~/ameliance-ui/components/blocks/Section';
-import { GithubIcon } from '~/ameliance-ui/components/icons/GithubIcon';
 import { Img } from '~/ameliance-ui/components/Img';
 import { Link } from '~/ameliance-ui/components/Link/Link';
 import { Typography } from '~/ameliance-ui/components/Typography';
+import { GithubLogoIcon } from '~components/SVG/GithubLogoIcon';
 import { useLang } from '~hooks/useLang';
 
 import { projectsList } from './projectsList';
@@ -47,8 +47,12 @@ export function Projects() {
 										<Block className={s.title}>
 											<Typography component="h3">{section.title}</Typography>
 											{projectsList[i].codeLink && (
-												<Link href={projectsList[i].codeLink} blank>
-													<GithubIcon size="small" />
+												<Link
+													className={s.codeLink}
+													href={projectsList[i].codeLink}
+													blank
+												>
+													<GithubLogoIcon size="custom" width="16px" height="16px" />
 												</Link>
 											)}
 										</Block>

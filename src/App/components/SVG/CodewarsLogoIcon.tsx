@@ -1,7 +1,7 @@
-import type { SvgIconProps } from '../SvgIcon';
-import { SvgIcon } from '../SvgIcon';
+import type { SvgIconProps } from '~/ameliance-ui/components/SvgIcon';
+import { SvgIcon } from '~/ameliance-ui/components/SvgIcon';
 
-export function CodewarsIcon(props: SvgIconProps) {
+export function CodewarsLogoIcon(props: SvgIconProps) {
 	return (
 		<SvgIcon
 			size="custom"
