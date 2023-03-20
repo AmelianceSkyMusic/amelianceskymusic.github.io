@@ -26,7 +26,7 @@ export function Summary() {
 				<Typography component="p1">{t.description.part1}</Typography>
 				<Typography component="p1">{t.description.part2}</Typography>
 				<Typography component="p1">{t.description.part3}</Typography>
-				<List type="custom" margin={0}>
+				<List type="unordered">
 					<Typography component="p1">{t.description.part4}</Typography>
 					<ListItem>
 						<Typography component="p1">{t.description.part4List.list1}</Typography>
@@ -39,9 +39,6 @@ export function Summary() {
 					</ListItem>
 					<ListItem>
 						<Typography component="p1">{t.description.part4List.list4}</Typography>
-					</ListItem>
-					<ListItem>
-						<Typography component="p1">{t.description.part4List.list5}</Typography>
 					</ListItem>
 				</List>
 				<Typography component="p1">{t.description.part5}</Typography>
