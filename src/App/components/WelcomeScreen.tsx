@@ -2,11 +2,11 @@ import { useState } from 'react';
 
 import asm from 'asm-ts-scripts';
 
-import { Backdrop } from '~/asmlib/components/_REFACTOR/Backdrop';
-import { Button } from '~/asmlib/components/Button/Button';
-import { ButtonLink } from '~/asmlib/components/Button/ButtonLink';
-import { Portal } from '~/asmlib/components/Portal';
-import { Typography } from '~/asmlib/components/Typography';
+import { Backdrop } from '~/ameliance-ui/components/Backdrop';
+import { Button } from '~/ameliance-ui/components/Button/Button';
+import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
+import { Portal } from '~/ameliance-ui/components/Portal';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import s from './WelcomeScreen.module.scss';

@@ -1,8 +1,8 @@
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Section } from '~/asmlib/components/blocks/Section';
-import { List } from '~/asmlib/components/List/List';
-import { ListItem } from '~/asmlib/components/List/ListItem';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Section } from '~/ameliance-ui/components/blocks/Section';
+import { List } from '~/ameliance-ui/components/List/List';
+import { ListItem } from '~/ameliance-ui/components/List/ListItem';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import photo from '~assets/img/photo.png';

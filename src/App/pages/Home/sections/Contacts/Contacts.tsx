@@ -2,13 +2,14 @@ import { useState } from 'react';
 
 import asm from 'asm-ts-scripts';
 
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Section } from '~/asmlib/components/blocks/Section';
-import { ButtonLink } from '~/asmlib/components/Button/ButtonLink';
-import { Link } from '~/asmlib/components/Link/Link';
-import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
-import { ToastList } from '~/asmlib/components/ToastList/ToastList';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Section } from '~/ameliance-ui/components/blocks/Section';
+import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
+import { Icon } from '~/ameliance-ui/components/Icon';
+import { CopyIcon } from '~/ameliance-ui/components/icons/CopyIcon';
+import { Link } from '~/ameliance-ui/components/Link/Link';
+import { ToastList } from '~/ameliance-ui/components/Toast';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import { contactsList } from './contactsList';
@@ -33,7 +34,7 @@ export function Contacts() {
 		id: '',
 	});
 
-	const handleCopyButtonClick = async (event: React.MouseEvent<HTMLButtonElement>) => {
+	const handleCopyButtonClick = async (event: React.MouseEvent<HTMLDivElement>) => {
 		const text = event.currentTarget?.previousElementSibling?.textContent;
 
 		if (text) {
@@ -84,7 +85,9 @@ export function Contacts() {
 							>
 								<Link href={contactsList[i].contactLink} display="p1" blank>{description}</Link>
 								{contactsList[i].copyIcon && (
-									<SvgIcon size="small" onClick={handleCopyButtonClick} icon="icon--copy" />
+									<Icon onClick={handleCopyButtonClick}>
+										<CopyIcon size="small" />
+									</Icon>
 								)}
 							</Block>
 						))}

@@ -1,4 +1,4 @@
-import { Block } from '~/asmlib/components/blocks/Block';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
 import { Contacts } from '~pages/Home/sections/Contacts/Contacts';
 import { HardSkills } from '~pages/Home/sections/HardSkills';
 import { Hobbies } from '~pages/Home/sections/Hobbies';

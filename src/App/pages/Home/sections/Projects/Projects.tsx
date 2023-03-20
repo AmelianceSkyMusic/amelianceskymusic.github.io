@@ -1,11 +1,11 @@
 import asm from 'asm-ts-scripts';
 
-import { Block } from '~/asmlib/components/blocks/Block';
-import { Section } from '~/asmlib/components/blocks/Section';
-import { Img } from '~/asmlib/components/Img';
-import { Link } from '~/asmlib/components/Link/Link';
-import { SvgIcon } from '~/asmlib/components/SvgIcon/SvgIcon';
-import { Typography } from '~/asmlib/components/Typography';
+import { Block } from '~/ameliance-ui/components/blocks/Block';
+import { Section } from '~/ameliance-ui/components/blocks/Section';
+import { GithubIcon } from '~/ameliance-ui/components/icons/GithubIcon';
+import { Img } from '~/ameliance-ui/components/Img';
+import { Link } from '~/ameliance-ui/components/Link/Link';
+import { Typography } from '~/ameliance-ui/components/Typography';
 import { useLang } from '~hooks/useLang';
 
 import { projectsList } from './projectsList';
@@ -48,7 +48,7 @@ export function Projects() {
 											<Typography component="h3">{section.title}</Typography>
 											{projectsList[i].codeLink && (
 												<Link href={projectsList[i].codeLink} blank>
-													<SvgIcon size="small" icon="icon--github" clickable />
+													<GithubIcon size="small" />
 												</Link>
 											)}
 										</Block>
