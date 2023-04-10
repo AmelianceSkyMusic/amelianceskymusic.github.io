@@ -2,11 +2,11 @@ import { forwardRef } from 'react';
 
 import asm from 'asm-ts-scripts';
 
-type ComponentElementType = HTMLElement;
+export type HeaderElement = HTMLElement;
 
-type Header = ReactHTMLElementAttributes<ComponentElementType>;
+export type HeaderProps = ReactHTMLElementAttributes<HeaderElement>;
 
-export const Header = forwardRef<ComponentElementType, Header>(({
+export const Header = forwardRef<HeaderElement, HeaderProps>(({
 	children,
 	className,
 	...rest

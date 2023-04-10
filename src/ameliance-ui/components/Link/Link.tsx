@@ -2,18 +2,19 @@ import { forwardRef } from 'react';
 
 import asm from 'asm-ts-scripts';
 
+import typography from '../Typography/Typography.module.scss';
 import s from './Link.module.scss';
 
-type ComponentElementType = HTMLAnchorElement;
+export type LinkElement = HTMLAnchorElement;
 
-interface Link extends ReactHTMLElementAttributes<
-ComponentElementType, React.AnchorHTMLAttributes<ComponentElementType>> {
+export interface LinkProps extends ReactHTMLElementAttributes<
+LinkElement, React.AnchorHTMLAttributes<LinkElement>> {
 	display?: TypographyVariants;
 	underline?: boolean;
 	blank?: boolean;
 }
 
-export const Link = forwardRef<ComponentElementType, Link>(({
+export const Link = forwardRef<LinkElement, LinkProps>(({
 	display,
 	underline,
 	children,
@@ -23,7 +24,7 @@ export const Link = forwardRef<ComponentElementType, Link>(({
 }, ref) => {
 	// *----- create class from props -----
 	const componentClass = [
-		display || 'link',
+		display ? typography[display] : typography.link,
 		underline === false && s.noUnderline,
 	];
 

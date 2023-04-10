@@ -4,18 +4,17 @@ import asm from 'asm-ts-scripts';
 
 import s from './FileUpload.module.scss';
 
-type ComponentElementType = HTMLInputElement;
+export type FileUploadElement = HTMLInputElement;
 
-interface FileUpload extends ReactHTMLElementAttributes<ComponentElementType> {
+export interface FileUploadProps extends ReactHTMLElementAttributes<FileUploadElement> {
 	icon: string;
 }
 
-export const FileUpload = forwardRef<ComponentElementType, FileUpload>(({
+export const FileUpload = forwardRef<FileUploadElement, FileUploadProps>(({
 	children,
 	className,
 	...rest
-}: FileUpload, ref) => (
-
+}, ref) => (
 	<div>
 		<label htmlFor="file">
 			{children}
@@ -31,36 +30,3 @@ export const FileUpload = forwardRef<ComponentElementType, FileUpload>(({
 ));
 
 FileUpload.displayName = 'FileUpload';
-
-// <div
-// 	className={asm.join(s.FileUpload, className, componentClass)}
-// 	ref={ref}
-// 	{...rest}
-// >
-// 	{children}
-// </div>
-
-// import { Icon } from '~components/Icon';
-
-// import s from './FileUpload.module.scss';
-
-// interface Props {
-// 	icon: string;
-// }
-
-// export function FileUpload({
-// 	icon,
-// }: Props) {
-// 	return (
-// 		<div>
-// 			<label htmlFor="file">
-// 				<Icon icon={icon} />
-// 				<input
-// 					type="file"
-// 					className={s.input}
-// 					id="file"
-// 				/>
-// 			</label>
-// 		</div>
-// 	);
-// }

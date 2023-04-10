@@ -5,28 +5,29 @@ import type { FieldError, FieldValues } from 'react-hook-form';
 
 import asm from 'asm-ts-scripts';
 
+import { Icon } from '../Icon';
+import { EyeIcon } from '../icons/EyeIcon';
+import { EyeOffIcon } from '../icons/EyeOffIcon';
 import { Typography } from '../Typography';
 
-import { Icon } from '../Icon';
-import { EyeOffIcon } from '../icons/EyeOffIcon';
-import { EyeOnIcon } from '../icons/EyeOnIcon';
+import typography from '../Typography/Typography.module.scss';
+import cs from './commonStyle.module.scss';
+import ics from './iconCommonStyle.module.scss';
 
-import s from './PasswordInput.module.scss';
+export type PasswordInputElement = HTMLInputElement;
 
-type ComponentElementType = HTMLInputElement;
-
-interface PasswordInput extends ReactHTMLElementAttributes<ComponentElementType> {
-	register: FieldValues;
-	errors: Record<string, FieldError> | undefined;
+export interface PasswordInputProps extends ReactHTMLElementAttributes<PasswordInputElement> {
+	register?: FieldValues;
+	errors?: Record<string, FieldError> | undefined;
 }
 
-export const PasswordInput = forwardRef<ComponentElementType, PasswordInput>(({
+export const PasswordInput = forwardRef<PasswordInputElement, PasswordInputProps>(({
 	register,
 	errors,
 	placeholder,
 	children,
 	...rest
-}: PasswordInput, ref) => {
+}, ref) => {
 	const [isShowPassword, setIsShowPassword] = useState(false);
 
 	const handlerIconClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -37,24 +38,30 @@ export const PasswordInput = forwardRef<ComponentElementType, PasswordInput>(({
 	const inputType = isShowPassword ? 'text' : 'password';
 
 	return (
-		<div className={s.PasswordInput}>
+		<div className={cs.container}>
 			<Typography component="h5">{children}</Typography>
-			<label className={s.label}>
-				<input
-					type={inputType}
-					className={asm.join(s.input, 'input text')}
-					placeholder={placeholder}
-					ref={ref}
-					{...register}
-					{...rest}
-				/>
-				<Icon size="custom" style={{ width: 20, height: 20 }} className={s.showHide} onClick={handlerIconClick}>
-					{isShowPassword ? <EyeOffIcon size="custom" style={{ width: 20, height: 20 }} /> : <EyeOnIcon size="custom" style={{ width: 20, height: 20 }} />}
-				</Icon>
-			</label>
-			<Typography component="p2" className={asm.join(s.error, 'input-error')}>
-				{(errors && errors[register.name] && errors[register.name].message) || ''}
-			</Typography>
+			<div className={cs.inputBlockContainer}>
+				<label className={ics.inputContainer}>
+					<input
+						type={inputType}
+						className={asm.join(cs.input, ics.input, typography.input)}
+						placeholder={placeholder}
+						ref={ref}
+						{...register}
+						{...rest}
+					/>
+					<Icon size="custom" style={{ width: 20, height: 20 }} className={ics.icon} onClick={handlerIconClick}>
+						{isShowPassword
+							? <EyeIcon size="custom" style={{ width: 20, height: 20 }} />
+							: <EyeOffIcon size="custom" style={{ width: 20, height: 20 }} />}
+					</Icon>
+				</label>
+				{register && (
+					<Typography component="p2" className={asm.join(cs.error)}>
+						{(errors && errors[register?.name] && errors[register?.name].message) || ''}
+					</Typography>
+				)}
+			</div>
 		</div>
 	);
 });

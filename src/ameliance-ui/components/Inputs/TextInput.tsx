@@ -7,37 +7,42 @@ import asm from 'asm-ts-scripts';
 
 import { Typography } from '../Typography';
 
-import s from './TextInput.module.scss';
+import typography from '../Typography/Typography.module.scss';
+import cs from './commonStyle.module.scss';
 
-type ComponentElementType = HTMLInputElement;
+export type TextInputElement = HTMLInputElement;
 
-interface TextInput extends ReactHTMLElementAttributes<ComponentElementType> {
-	register: FieldValues;
-	errors: Record<string, FieldError> | undefined;
+export interface TextInputProps extends ReactHTMLElementAttributes<TextInputElement> {
+	register?: FieldValues;
+	errors?: Record<string, FieldError> | undefined;
 }
 
-export const TextInput = forwardRef<ComponentElementType, TextInput>(({
+export const TextInput = forwardRef<TextInputElement, TextInputProps>(({
 	register,
 	errors,
 	placeholder,
 	children,
 	...rest
-}: TextInput, ref) => (
-	<div className={s.TextInput}>
+}, ref) => (
+	<div className={cs.container}>
 		<Typography component="h5">{children}</Typography>
-		<label>
-			<input
-				type="text"
-				className={asm.join(s.input, 'input text')}
-				placeholder={placeholder}
-				ref={ref}
-				{...register}
-				{...rest}
-			/>
-		</label>
-		<Typography component="p2" className={asm.join(s.error, 'input-error')}>
-			{(errors && errors[register.name] && errors[register.name].message) || ''}
-		</Typography>
+		<div className={cs.inputBlockContainer}>
+			<label>
+				<input
+					type="text"
+					className={asm.join(cs.input, typography.input)}
+					placeholder={placeholder}
+					ref={ref}
+					{...register}
+					{...rest}
+				/>
+			</label>
+			{register && (
+				<Typography component="p2" className={asm.join(cs.error)}>
+					{(errors && errors[register?.name] && errors[register?.name].message) || ''}
+				</Typography>
+			)}
+		</div>
 	</div>
 ));
 

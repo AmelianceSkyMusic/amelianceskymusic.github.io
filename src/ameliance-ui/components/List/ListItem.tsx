@@ -1,14 +1,14 @@
 import { forwardRef } from 'react';
 
-type ComponentElementType = HTMLLIElement;
+export type ListItemElement = HTMLLIElement;
 
-type ListItem = ReactHTMLElementAttributes<ComponentElementType>;
+export type ListItemProps = ReactHTMLElementAttributes<ListItemElement>;
 
-export const ListItem = forwardRef<ComponentElementType, ListItem>(({
+export const ListItem = forwardRef<ListItemElement, ListItemProps>(({
 	children,
 	className,
 	...rest
-}: ListItem, ref) => (
+}, ref) => (
 	<li
 		className={className}
 		ref={ref}
