@@ -13,12 +13,12 @@ export function useAppInit(setInitialized: (arg: boolean) => void) {
 	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
 
 	// *----- set or init theme -----
-	const initTheme = useInitTheme(themeRecoil);
+	const { theme } = useInitTheme(themeRecoil);
 
 	useEffect(() => {
-		setThemeRecoil(initTheme || themeRecoil);
+		setThemeRecoil(theme || themeRecoil);
 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [initTheme]);
+	}, [theme]);
 
 	useEffect(() => {
 		setLangRecoil(langRecoil);
