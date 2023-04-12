@@ -1,14 +1,14 @@
 import { forwardRef } from 'react';
 
-type ComponentElementType = HTMLFormElement;
+export type FormElement = HTMLFormElement;
 
-type Form = ReactHTMLElementAttributes<ComponentElementType>;
+export type FormProps = ReactHTMLElementAttributes<FormElement>;
 
-export const Form = forwardRef<ComponentElementType, Form>(({
+export const Form = forwardRef<FormElement, FormProps>(({
 	children,
 	className,
 	...rest
-}: Form, ref) => (
+}, ref) => (
 	<form
 		className={className}
 		ref={ref}

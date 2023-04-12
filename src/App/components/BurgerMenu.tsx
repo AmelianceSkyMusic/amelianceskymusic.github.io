@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 import { useRecoilState } from 'recoil';
 
@@ -13,7 +13,7 @@ import { MenuItem } from '~/ameliance-ui/components/Menu/MenuItem';
 import { Typography } from '~/ameliance-ui/components/Typography';
 import { toggleTheme } from '~/ameliance-ui/scripts/toggleTheme';
 import { languageState, themeState } from '~app/state/atoms';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
 import { StickyButton } from './StickyButton';
@@ -21,14 +21,14 @@ import { StickyButton } from './StickyButton';
 export function BurgerMenu() {
 	const { isScreenMD } = useScreenQuery();
 
-	const { menu: t } = useLang('menu');
-	const { navigation } = useLang('navigation');
+	const navigate = useNavigate();
 
-	const { i18n } = useTranslation();
+	const t = useTranslationKey('menu');
+	const navigation = useTranslationKey('navigation');
 
 	const [themeRecoil, setThemeRecoil] = useRecoilState(themeState);
 
-	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
+	const [langRecoil] = useRecoilState(languageState);
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -47,8 +47,7 @@ export function BurgerMenu() {
 
 	const handleLanguageClick = () => {
 		const newLang = langRecoil === 'uk' ? 'en' : 'uk';
-		setLangRecoil(newLang);
-		i18n.changeLanguage(newLang);
+		navigate(`/${newLang}`);
 	};
 
 	return (
@@ -62,8 +61,13 @@ export function BurgerMenu() {
 					preventItemClickClose
 				>
 					<MenuItem>
-						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov.pdf" blank underline={false}>
-							<Typography component="p1">{t.pdf}</Typography>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov (en).pdf" display="p1" blank underline={false} hover={false}>
+							{t.pdf.en}
+						</Link>
+					</MenuItem>
+					<MenuItem>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov (uk).pdf" display="p1" blank underline={false} hover={false}>
+							{t.pdf.uk}
 						</Link>
 					</MenuItem>
 					<MenuDivider />
@@ -81,14 +85,46 @@ export function BurgerMenu() {
 					&& (
 						<>
 							<MenuDivider />
-							<MenuItem><a href="#summary" className="p1">{navigation.summary}</a></MenuItem>
-							<MenuItem><a href="#contacts" className="p1">{navigation.contacts}</a></MenuItem>
-							<MenuItem><a href="#experience" className="p1">{navigation.experience}</a></MenuItem>
-							<MenuItem><a href="#education" className="p1">{navigation.education}</a></MenuItem>
-							<MenuItem><a href="#hard-skills" className="p1">{navigation.hardSkills}</a></MenuItem>
-							<MenuItem><a href="#soft-skills" className="p1">{navigation.softSkills}</a></MenuItem>
-							<MenuItem><a href="#projects" className="p1">{navigation.projects}</a></MenuItem>
-							<MenuItem><a href="#hobbies" className="p1">{navigation.hobbies}</a></MenuItem>
+							<MenuItem>
+								<Link href="#summary" display="p1" underline={false} hover={false}>
+									{navigation.summary}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#contacts" display="p1" underline={false} hover={false}>
+									{navigation.contacts}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#experience" display="p1" underline={false} hover={false}>
+									{navigation.experience}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#education" display="p1" underline={false} hover={false}>
+									{navigation.education}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#hard-skills" display="p1" underline={false} hover={false}>
+									{navigation.hardSkills}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#soft-skills" display="p1" underline={false} hover={false}>
+									{navigation.softSkills}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#projects" display="p1" underline={false} hover={false}>
+									{navigation.projects}
+								</Link>
+							</MenuItem>
+							<MenuItem>
+								<Link href="#hobbies" display="p1" underline={false} hover={false}>
+									{navigation.hobbies}
+								</Link>
+							</MenuItem>
 						</>
 					)}
 				</Menu>

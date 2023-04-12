@@ -8,38 +8,54 @@ import asm from 'asm-ts-scripts';
 import { Typography } from '../Typography';
 
 import s from './Checkbox.module.scss';
+import cs from './commonStyle.module.scss';
 
-type ComponentElementType = HTMLInputElement;
+export type CheckboxElement = HTMLInputElement;
 
-interface Checkbox extends ReactHTMLElementAttributes<ComponentElementType> {
-	register: FieldValues;
-	errors: Record<string, FieldError> | undefined;
+export interface CheckboxProps extends ReactHTMLElementAttributes<CheckboxElement> {
+	register?: FieldValues;
+	errors?: Record<string, FieldError> | undefined;
+	onLabelClick?: (event: React.MouseEvent<HTMLParagraphElement>) => void;
 	label: string;
 }
 
-export const Checkbox = forwardRef<ComponentElementType, Checkbox>(({
-	register,
+export const Checkbox = forwardRef<CheckboxElement, CheckboxProps>(({
+	register = null,
 	errors,
+	onLabelClick,
 	label,
 	children,
+	className,
 	...rest
-}: Checkbox, ref) => (
+}, ref) => {
+	const handleLabelOnClick = (event: React.MouseEvent<HTMLParagraphElement>) => {
+		if (onLabelClick) onLabelClick(event);
+	};
 
-	<div className={s.Checkbox}>
-		<Typography component="h3">{children}</Typography>
-		<label className={s.container}>
-			<input
-				type="checkbox"
-				ref={ref}
-				{...register}
-				{...rest}
-			/>
-			<Typography component="p1">{label}</Typography>
-		</label>
-		<Typography component="p2" className={asm.join(s.error, 'input-error')}>
-			{(errors && errors[register.name] && errors[register.name].message) || ''}
-		</Typography>
-	</div>
-));
+	return (
+
+		<div className={cs.container}>
+			{children && <Typography component="h3">{children}</Typography>}
+			<div className={cs.inputBlockContainer}>
+				{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-noninteractive-element-interactions */}
+				<label className={s.inputContainer}>
+					<input
+						type="checkbox"
+						className={asm.join(s.input, className)}
+						ref={ref}
+						{...register}
+						{...rest}
+					/>
+					<Typography component="p1" onClick={handleLabelOnClick}>{label}</Typography>
+				</label>
+				{register && (
+					<Typography component="p2" className={asm.join(cs.error)}>
+						{(errors && errors[register.name] && errors[register.name].message) || ''}
+					</Typography>
+				)}
+			</div>
+		</div>
+	);
+});
 
 Checkbox.displayName = 'Checkbox';

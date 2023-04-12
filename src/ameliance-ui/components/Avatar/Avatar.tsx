@@ -4,9 +4,9 @@ import asm from 'asm-ts-scripts';
 
 import s from './Avatar.module.scss';
 
-type ComponentElementType = HTMLDivElement;
+export type AvatarElement = HTMLDivElement;
 
-interface Avatar extends ReactHTMLElementAttributes<ComponentElementType> {
+export interface AvatarProps extends ReactHTMLElementAttributes<AvatarElement> {
 	src?: string;
 	alt?: string;
 	char?: string;
@@ -14,7 +14,7 @@ interface Avatar extends ReactHTMLElementAttributes<ComponentElementType> {
 	size?: ComponentSizes;
 }
 
-export const Avatar = forwardRef<ComponentElementType, Avatar>(({
+export const Avatar = forwardRef<AvatarElement, AvatarProps>(({
 	src,
 	alt,
 	char,
@@ -24,7 +24,7 @@ export const Avatar = forwardRef<ComponentElementType, Avatar>(({
 	children,
 	className,
 	...rest
-}: Avatar, ref) => {
+}, ref) => {
 	const componentClass = [
 		onClick && 'clickable',
 	];

@@ -1,16 +1,15 @@
-import { useState } from 'react';
-
 import asm from 'asm-ts-scripts';
 
+import { useToast } from '~/ameliance-ui/components/_LAB/toastbar';
 import { Block } from '~/ameliance-ui/components/blocks/Block';
 import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
 import { Icon } from '~/ameliance-ui/components/Icon';
 import { CopyIcon } from '~/ameliance-ui/components/icons/CopyIcon';
 import { Link } from '~/ameliance-ui/components/Link/Link';
-import { ToastList } from '~/ameliance-ui/components/Toast';
 import { Typography } from '~/ameliance-ui/components/Typography';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
+import { writeTextToClipboard } from '~utils/writeTextToClipboard';
 
 import { contactsList } from './contactsList';
 
@@ -18,48 +17,30 @@ import s from './Contacts.module.scss';
 import cs from '~pages/Home/commonHome.module.scss';
 
 export function Contacts() {
-	const { contacts: t } = useLang('contacts');
+	const t = useTranslationKey('contacts');
 
-	const [isShowToast, setIsShowToast] = useState(false);
-
-	const [toast, setToast] = useState<{
-		title?: string;
-		message: string;
-		type?: 'alert' | 'info' | 'success' | 'error' | 'warn';
-		id: string;
-	}>({
-		title: '',
-		message: '',
-		type: undefined,
-		id: '',
-	});
+	const { add } = useToast();
 
 	const handleCopyButtonClick = async (event: React.MouseEvent<HTMLDivElement>) => {
 		const text = event.currentTarget?.previousElementSibling?.textContent;
-
 		if (text) {
 			try {
-				await navigator.clipboard.writeText(text);
-				setToast((prev) => ({
-					title: `${t.toastTitle}:`,
-					message: `${text}`,
-					id: (+prev.id + 1).toString(),
-				}));
-				setIsShowToast(true);
+				const result = await writeTextToClipboard(text);
+				if (result) {
+					add({
+						title: `${t.toastTitle}:`,
+						message: text,
+						duration: 3000,
+					});
+				}
 			} catch (error) {
-				setToast((prev) => ({
-					title: '',
-					message: t.toastErrorTitle,
+				add({
 					type: 'error',
-					id: (+prev.id + 1).toString(),
-				}));
-				setIsShowToast(true);
+					message: t.toastErrorTitle,
+					duration: 3000,
+				});
 			}
 		}
-	};
-
-	const handleClearToastList = () => {
-		setIsShowToast(false);
 	};
 
 	return (
@@ -93,21 +74,6 @@ export function Contacts() {
 						))}
 				</Block>
 			))}
-
-			{isShowToast && (
-				<ToastList
-					onClearList={handleClearToastList}
-					title={toast.title}
-					message={toast.message}
-					type={toast.type}
-					id={toast.id}
-					size="flex"
-					autoDeleteTime={3000}
-					maxCount={3}
-					position="top-right"
-				/>
-			)}
-
 		</Section>
 	);
 }

@@ -4,17 +4,17 @@ import { forwardRef } from 'react';
 import asm from 'asm-ts-scripts';
 
 import { Component } from '../_LAB/Component';
-import type { Grid } from './helpers/grid';
 import { getGridClass } from './helpers/grid';
+import type { Grid } from './types/Grid';
 
-type ComponentElementType = ComponentProps<ElementType>;
+export type BlockElement = ComponentProps<ElementType>;
 
-interface Block extends ReactHTMLElementAttributes<ComponentElementType> {
+export interface BlockProps extends ReactHTMLElementAttributes<BlockElement> {
 	component?: ElementType;
 	grid?: Grid;
 }
 
-export const Block = forwardRef<ComponentElementType, Block>(({
+export const Block = forwardRef<BlockElement, BlockProps>(({
 	component = 'div',
 	grid,
 	children,

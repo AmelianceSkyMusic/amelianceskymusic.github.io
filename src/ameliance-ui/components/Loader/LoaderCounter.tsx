@@ -1,17 +1,26 @@
 import {
-	useEffect, useLayoutEffect, useRef, useState,
+	forwardRef, useEffect, useLayoutEffect, useRef, useState,
 } from 'react';
 
 import asm from 'asm-ts-scripts';
 
+import { Typography } from '../Typography';
+
 import s from './LoaderCounter.module.scss';
 
-interface LoaderCounter {
+export type LoaderCounterElement = HTMLDivElement;
+
+export interface LoaderCounterProps extends ReactHTMLElementAttributes<LoaderCounterElement> {
 	timer: number;
 	isInversion?: boolean;
 }
 
-export function LoaderCounter({ timer, isInversion }: LoaderCounter) {
+export const LoaderCounter = forwardRef<LoaderCounterElement, LoaderCounterProps>(({
+	timer,
+	isInversion,
+	className,
+	...rest
+}, ref) => {
 	const [counter, setCounter] = useState(timer / 1000);
 
 	useEffect(() => {
@@ -30,13 +39,23 @@ export function LoaderCounter({ timer, isInversion }: LoaderCounter) {
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [timer]);
 
+	const componentClass = [
+		isInversion ? s.inversion : s.normal,
+	];
+
 	return (
-		<div className={asm.join(s.LoaderCounter, isInversion ? s.inversion : s.normal)}>
+		<div
+			className={asm.join(s.LoaderCounter, className, componentClass)}
+			ref={ref}
+			{...rest}
+		>
 			<div className={s.background} />
 			<div className={s.animation} ref={refAnimation} />
-			<p className={asm.join(s.counter, 'p2')}>
+			<Typography component="p2" className={s.counter}>
 				{counter}
-			</p>
+			</Typography>
 		</div>
 	);
-}
+});
+
+LoaderCounter.displayName = 'LoaderCounter';

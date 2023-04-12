@@ -1,16 +1,15 @@
-import type { SyntheticEvent } from 'react';
 import { forwardRef, useState } from 'react';
 
-type ComponentElementType = HTMLImageElement;
+export type ImgElement = HTMLImageElement;
 
-interface Img extends ReactHTMLElementAttributes<
-ComponentElementType, React.ImgHTMLAttributes<ComponentElementType>> {
+export interface ImgProps extends ReactHTMLElementAttributes<
+ImgElement, React.ImgHTMLAttributes<ImgElement>> {
 	fallbackScr?: string;
 	src: string;
 	alt: string;
 }
 
-export const Img = forwardRef<ComponentElementType, Img>(({
+export const Img = forwardRef<ImgElement, ImgProps>(({
 	className,
 	src,
 	alt,
@@ -20,9 +19,9 @@ export const Img = forwardRef<ComponentElementType, Img>(({
 }, ref) => {
 	const [imgSrc, setImgSrc] = useState(src);
 
-	const imageOnErrorHandler = (event: SyntheticEvent<HTMLImageElement, Event>) => {
-		if (fallbackScr) setImgSrc(fallbackScr);
+	const imageOnErrorHandler = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
 		if (onError) onError(event);
+		if (fallbackScr) setImgSrc(fallbackScr);
 	};
 
 	return (

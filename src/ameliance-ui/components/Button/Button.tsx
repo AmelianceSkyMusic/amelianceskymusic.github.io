@@ -2,18 +2,18 @@ import { forwardRef } from 'react';
 
 import asm from 'asm-ts-scripts';
 
+import typography from '../Typography/Typography.module.scss';
 import s from './Button.module.scss';
 
-type ComponentElementType = HTMLButtonElement;
-
-interface Button extends ReactHTMLElementAttributes<ComponentElementType> {
+export type ButtonElement = HTMLButtonElement;
+export interface ButtonProps extends ReactHTMLElementAttributes<ButtonElement> {
 	size?: ComponentSizes;
 	disabled?: boolean;
 	type?: 'primary' | 'secondary' | 'text';
 	submit?: boolean;
 }
 
-export const Button = forwardRef<ComponentElementType, Button>(({
+export const Button = forwardRef<ButtonElement, ButtonProps>(({
 	size = 'default',
 	type = 'primary',
 	submit,
@@ -40,7 +40,7 @@ export const Button = forwardRef<ComponentElementType, Button>(({
 			ref={ref}
 			{...rest}
 		>
-			<span className={asm.join(s.label, sizeClass, 'button')}>
+			<span className={asm.join(s.label, typography.button, sizeClass)}>
 				{children}
 			</span>
 		</button>
