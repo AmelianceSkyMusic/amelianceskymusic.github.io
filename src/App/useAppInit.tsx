@@ -10,7 +10,7 @@ import i18n from './translation/i18n';
 
 export function useAppInit(setInitialized: (arg: boolean) => void) {
 	const [themeRecoil, setThemeRecoil] = useRecoilState(themeState);
-	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
+	const [langRecoil] = useRecoilState(languageState);
 
 	// *----- set or init theme -----
 	const { theme } = useInitTheme(themeRecoil);
@@ -19,11 +19,6 @@ export function useAppInit(setInitialized: (arg: boolean) => void) {
 		setThemeRecoil(theme || themeRecoil);
 	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [theme]);
-
-	useEffect(() => {
-		setLangRecoil(langRecoil);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [langRecoil]);
 
 	// *----- create special css variable to fix mobile viewport height -----
 	useViewportSize();
