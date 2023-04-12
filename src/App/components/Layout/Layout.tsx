@@ -9,7 +9,9 @@ import { Navigation } from './Navigation/Navigation';
 export function Layout() {
 	const { isScreenMD } = useScreenQuery();
 	const { pathname } = useLocation();
-	const isHome = isMatchPath(pathname, '');
+	const isHome = isMatchPath(pathname, '')
+	|| isMatchPath(pathname, 'en')
+	|| isMatchPath(pathname, 'uk');
 	return (
 		<>
 			<Outlet />
