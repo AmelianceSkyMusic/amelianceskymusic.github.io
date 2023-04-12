@@ -60,8 +60,13 @@ export function BurgerMenu() {
 					preventItemClickClose
 				>
 					<MenuItem>
-						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov.pdf" blank underline={false}>
-							<Typography component="p1">{t.pdf}</Typography>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov (en).pdf" display="p1" blank underline={false} hover={false}>
+							{t.pdf.en}
+						</Link>
+					</MenuItem>
+					<MenuItem>
+						<Link href="./pdf/Junior Front-end Developer _ Bobomuratov (uk).pdf" display="p1" blank underline={false} hover={false}>
+							{t.pdf.uk}
 						</Link>
 					</MenuItem>
 					<MenuDivider />
