@@ -13,7 +13,6 @@ import { MenuItem } from '~/ameliance-ui/components/Menu/MenuItem';
 import { Typography } from '~/ameliance-ui/components/Typography';
 import { toggleTheme } from '~/ameliance-ui/scripts/toggleTheme';
 import { languageState, themeState } from '~app/state/atoms';
-import i18n from '~app/translation/i18n';
 import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
@@ -29,7 +28,7 @@ export function BurgerMenu() {
 
 	const [themeRecoil, setThemeRecoil] = useRecoilState(themeState);
 
-	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
+	const [langRecoil] = useRecoilState(languageState);
 
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -48,8 +47,6 @@ export function BurgerMenu() {
 
 	const handleLanguageClick = () => {
 		const newLang = langRecoil === 'uk' ? 'en' : 'uk';
-		setLangRecoil(newLang);
-		i18n.changeLanguage(newLang);
 		navigate(`/${newLang}`);
 	};
 
