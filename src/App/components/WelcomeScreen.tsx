@@ -7,12 +7,12 @@ import { Button } from '~/ameliance-ui/components/Button/Button';
 import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
 import { Portal } from '~/ameliance-ui/components/Portal';
 import { Typography } from '~/ameliance-ui/components/Typography';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 
 import s from './WelcomeScreen.module.scss';
 
 export function WelcomeScreen() {
-	const { welcomeScreen: t } = useLang('welcomeScreen');
+	const t = useTranslationKey('welcomeScreen');
 
 	const [isShow, setIsShOw] = useState(true);
 	const [isAnimationEnd, setIsAnimationEnd] = useState(false);

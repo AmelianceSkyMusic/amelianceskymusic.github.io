@@ -2,13 +2,13 @@ import { Container } from '~/ameliance-ui/components/blocks/Container';
 import { Nav } from '~/ameliance-ui/components/blocks/Nav';
 import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { Link } from '~/ameliance-ui/components/Link/Link';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { useScreenQuery } from '~hooks/useScreenQuery';
 
 import s from './Navigation.module.scss';
 
 export function Navigation() {
-	const { navigation: t } = useLang('navigation');
+	const t = useTranslationKey('navigation');
 
 	const { isScreenLG } = useScreenQuery();
 

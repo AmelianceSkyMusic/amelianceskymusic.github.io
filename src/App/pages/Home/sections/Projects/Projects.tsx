@@ -5,8 +5,9 @@ import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { Img } from '~/ameliance-ui/components/Img';
 import { Link } from '~/ameliance-ui/components/Link/Link';
 import { Typography } from '~/ameliance-ui/components/Typography';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { GithubLogoIcon } from '~components/SVG/GithubLogoIcon';
-import { useLang } from '~hooks/useLang';
+import { VideoPlayerIcon } from '~components/SVG/VideoPlayerIcon';
 
 import { projectsList } from './projectsList';
 
@@ -14,7 +15,7 @@ import s from './Projects.module.scss';
 import cs from '~pages/Home/commonHome.module.scss';
 
 export function Projects() {
-	const { projects: t } = useLang('projects');
+	const t = useTranslationKey('projects');
 
 	return (
 		<Section id="projects" className={cs.section}>

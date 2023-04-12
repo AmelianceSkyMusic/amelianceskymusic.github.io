@@ -8,9 +8,8 @@ import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
 import { Icon } from '~/ameliance-ui/components/Icon';
 import { CopyIcon } from '~/ameliance-ui/components/icons/CopyIcon';
 import { Link } from '~/ameliance-ui/components/Link/Link';
-import { ToastList } from '~/ameliance-ui/components/Toast';
 import { Typography } from '~/ameliance-ui/components/Typography';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 
 import { contactsList } from './contactsList';
 
@@ -18,7 +17,7 @@ import s from './Contacts.module.scss';
 import cs from '~pages/Home/commonHome.module.scss';
 
 export function Contacts() {
-	const { contacts: t } = useLang('contacts');
+	const t = useTranslationKey('contacts');
 
 	const [isShowToast, setIsShowToast] = useState(false);
 

@@ -1,12 +1,12 @@
 import { Block } from '~/ameliance-ui/components/blocks/Block';
 import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { Typography } from '~/ameliance-ui/components/Typography';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 
 import cs from '~pages/Home/commonHome.module.scss';
 
 export function HardSkills() {
-	const { hardSkills: t } = useLang('hardSkills');
+	const t = useTranslationKey('hardSkills');
 
 	return (
 		<Section id="hard-skills" className={cs.section}>

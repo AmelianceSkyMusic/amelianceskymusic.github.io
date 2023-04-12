@@ -3,7 +3,7 @@ import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { List } from '~/ameliance-ui/components/List/List';
 import { ListItem } from '~/ameliance-ui/components/List/ListItem';
 import { Typography } from '~/ameliance-ui/components/Typography';
-import { useLang } from '~hooks/useLang';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 
 import photo from '~assets/img/photo.png';
 
@@ -11,7 +11,7 @@ import s from './Summary.module.scss';
 import cs from '~pages/Home/commonHome.module.scss';
 
 export function Summary() {
-	const { summary: t } = useLang('summary');
+	const t = useTranslationKey('summary');
 
 	return (
 		<Section id="heading" className={cs.section}>
