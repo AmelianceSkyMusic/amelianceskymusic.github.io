@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { useRecoilState } from 'recoil';
 
@@ -20,6 +21,8 @@ import { StickyButton } from './StickyButton';
 
 export function BurgerMenu() {
 	const { isScreenMD } = useScreenQuery();
+
+	const navigate = useNavigate();
 
 	const t = useTranslationKey('menu');
 	const navigation = useTranslationKey('navigation');
@@ -47,6 +50,7 @@ export function BurgerMenu() {
 		const newLang = langRecoil === 'uk' ? 'en' : 'uk';
 		setLangRecoil(newLang);
 		i18n.changeLanguage(newLang);
+		navigate(`/${newLang}`);
 	};
 
 	return (
