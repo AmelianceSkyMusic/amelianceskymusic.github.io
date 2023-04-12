@@ -41,19 +41,8 @@
 		opacity: 90%;
 	}
 
-	@include screen-lg {
-		height: 80px;
-		width: 80px;
-	}
-
-	@include screen-xs {
-		display: none;
-	}
-
-	filter: grayscale(100%);
-	transition: filter ease-in-out 0.2s;
-	@include hover {
-		filter: grayscale(0);
-		cursor: auto;
+	@include screen-sm {
+		height: 120px;
+		width: 120px;
 	}
 }

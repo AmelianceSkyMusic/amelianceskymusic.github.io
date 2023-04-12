@@ -8,6 +8,7 @@ import { ListItem } from '~/ameliance-ui/components/List/ListItem';
 import { Typography } from '~/ameliance-ui/components/Typography';
 import { themeState } from '~app/state/atoms';
 import { useTranslationKey } from '~app/translation/useTranslationKey';
+import { useScreenQuery } from '~hooks/useScreenQuery';
 
 import photoLight from '~assets/img/photo-light.png';
 
@@ -18,15 +19,17 @@ export function Summary() {
 	const t = useTranslationKey('summary');
 	const [themeRecoil] = useRecoilState(themeState);
 	const imgClass = themeRecoil === 'dark' ? s.dark : s.light;
+	const { isScreenSM } = useScreenQuery();
 
 	return (
 		<Section id="heading" className={cs.section}>
+			{isScreenSM && <img className={asm.join(s.photo, imgClass)} src={photoLight} alt="avatar" />}
 			<Block className={s.titleContainer}>
 				<Block className={s.titleTextContent}>
 					<Typography component="h1" className={s.title}>{t.name}</Typography>
 					<Typography component="h2" className={s.subtitle}>{t.position}</Typography>
 				</Block>
-				<img className={asm.join(s.photo, imgClass)} src={photoLight} alt="avatar" />
+				{!isScreenSM && <img className={asm.join(s.photo, imgClass)} src={photoLight} alt="avatar" />}
 			</Block>
 			<Block id="summary" className={cs.sectionDescription}>
 				<Typography component="p1">{t.description.part1}</Typography>
