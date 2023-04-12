@@ -33,6 +33,13 @@
 	height: 100px;
 	width: 100px;
 	border-radius: 50%;
+	&.light {
+		mix-blend-mode: multiply;
+	}
+	&.dark {
+		mix-blend-mode: screen;
+		opacity: 90%;
+	}
 
 	@include screen-lg {
 		height: 80px;
