@@ -5,13 +5,13 @@ import { Container } from '~/ameliance-ui/components/blocks/Container';
 import { Main } from '~/ameliance-ui/components/blocks/Main';
 import { Button } from '~/ameliance-ui/components/Button/Button';
 import { Typography } from '~/ameliance-ui/components/Typography';
+import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { ROUTES } from '~constants/ROUTES';
-import { useLang } from '~hooks/useLang';
 
 import s from './NotFound.module.scss';
 
 export function NotFound() {
-	const { notFound: t } = useLang('notFound');
+	const t = useTranslationKey('notFound');
 	const navigate = useNavigate();
 
 	return (
