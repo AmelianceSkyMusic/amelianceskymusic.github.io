@@ -20,3 +20,23 @@
 	gap: 32px;
 	z-index: 11000;
 }
+
+.languages {
+	width: 320px;
+	justify-content: space-evenly;
+	position: absolute;
+	bottom: 64px;
+	display: flex;
+	align-items: center;
+}
+
+.language {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 32px;
+	&.active {
+		padding-left: 4px;
+	}
+}
