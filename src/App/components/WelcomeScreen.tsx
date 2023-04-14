@@ -72,14 +72,12 @@ export function WelcomeScreen() {
 										className={asm.join(s.language, enActiveClass)}
 										onClick={handleEnLanguageOnClick}
 									>
-										{langRecoil === 'en' && <CheckIcon />}
 										English
 									</Typography>
 									<Typography
 										className={asm.join(s.language, ukActiveClass)}
 										onClick={handleUkLanguageOnClick}
 									>
-										{langRecoil === 'uk' && <CheckIcon />}
 										Українська
 									</Typography>
 								</Block>
