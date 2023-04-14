@@ -1,3 +1,5 @@
+@use "~/ameliance-ui/styles/globals/" as *;
+
 .WelcomeScreen {
 	position: fixed;
 	top: 0;
@@ -21,22 +23,62 @@
 	z-index: 11000;
 }
 
-.languages {
-	width: 320px;
-	justify-content: space-evenly;
+.topPanel {
 	position: absolute;
-	bottom: 64px;
+	top: calc(var(--gap) * 3);
+	left: calc(var(--gap) * 3);
+	right: calc(var(--gap) * 3);
+	display: flex;
+	justify-content: space-between;
+	@include screen-sm {
+		justify-content: center;
+		top: auto;
+		bottom: calc(var(--gap) * 2);
+	}
+}
+
+.controls {
 	display: flex;
 	align-items: center;
+	gap: 64px;
+	@include screen-sm {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 21px;
+	}
+}
+
+.heading {
+	@include screen-sm {
+		display: none;
+	}
+}
+
+.languages {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	@include screen-sm {
+		gap: 16px;
+	}
 }
 
 .language {
 	display: flex;
-	gap: 4px;
 	align-items: center;
-	cursor: pointer;
+	gap: 4px;
 	padding-left: 32px;
+	cursor: pointer;
 	&.active {
 		padding-left: 4px;
 	}
 }
+
+// .themeIcon {
+// 	@include screen-sm {
+// 		background-color: red;
+// 		position: fixed;
+// 		top: 0;
+// 		width: 100vh;
+// 	}
+// }
