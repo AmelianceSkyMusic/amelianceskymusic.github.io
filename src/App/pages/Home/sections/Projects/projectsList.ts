@@ -1,4 +1,5 @@
 import stageZero2048 from '~assets/img/2048.png';
+import amelianceUI from '~assets/img/amelianceUI.png';
 import stageTwoAsyncRace from '~assets/img/async-race.png';
 import petAW from '~assets/img/aw.png';
 import stageOneCssMemSlider from '~assets/img/css-mem-slider.png';
@@ -16,94 +17,121 @@ import stageZeroVideoPlayer from '~assets/img/videoplayer.png';
 import stageOneVirtualKeyboard from '~assets/img/virtual-keyboard.png';
 import wisay from '~assets/img/wisay.png';
 
-interface ProjectListItem {codeLink: string;deployLink: string;videoLink: string;previewImg: string;
-
+interface ProjectListItem {
+	name: string;
+	imgLink: string;
+	codeLink: string;
+	deployLink: string;
+	videoLink: string;
 }
 
 export const projectsList: ProjectListItem[] = [{
+	name: 'stageZeroCv',
+	imgLink: stageZeroCv,
 	codeLink: 'https://github.com/AmelianceSkyMusic/rs-cv',
 	deployLink: 'https://amelianceskymusic.github.io/rs-cv',
 	videoLink: '',
-	previewImg: stageZeroCv,
 }, {
+	name: 'stageZeroPortfolio',
+	imgLink: stageZeroPortfolio,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/portfolio',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/portfolio',
 	videoLink: '',
-	previewImg: stageZeroPortfolio,
 },	{
+	name: 'stageZeroVideoPlayer',
+	imgLink: stageZeroVideoPlayer,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/videoplayer',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/videoplayer',
 	videoLink: '',
-	previewImg: stageZeroVideoPlayer,
 },	{
+	name: 'stageZero2048',
+	imgLink: stageZero2048,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/random-game',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/random-game',
 	videoLink: '',
-	previewImg: stageZero2048,
 },	{
+	name: 'stageZeroMovieApp',
+	imgLink: stageZeroMovieApp,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFEPRESCHOOL/tree/movie-app',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFEPRESCHOOL/movie-app',
 	videoLink: '',
-	previewImg: stageZeroMovieApp,
 },	{
+	name: 'stageOneShelter',
+	imgLink: stageOneShelter,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/shelter',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/shelter/pages/main',
 	videoLink: '',
-	previewImg: stageOneShelter,
 },	{
+	name: 'stageOneVirtualKeyboard',
+	imgLink: stageOneVirtualKeyboard,
 	codeLink: 'https://github.com/AmelianceSkyMusic/virtual-keyboard/tree/virtual-keyboard',
 	deployLink: 'https://amelianceskymusic.github.io/virtual-keyboard',
 	videoLink: '',
-	previewImg: stageOneVirtualKeyboard,
 },	{
+	name: 'stageOneCssMemSlider',
+	imgLink: stageOneCssMemSlider,
 	codeLink: 'https://github.com/AmelianceSkyMusic/cssMemSlider/tree/gh-pages',
 	deployLink: 'https://amelianceskymusic.github.io/cssMemSlider/cssMemSlider',
 	videoLink: '',
-	previewImg: stageOneCssMemSlider,
 },	{
+	name: 'stageTwoOnlineStore',
+	imgLink: stageTwoOnlineStore,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/online-store-jest',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/online-store',
 	videoLink: '',
-	previewImg: stageTwoOnlineStore,
 },	{
+	name: 'stageTwoNewsPortal',
+	imgLink: stageTwoNewsPortal,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/migration-newip-to-ts--dev',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/migration-newip-to-ts',
 	videoLink: '',
-	previewImg: stageTwoNewsPortal,
 },	{
+	name: 'stageTwoAsyncRace',
+	imgLink: stageTwoAsyncRace,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/async-race',
 	deployLink: 'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/async-race',
 	videoLink: '',
-	previewImg: stageTwoAsyncRace,
 },	{
+	name: 'stageTwoEngle',
+	imgLink: stageTwoEngle,
 	codeLink: 'https://github.com/AmelianceSkyMusic/engle',
 	deployLink: 'https://amelianceskymusic.github.io/engle',
 	videoLink: '',
-	previewImg: stageTwoEngle,
 },	{
+	name: 'stageReactRSS',
+	imgLink: stageReactRSS,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic-REACT2022Q3',
 	deployLink: 'https://rss-react-06-redux.netlify.app',
 	videoLink: '',
-	previewImg: stageReactRSS,
 },	{
+	name: 'stageReactPMA',
+	imgLink: stageReactPMA,
 	codeLink: 'https://github.com/AmelianceSkyMusic/project-management-app',
 	deployLink: '',
 	videoLink: '',
-	previewImg: stageReactPMA,
 },	{
-	codeLink: 'https://github.com/amelianceworship/amelianceworship.github.io',
-	deployLink: '',
-	videoLink: '',
-	previewImg: petAW,
-},	{
+	name: 'cv',
+	imgLink: cv,
 	codeLink: 'https://github.com/AmelianceSkyMusic/amelianceskymusic.github.io',
 	deployLink: 'https://amelianceskymusic.github.io',
 	videoLink: '',
-	previewImg: cv,
 },	{
+	name: 'wisay',
+	imgLink: wisay,
 	codeLink: 'https://github.com/AmelianceSkyMusic/genesis-front-end-school',
 	deployLink: 'https://genesis-front-end-school.netlify.app',
 	videoLink: 'https://streamable.com/8r6nfa',
-	previewImg: wisay,
+},	{
+	name: 'amelianceUI',
+	imgLink: amelianceUI,
+	codeLink: 'https://github.com/AmelianceSkyMusic/ameliance-ui',
+	deployLink: '',
+	videoLink: '',
+},	{
+	name: 'petAW',
+	imgLink: petAW,
+	codeLink: 'https://github.com/amelianceworship/amelianceworship.github.io',
+	deployLink: '',
+	videoLink: '',
 },
 ].reverse();

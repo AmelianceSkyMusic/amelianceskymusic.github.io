@@ -17,29 +17,34 @@ import cs from '~pages/Home/commonHome.module.scss';
 
 export function Projects() {
 	const t = useTranslationKey('projects');
+	type Section = keyof typeof t.sections;
 
 	return (
 		<Section id="projects" className={cs.section}>
 			<Typography component="h2">{t.title}</Typography>
 
-			{t.sections.map((section, i) => (
-				<Block className={s.sectionContainer} key={section.title + section.subTitle}>
-					{projectsList[i].previewImg && (
-						<Link className={s.exampleLink} href={projectsList[i].previewImg} blank>
+			{projectsList.map((project, i) => (
+				<Block
+					className={s.sectionContainer}
+					key={t.sections[project.name as Section].title}
+				>
+					{projectsList[i].imgLink && (
+						<Link className={s.exampleLink} href={projectsList[i].imgLink} blank>
 							<Img
 								className={asm.join(s.previewImg)}
-								src={projectsList[i].previewImg}
-								alt={section.title}
+								src={projectsList[i].imgLink}
+								alt={t.sections[project.name as Section].title}
 							/>
 						</Link>
 					)}
 					<Block className={cs.sectionItem}>
-						{(section.title || section.subTitle) && (
+						{(t.sections[project.name as Section].title
+						|| t.sections[project.name as Section].subTitle) && (
 							<Block className={cs.sectionTitle}>
-								{section.title
+								{t.sections[project.name as Section].title
 									&& (
 										<Block className={s.title}>
-											<Typography component="h3">{section.title}</Typography>
+											<Typography component="h3">{t.sections[project.name as Section].title}</Typography>
 											{projectsList[i].videoLink && (
 												<Link
 													className={s.icon}
@@ -67,20 +72,21 @@ export function Projects() {
 													<DeployIcon size="custom" width="16px" height="16px" />
 												</Link>
 											)}
-											{section.deployComment && (
-												<Typography component="caption">{section.deployComment}</Typography>
+											{t.sections[project.name as Section].deployComment && (
+												<Typography component="caption">{t.sections[project.name as Section].deployComment}</Typography>
 											)}
 										</Block>
 									)}
-								{section.subTitle && <Typography component="subtitle1">{section.subTitle}</Typography>}
+								{t.sections[project.name as Section].subTitle
+								&& <Typography component="subtitle1">{t.sections[project.name as Section].subTitle}</Typography>}
 							</Block>
 						)}
-						{section.descriptions.length > 0 && (
+						{t.sections[project.name as Section].descriptions.length > 0 && (
 							<Block className={cs.sectionDescription}>
-								{section.descriptions.length > 0
-									&& section.descriptions.map((description) => (
-										<Typography component="p1" key={description}>{description}</Typography>
-									))}
+								{t.sections[project.name as Section].descriptions.length > 0
+								&& t.sections[project.name as Section].descriptions.map((description) => (
+									<Typography component="p1" key={description}>{description}</Typography>
+								))}
 							</Block>
 						)}
 					</Block>

@@ -1,3 +1,5 @@
+@use "~/ameliance-ui/styles/globals/" as *;
+
 .WelcomeScreen {
 	position: fixed;
 	top: 0;
@@ -19,4 +21,50 @@
 	align-items: center;
 	gap: 32px;
 	z-index: 11000;
+}
+
+.topPanel {
+	position: absolute;
+	top: calc(var(--gap) * 2);
+	left: calc(var(--gap) * 2);
+	right: calc(var(--gap) * 2);
+	display: flex;
+	justify-content: space-between;
+	@include screen-sm {
+		justify-content: center;
+		top: auto;
+		bottom: calc(var(--gap) * 3);
+	}
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	@include screen-sm {
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+}
+
+.heading {
+	@include screen-sm {
+		display: none;
+	}
+}
+
+.languages {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.language {
+	display: flex;
+	align-items: center;
+	@include clickable;
+	&.active {
+		border-bottom: 1px solid var(--color--f1-0);
+	}
 }
