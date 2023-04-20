@@ -18,9 +18,11 @@ export function App() {
 
 	return (
 		<Routes>
+			{/* do not use params in this project as for root repo in github */}
 			<Route path="/" element={<Layout />}>
 				<Route index element={<Home />} />
-				<Route path=":lang" element={<Home />} />
+				<Route path="/en" element={<Home lang="en" />} />
+				<Route path="/uk" element={<Home lang="uk" />} />
 				<Route path="*" element={<NotFound />} />
 			</Route>
 		</Routes>
