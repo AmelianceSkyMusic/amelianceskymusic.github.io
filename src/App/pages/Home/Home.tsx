@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 
 import { useRecoilState } from 'recoil';
 
@@ -17,12 +16,14 @@ import { SingleColumn } from './SingleColumn/SingleColumn';
 
 import s from './Home.module.scss';
 
-export function Home() {
+interface Home {
+	lang?: 'uk' | 'en';
+}
+
+export function Home({ lang }: Home) {
 	const { isScreenMD } = useScreenQuery();
 
 	const [langRecoil, setLangRecoil] = useRecoilState(languageState);
-
-	const { lang } = useParams();
 
 	useEffect(() => {
 		if (lang && lang !== langRecoil) {
