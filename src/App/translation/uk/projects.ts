@@ -3,6 +3,22 @@ import { en } from '../en';
 export const projects = {
 	title: 'ПРОЄКТИ',
 	sections: {
+		rssuabot: {
+			title: 'RS School Telegram bot',
+			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, Eslint, Nodemon',
+			descriptions: [
+				'Бот чату RS School | Ukraine (The Rolling Scopes School)',
+			],
+			deployComment: '',
+		},
+		amelianceScripts: {
+			title: 'Ameliance Scripts',
+			subTitle: 'TypeScript',
+			descriptions: [
+				'Власна колекція часто використовуваних скриптів',
+			],
+			deployComment: '',
+		},
 		amelianceUI: {
 			title: en.projects.sections.amelianceUI.title,
 			subTitle: en.projects.sections.amelianceUI.subTitle,
@@ -72,6 +88,7 @@ export const projects = {
 				'Фінальне завдання курсу JavaScript/Front end виконувала команда з 3-х осіб. Хоча курс був присвячений JavaScript, з дозволу ментора ми вперше спробували попрацювати з React та Redux. Було дуже складно, але ми це зробили',
 				'Мій внесок: Тімлід команди, організація роботи та комунікації в команді. UX/UI дизайн додатку. Налаштування проєкту, встановлення пакетів. Розробка стору додатка. Створення ui компонентів. Зміна тем. Реалізація гри "Аудіо Виклик". Верстка: хедер, футер, гра "Аудіо Виклик", домашня сторінка',
 			],
+			deployComment: '* потрібно дочекатися, поки бекенд прокинеться* ',
 		},
 		stageTwoAsyncRace: {
 			title: en.projects.sections.stageTwoAsyncRace.title,

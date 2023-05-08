@@ -1,6 +1,22 @@
 export const projects = {
 	title: 'PROJECTS',
 	sections: {
+		rssuabot: {
+			title: 'RS School Telegram bot',
+			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, Eslint, Nodemon',
+			descriptions: [
+				'RS School | Ukraine chat bot (The Rolling Scopes School)',
+			],
+			deployComment: '',
+		},
+		amelianceScripts: {
+			title: 'Ameliance Scripts',
+			subTitle: 'TypeScript',
+			descriptions: [
+				'Your own collection of frequently used scripts',
+			],
+			deployComment: '',
+		},
 		amelianceUI: {
 			title: 'Ameliance UI',
 			subTitle: 'React, React Hook Form, react-responsive',
@@ -74,7 +90,7 @@ export const projects = {
 				'The final task of the JavaScript/Front end course was performed by a team of 3 people. Although the course was on JavaScript, with the permission of the mentor, we tried to work with React and Redux for the first time. It was very difficult, but we did it',
 				'My contribution: Team leader, organization of work and communication in the team. UX/UI design of the application. Setting up the project, installing packages. Development of the app store. Creating ui components. Light and dark themes. Implementation of the "Audio Challenge" game. Layout: header, footer, audio challenge game, home scree',
 			],
-			deployComment: '',
+			deployComment: '* need to wait until the backend wakes up',
 		},
 		stageTwoAsyncRace: {
 			title: 'Async Race',

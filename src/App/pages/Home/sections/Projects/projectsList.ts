@@ -1,4 +1,5 @@
 import stageZero2048 from '~assets/img/2048.png';
+import amelianceScripts from '~assets/img/ameliance-scripts.png';
 import amelianceUI from '~assets/img/amelianceUI.png';
 import stageTwoAsyncRace from '~assets/img/async-race.png';
 import petAW from '~assets/img/aw.png';
@@ -12,6 +13,7 @@ import stageTwoOnlineStore from '~assets/img/online-store.png';
 import stageReactPMA from '~assets/img/pma.png';
 import stageZeroPortfolio from '~assets/img/portfolio.png';
 import stageReactRSS from '~assets/img/react.png';
+import rssuabot from '~assets/img/rssuabot.png';
 import stageOneShelter from '~assets/img/shelter.png';
 import stageZeroVideoPlayer from '~assets/img/videoplayer.png';
 import stageOneVirtualKeyboard from '~assets/img/virtual-keyboard.png';
@@ -26,6 +28,12 @@ interface ProjectListItem {
 }
 
 export const projectsList: ProjectListItem[] = [{
+	name: 'rssuabot',
+	imgLink: rssuabot,
+	codeLink: 'https://github.com/AmelianceSkyMusic/rssuabot',
+	deployLink: '',
+	videoLink: '',
+}, {
 	name: 'stageZeroCv',
 	imgLink: stageZeroCv,
 	codeLink: 'https://github.com/AmelianceSkyMusic/rs-cv',
@@ -95,7 +103,7 @@ export const projectsList: ProjectListItem[] = [{
 	name: 'stageTwoEngle',
 	imgLink: stageTwoEngle,
 	codeLink: 'https://github.com/AmelianceSkyMusic/engle',
-	deployLink: 'https://amelianceskymusic.github.io/engle',
+	deployLink: 'https://engle-app.netlify.app',
 	videoLink: '',
 },	{
 	name: 'stageReactRSS',
@@ -122,6 +130,12 @@ export const projectsList: ProjectListItem[] = [{
 	deployLink: 'https://genesis-front-end-school.netlify.app',
 	videoLink: 'https://streamable.com/8r6nfa',
 },	{
+	name: 'amelianceScripts',
+	imgLink: amelianceScripts,
+	codeLink: 'https://github.com/AmelianceSkyMusic/ameliance-scripts',
+	deployLink: '',
+	videoLink: '',
+},	{
 	name: 'amelianceUI',
 	imgLink: amelianceUI,
 	codeLink: 'https://github.com/AmelianceSkyMusic/ameliance-ui',
@@ -131,7 +145,7 @@ export const projectsList: ProjectListItem[] = [{
 	name: 'petAW',
 	imgLink: petAW,
 	codeLink: 'https://github.com/amelianceworship/amelianceworship.github.io',
-	deployLink: '',
+	deployLink: 'https://aw-amelianceskymusic.netlify.app/',
 	videoLink: '',
 },
 ].reverse();
