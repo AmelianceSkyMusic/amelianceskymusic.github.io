@@ -3,11 +3,19 @@ import { en } from '../en';
 export const projects = {
 	title: 'ПРОЄКТИ',
 	sections: {
+		deliVery: {
+			title: 'Deli-Very',
+			subTitle: 'Next.js, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
+			descriptions: [
+				'Міні-сервіс для замовлення доставки продуктів',
+			],
+		},
 		rssuabot: {
 			title: 'RS School Telegram bot',
-			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, Eslint, Nodemon',
+			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, ESLint, Nodemon',
 			descriptions: [
 				'Бот чату RS School | Ukraine (The Rolling Scopes School)',
+				'Телеграм бот для допомоги модерація чату, публікації анонсів, довідки',
 			],
 			deployComment: '',
 		},

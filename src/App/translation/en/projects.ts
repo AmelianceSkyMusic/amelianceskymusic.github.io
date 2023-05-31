@@ -1,11 +1,20 @@
 export const projects = {
 	title: 'PROJECTS',
 	sections: {
+		deliVery: {
+			title: 'Deli-Very',
+			subTitle: 'Next.js, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
+			descriptions: [
+				'Mini-service for ordering food delivery',
+			],
+			deployComment: '',
+		},
 		rssuabot: {
 			title: 'RS School Telegram bot',
-			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, Eslint, Nodemon',
+			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, ESLint, Nodemon',
 			descriptions: [
 				'RS School | Ukraine chat bot (The Rolling Scopes School)',
+				'Telegram bot to help moderate chat, publish announcements, and help',
 			],
 			deployComment: '',
 		},
@@ -114,7 +123,7 @@ export const projects = {
 			descriptions: [
 				'Mini-store. Working with filters. Working with MVC',
 			],
-			deployComment: '* localStorage conflict is possible. In this case, clear localStorage',
+			deployComment: '*localStorage conflict is possible. In this case, clear localStorage',
 		},
 		stageOneCssMemSlider: {
 			title: 'Css Mem Slider',
