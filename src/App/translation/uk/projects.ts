@@ -104,6 +104,7 @@ export const projects = {
 			descriptions: [
 				'Перший проєкт на TypeScript, де ми поглиблено навчалися працювати з Rest API. Тут я спробував декомпозиційний підхід. Також спробував попрацювати з Lottie анімацією та API Web Animations',
 			],
+			deployComment: '* деплой працює тільки з локальним сервером https://github.com/mikhama/async-race-api',
 		},
 		stageTwoNewsPortal: {
 			title: en.projects.sections.stageTwoNewsPortal.title,

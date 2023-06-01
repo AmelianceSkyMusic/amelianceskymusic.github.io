@@ -107,7 +107,7 @@ export const projects = {
 			descriptions: [
 				'The first TypeScript project where we learned to work with the Rest API in depth. Here I tried a decomposition approach. I also tried working with Lottie animation and the Web Animations API',
 			],
-			deployComment: '',
+			deployComment: '* deploy works only with the local server https://github.com/mikhama/async-race-api',
 		},
 		stageTwoNewsPortal: {
 			title: 'News Portal',
@@ -123,7 +123,7 @@ export const projects = {
 			descriptions: [
 				'Mini-store. Working with filters. Working with MVC',
 			],
-			deployComment: '*localStorage conflict is possible. In this case, clear localStorage',
+			deployComment: '* localStorage conflict is possible. In this case, clear localStorage',
 		},
 		stageOneCssMemSlider: {
 			title: 'Css Mem Slider',
