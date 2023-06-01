@@ -112,6 +112,7 @@ export const projects = {
 			descriptions: [
 				'Сайт з новинами. Завдання полягало в тому, щоб переписати код, що вже існує з JavaScript на TypeScript. Додатково зробити верстку',
 			],
+			deployComment: '* працює тільки локально',
 		},
 		stageTwoOnlineStore: {
 			title: en.projects.sections.stageTwoOnlineStore.title,

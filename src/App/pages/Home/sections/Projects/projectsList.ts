@@ -118,10 +118,9 @@ export const projectsList: ProjectListItem[] = [
 		name: 'stageTwoNewsPortal',
 		imgLink: stageTwoNewsPortal,
 		codeLink:
-			'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/migration-newip-to-ts--dev',
-		deployLink:
-			'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/migration-newip-to-ts',
-		videoLink: '',
+			'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/migration-newip-to-ts/migration-newip-to-ts',
+		deployLink: '',
+		videoLink: 'https://streamable.com/7gtvn8',
 	},
 	{
 		name: 'stageTwoAsyncRace',

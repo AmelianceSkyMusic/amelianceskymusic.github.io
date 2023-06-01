@@ -115,7 +115,7 @@ export const projects = {
 			descriptions: [
 				'A website with news. The task was to rewrite the existing code from JavaScript to TypeScript and make a layout of the design',
 			],
-			deployComment: '',
+			deployComment: '* works only locally',
 		},
 		stageTwoOnlineStore: {
 			title: 'Online Store',
