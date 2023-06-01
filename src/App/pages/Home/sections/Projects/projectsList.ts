@@ -109,7 +109,7 @@ export const projectsList: ProjectListItem[] = [
 		name: 'stageTwoOnlineStore',
 		imgLink: stageTwoOnlineStore,
 		codeLink:
-			'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/online-store-jest',
+			'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/online-store-jest/online-store',
 		deployLink:
 			'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/online-store',
 		videoLink: '',
