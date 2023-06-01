@@ -120,7 +120,7 @@ export const projects = {
 			descriptions: [
 				'Міні-магазин. Робота з фільтрами. Робота з MVC',
 			],
-			deployComment: '* можливий конфлікт localStorage. В разі чого очистити localStorage',
+			deployComment: '',
 		},
 		stageOneCssMemSlider: {
 			title: en.projects.sections.stageOneCssMemSlider.title,

@@ -77,7 +77,7 @@ export const projects = {
 		},
 		stageReactRSS: {
 			title: 'RS School React',
-			subTitle: 'React, TypeScript, Redux, Axios, Create React App, ESLint, Prettier, Rest API, React Hook Form, React Router DOM',
+			subTitle: 'React, TypeScript, Redux, Axios, Create React App, ESLint, Prettier, Rest API, React Testing Library, React Hook Form, React Router DOM',
 			descriptions: [
 				'A training SPA project of the React course where we practiced our skills: '
 				+ 'React Class and Functional components, '
@@ -103,7 +103,7 @@ export const projects = {
 		},
 		stageTwoAsyncRace: {
 			title: 'Async Race',
-			subTitle: 'TypeScript, HTML, SCSS, Rest API, ESLint, Prettier, Lottie, Web Animation API',
+			subTitle: 'TypeScript, HTML, SCSS, Rest API, Webpack, ESLint, Prettier, Lottie, Web Animation API',
 			descriptions: [
 				'The first TypeScript project where we learned to work with the Rest API in depth. Here I tried a decomposition approach. I also tried working with Lottie animation and the Web Animations API',
 			],
@@ -111,7 +111,7 @@ export const projects = {
 		},
 		stageTwoNewsPortal: {
 			title: 'News Portal',
-			subTitle: 'TypeScript, HTML, SCSS, Rest API',
+			subTitle: 'TypeScript, HTML, SCSS, Rest API, Webpack',
 			descriptions: [
 				'A website with news. The task was to rewrite the existing code from JavaScript to TypeScript and make a layout of the design',
 			],
@@ -119,11 +119,11 @@ export const projects = {
 		},
 		stageTwoOnlineStore: {
 			title: 'Online Store',
-			subTitle: 'JavaScript, HTML, SCSS, Rest API',
+			subTitle: 'JavaScript, HTML, SCSS, Rest API, Webpack, Jest',
 			descriptions: [
 				'Mini-store. Working with filters. Working with MVC',
 			],
-			deployComment: '* localStorage conflict is possible. In this case, clear localStorage',
+			deployComment: '',
 		},
 		stageOneCssMemSlider: {
 			title: 'Css Mem Slider',
