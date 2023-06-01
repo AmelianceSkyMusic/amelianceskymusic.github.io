@@ -130,7 +130,7 @@ export const projectsList: ProjectListItem[] = [
 			'https://github.com/AmelianceSkyMusic/amelianceskymusic-JSFE2022Q1/tree/async-race',
 		deployLink:
 			'https://amelianceskymusic.github.io/amelianceskymusic-JSFE2022Q1/async-race',
-		videoLink: '',
+		videoLink: 'https://streamable.com/l64118',
 	},
 	{
 		name: 'stageTwoEngle',
@@ -173,7 +173,7 @@ export const projectsList: ProjectListItem[] = [
 		name: 'deliVery',
 		imgLink: deliVery,
 		codeLink:
-		'https://github.com/AmelianceSkyMusic/eliftech-school-test-task',
+			'https://github.com/AmelianceSkyMusic/eliftech-school-test-task',
 		deployLink: 'https://eliftech-school-test-task.vercel.app',
 		videoLink: '',
 	},
