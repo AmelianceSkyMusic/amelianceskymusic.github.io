@@ -1,12 +1,12 @@
 import asm from 'asm-ts-scripts';
 
-import { useToast } from '~/ameliance-ui/components/_LAB/toastbar';
 import { Block } from '~/ameliance-ui/components/blocks/Block';
 import { Section } from '~/ameliance-ui/components/blocks/Section';
 import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
 import { Icon } from '~/ameliance-ui/components/Icon';
 import { CopyIcon } from '~/ameliance-ui/components/icons/CopyIcon';
 import { Link } from '~/ameliance-ui/components/Link/Link';
+import { useSnack } from '~/ameliance-ui/components/snackbar';
 import { Typography } from '~/ameliance-ui/components/Typography';
 import { useTranslationKey } from '~app/translation/useTranslationKey';
 import { writeTextToClipboard } from '~utils/writeTextToClipboard';
@@ -19,7 +19,7 @@ import cs from '~pages/Home/commonHome.module.scss';
 export function Contacts() {
 	const t = useTranslationKey('contacts');
 
-	const { add } = useToast();
+	const { add } = useSnack();
 
 	const handleCopyButtonClick = async (event: React.MouseEvent<HTMLDivElement>) => {
 		const text = event.currentTarget?.previousElementSibling?.textContent;
@@ -28,7 +28,7 @@ export function Contacts() {
 				const result = await writeTextToClipboard(text);
 				if (result) {
 					add({
-						title: `${t.toastTitle}:`,
+						title: `${t.snackTitle}:`,
 						message: text,
 						duration: 3000,
 					});
@@ -36,7 +36,7 @@ export function Contacts() {
 			} catch (error) {
 				add({
 					type: 'error',
-					message: t.toastErrorTitle,
+					message: t.snackErrorTitle,
 					duration: 3000,
 				});
 			}

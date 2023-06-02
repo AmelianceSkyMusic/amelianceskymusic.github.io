@@ -1,3 +1,5 @@
+@use "../../styles/globals/" as *;
+
 .img {
 	width: 54px;
 	height: 54px;
@@ -6,6 +8,10 @@
 	&.small {
 		width: 36px;
 		height: 36px;
+	}
+	&.extra {
+		width: 256px;
+		height: 256px;
 	}
 }
 
@@ -17,7 +23,7 @@
 	height: 54px;
 	border-radius: 50%;
 	background-color: var(--color--e1-0);
-	color: var(--color--f2-0);
+	color: var(--color--f2-1);
 	.char {
 		opacity: 70%;
 	}
@@ -25,4 +31,12 @@
 		width: 36px;
 		height: 36px;
 	}
+	&.extra {
+		width: 256px;
+		height: 256px;
+	}
+}
+
+.clickable {
+	@include clickable;
 }

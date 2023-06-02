@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { RecoilRoot } from 'recoil';
 
-import { ToastBarProvider } from './ameliance-ui/components/_LAB/toastbar';
+import { SnackBarProvider } from './ameliance-ui/components/snackbar';
 import { App } from './App/App';
 
 import '@fontsource/montserrat/300.css';
@@ -18,11 +18,11 @@ const root = createRoot(container);
 root.render(
 	// <StrictMode>
 	<BrowserRouter>
-		<ToastBarProvider maxToast={3}>
+		<SnackBarProvider maxSnack={3}>
 			<RecoilRoot>
 				<App />
 			</RecoilRoot>
-		</ToastBarProvider>
+		</SnackBarProvider>
 	</BrowserRouter>,
 	// </StrictMode>,
 );

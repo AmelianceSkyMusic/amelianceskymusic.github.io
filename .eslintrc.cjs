@@ -76,29 +76,29 @@ module.exports = {
 			],
 		}],
 
-		"jsx-a11y/label-has-associated-control": [ "error", {
+		"jsx-a11y/label-has-associated-control": ["error", {
 			"required": {
-			  "some": [ "nesting", "id"  ]
+				"some": ["nesting", "id"]
 			}
 		}],
 
 		"max-len": [
 			"error",
 			{
-			  "code": 100,
-			  "tabWidth": 3,
-			  "ignoreComments": true,
-			  "ignoreUrls": true,
-			  "ignoreStrings": true,
-			  "ignoreTemplateLiterals": true,
+				"code": 100,
+				"tabWidth": 3,
+				"ignoreComments": true,
+				"ignoreUrls": true,
+				"ignoreStrings": true,
+				"ignoreTemplateLiterals": true,
 			}
 		],
 
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": [
-		"warn", {
-			"additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
-		}
+			"warn", {
+				"additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
+			}
 		]
 	},
 };

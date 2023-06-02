@@ -1,8 +1,8 @@
 export const contacts = {
 	title: 'CONTACTS',
 	telegramButton: 'Message me on Telegram',
-	toastTitle: 'Copied to the clipboard',
-	toastErrorTitle: 'Something went wrong=(',
+	snackTitle: 'Copied to the clipboard',
+	snackErrorTitle: 'Something went wrong=(',
 	sections: [
 		{
 			title: 'Location',
