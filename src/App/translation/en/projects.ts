@@ -3,7 +3,7 @@ export const projects = {
 	sections: {
 		deliVery: {
 			title: 'Deli-Very',
-			subTitle: 'Next.js, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
+			subTitle: 'Next.js, React, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
 			descriptions: [
 				'Mini-service for ordering food delivery',
 			],
@@ -28,7 +28,7 @@ export const projects = {
 		},
 		amelianceUI: {
 			title: 'Ameliance UI',
-			subTitle: 'React, React Hook Form, react-responsive',
+			subTitle: 'React, React Hook Form, React Responsive',
 			descriptions: [
 				'Own UI library of React components',
 				'The library that has gone from a simple SCSS UI library to a React component library and contains more than 300 files',
@@ -39,7 +39,7 @@ export const projects = {
 		},
 		wisay: {
 			title: 'Wisay',
-			subTitle: 'React, TypeScript, Zustand, SCSS Modules, Vite, ESLint, Autoprefixer, Ameliance UI, ASM TS Scripts, HLS, React Responsive, React Router DOM',
+			subTitle: 'React, TypeScript, Zustand, SCSS Modules, Vite, ESLint, Autoprefixer, Ameliance UI, Ameliance Scripts, HLS, React Responsive, React Router DOM',
 			descriptions: [
 				'Case study for selection to the front-end school',
 				'A training site for taking courses. The main task was to work with API Wisay, render courses and lessons, add pagination, video playback when hovering, create a custom player to work with the hls format based on a standard HTML5 player, and save the progress of the lessons',
@@ -48,7 +48,7 @@ export const projects = {
 		},
 		cv: {
 			title: 'CV',
-			subTitle: 'React, TypeScript, Recoil, SCSS Modules, Vite, ESLint, Autoprefixer, Ameliance UI, ASM TS Scripts, I18next, React Responsive, React Router DOM',
+			subTitle: 'React, TypeScript, Recoil, SCSS Modules, Vite, ESLint, Autoprefixer, Ameliance UI, Ameliance Scripts, I18next, React Responsive, React Router DOM',
 			descriptions: [
 				'My CV',
 				'The project was made on React to practice working with React once again, try something new and hone my skills',
@@ -57,7 +57,7 @@ export const projects = {
 		},
 		petAW: {
 			title: 'AW',
-			subTitle: 'React, TypeScript, Redux, SCSS Modules, Vite, ESLint, Autoprefixer, Firebase, React Hook Form, Ameliance, ASM TS Scripts, React Responsive, React Router DOM, React Showfall, Google Apps Script',
+			subTitle: 'React, TypeScript, Redux, SCSS Modules, Vite, ESLint, Autoprefixer, Firebase, React Hook Form, Ameliance UI, Ameliance Scripts, React Responsive, React Router DOM, React Showfall, Google Apps Script',
 			descriptions: [
 				'Pet Project',
 				'Single Page Application for use within a music group. The application contains a list of songs, chords, and a chat for communication. The app\'s functionality includes the ability to create a song list and transpose chords',
@@ -93,7 +93,7 @@ export const projects = {
 		},
 		stageTwoEngle: {
 			title: 'Engle',
-			subTitle: 'React, TypeScript, Redux Vanilla, Axios, SCSS, Create React App, ESLint, React Responsive, React Router DOM, asmlib',
+			subTitle: 'React, TypeScript, Redux, Axios, SCSS, Create React App, ESLint, React Responsive, React Router DOM, Ameliance UI',
 			descriptions: [
 				'SPA for learning the most popular English words through two games. Users can have their own account, their own dictionary and statistics',
 				'The final task of the JavaScript/Front end course was performed by a team of 3 people. Although the course was on JavaScript, with the permission of the mentor, we tried to work with React and Redux for the first time. It was very difficult, but we did it',
