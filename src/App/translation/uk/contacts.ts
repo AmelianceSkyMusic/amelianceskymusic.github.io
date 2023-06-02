@@ -1,8 +1,8 @@
 export const contacts = {
 	title: 'КОНТАКТИ',
 	telegramButton: 'Написати мені в Telegram',
-	toastTitle: 'Скопійовано до буфера обміну',
-	toastErrorTitle: 'Щось пішло не так=(',
+	snackTitle: 'Скопійовано до буфера обміну',
+	snackErrorTitle: 'Щось пішло не так=(',
 	sections: [
 		{
 			title: 'Локація',
