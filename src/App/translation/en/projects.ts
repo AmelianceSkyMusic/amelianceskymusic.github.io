@@ -6,6 +6,8 @@ export const projects = {
 			subTitle: 'Next.js, React, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
 			descriptions: [
 				'Mini-service for ordering food delivery',
+				'The main task was to create a page with a list of stores where you can order products, a shopping cart page where you can place an order with saving to the database and a page to display history',
+				'A personal task was to practice with the new Next.js, Mantine and Zustand',
 			],
 			deployComment: '',
 		},
@@ -67,7 +69,7 @@ export const projects = {
 		},
 		stageReactPMA: {
 			title: 'Project Manager App',
-			subTitle: 'React, TypeScript, Redux, Axios, Lodash, MUI, Create React App, I18next, ESLint, React Hook Form, React Responsive, React Router Dom, React DND',
+			subTitle: 'React, TypeScript, Redux, Axios, Lodash/merge, MUI, Create React App, I18next, ESLint, React Hook Form, React Responsive, React Router Dom, React DND',
 			descriptions: [
 				'SPA that helps an individual in a team or group of developers achieve their goals',
 				'The final task of the React course was performed by a team of 3 people. Due to the lack of electricity and differences in the electricity supply schedule, communication was poor, and the time was less than for teams from outside Ukraine',
