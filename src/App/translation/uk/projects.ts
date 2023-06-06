@@ -4,15 +4,17 @@ export const projects = {
 	title: 'ПРОЄКТИ',
 	sections: {
 		deliVery: {
-			title: 'Deli-Very',
-			subTitle: 'Next.js, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
+			title: en.projects.sections.deliVery.title,
+			subTitle: en.projects.sections.deliVery.subTitle,
 			descriptions: [
 				'Міні-сервіс для замовлення доставки продуктів',
+				'Основним завданням було створити сторінку з списком магазинів де можна замовити продукти, сторінка кошика де можна оформити замовлення зі збереженням в базу даних та сторінка з відображення історії',
+				'Особистим завданням була практика з новим Next.js Mantine та Zustand',
 			],
 		},
 		rssuabot: {
-			title: 'RS School Telegram bot',
-			subTitle: 'GrammY, TypeScript, Zustand, Dotenv, ESLint, Nodemon',
+			title: en.projects.sections.rssuabot.title,
+			subTitle: en.projects.sections.rssuabot.subTitle,
 			descriptions: [
 				'Бот чату RS School | Ukraine (The Rolling Scopes School)',
 				'Телеграм бот для допомоги модерація чату, публікації анонсів, довідки',
@@ -20,8 +22,8 @@ export const projects = {
 			deployComment: '',
 		},
 		amelianceScripts: {
-			title: 'Ameliance Scripts',
-			subTitle: 'TypeScript',
+			title: en.projects.sections.amelianceScripts.title,
+			subTitle: en.projects.sections.amelianceScripts.subTitle,
 			descriptions: [
 				'Власна колекція часто використовуваних скриптів',
 			],
