@@ -22,5 +22,12 @@ export const languages = {
 				'Native',
 			],
 		},
+		{
+			title: 'Russian',
+			subTitle: '',
+			descriptions: [
+				'I know, unfortunately',
+			],
+		},
 	],
 };

@@ -22,5 +22,12 @@ export const languages = {
 				'Рідна',
 			],
 		},
+		{
+			title: 'Російська',
+			subTitle: '',
+			descriptions: [
+				'Знаю, на жаль',
+			],
+		},
 	],
 };
