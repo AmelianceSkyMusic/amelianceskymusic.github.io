@@ -2,6 +2,14 @@ export const experience = {
 	title: 'ДОСВІД',
 	sections: [
 		{
+			title: 'React Front-end Розробник',
+			subTitle: 'ЧЕРВЕНЬ 2023 - ДОТЕПЕР  // Baza Trainee',
+			descriptions: [
+				'Фронт-енд розробка некомерційних проєктів',
+				'Тімлід та ментора фронт-енд команди: налаштування проєкту, створення та ведення гайдів, розподілення задач, код ревью, консультація та допомога з вирішенням задач',
+			],
+		},
+		{
 			title: 'Junior UX/UI Дизайнер',
 			subTitle: 'КВІТЕНЬ 2021 - ЛИПЕНЬ 2021 // unqa.agency (agency, Rivne)',
 			descriptions: [
