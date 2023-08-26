@@ -1,6 +1,19 @@
 export const projects = {
 	title: 'PROJECTS',
 	sections: {
+		radency: {
+			title: 'Radency',
+			subTitle: 'React, Vite, TypeScript, SCSS Modules, Redux, React Hook Form, React Router DOM, ESLint, Prettier, Ameliance Scripts, Fontsource, Nest.js, Class Validator, JavaScript, CSS',
+			descriptions: [
+				'Test task for fullstack developer internship',
+				'Working with pure JavaScript, tables, backend.',
+				'Part one: developing a todo application in pure JavaScript. To solve the task, a pseudo framework was developed, and the Observable pattern was used to work with the store',
+				'Part two: rewriting the todo application in React. To solve the task, we developed a table component',
+				'Part three: writing the backend part in Nest.js ',
+
+			],
+			deployComment: '',
+		},
 		deliVery: {
 			title: 'Deli-Very',
 			subTitle: 'Next.js, React, Mantine, Zustand, Firebase, ESLint, Prettier, Lodash/merge, TypeScript',
@@ -17,6 +30,14 @@ export const projects = {
 			descriptions: [
 				'RS School | Ukraine chat bot (The Rolling Scopes School)',
 				'Telegram bot to help moderate chat, publish announcements, and help',
+			],
+			deployComment: '',
+		},
+		amelianceUseIconsScss: {
+			title: 'Ameliance Use Icons SCSS',
+			subTitle: 'SCSS',
+			descriptions: [
+				'SCSS mixin for working with icons',
 			],
 			deployComment: '',
 		},

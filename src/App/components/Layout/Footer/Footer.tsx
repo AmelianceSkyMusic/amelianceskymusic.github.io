@@ -15,7 +15,7 @@ import s from './Footer.module.scss';
 
 export function Footer() {
 	return (
-		<Block component="footer" className={s.Footer}>
+		<Block component="footer" id="links" className={s.Footer}>
 			<Container className={s.container} gridContainer>
 				<Section
 					className={s.footerIcons}

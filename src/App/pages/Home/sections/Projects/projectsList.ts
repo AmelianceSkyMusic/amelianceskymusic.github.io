@@ -1,18 +1,20 @@
 import stageZero2048 from '~assets/img/2048.png';
 import amelianceScripts from '~assets/img/ameliance-scripts.png';
+import amelianceUseIconsScss from '~assets/img/ameliance-use-icons-scss.png';
 import amelianceUI from '~assets/img/amelianceUI.png';
 import stageTwoAsyncRace from '~assets/img/async-race.png';
 import petAW from '~assets/img/aw.png';
 import stageOneCssMemSlider from '~assets/img/css-mem-slider.png';
 import cv from '~assets/img/cv.png';
 import stageZeroCv from '~assets/img/cv-rss.png';
-import deliVery from '~assets/img/deliVery.png';
+import deliVery from '~assets/img/deli-very.png';
 import stageTwoEngle from '~assets/img/engle.png';
 import stageZeroMovieApp from '~assets/img/movie-app.png';
 import stageTwoNewsPortal from '~assets/img/news-portal.png';
 import stageTwoOnlineStore from '~assets/img/online-store.png';
 import stageReactPMA from '~assets/img/pma.png';
 import stageZeroPortfolio from '~assets/img/portfolio.png';
+import radency from '~assets/img/radency.png';
 import stageReactRSS from '~assets/img/react.png';
 import rssuabot from '~assets/img/rssuabot.png';
 import stageOneShelter from '~assets/img/shelter.png';
@@ -174,6 +176,21 @@ export const projectsList: ProjectListItem[] = [
 		codeLink:
 			'https://github.com/AmelianceSkyMusic/eliftech-school-test-task',
 		deployLink: 'https://eliftech-school-test-task.vercel.app',
+		videoLink: '',
+	},
+	{
+		name: 'radency',
+		imgLink: radency,
+		codeLink:
+			'https://github.com/AmelianceSkyMusic/radency-internship-test-hometask-2/tree/develop',
+		deployLink: 'https://radency-internship-test-hometask-2.netlify.app/',
+		videoLink: '',
+	},
+	{
+		name: 'amelianceUseIconsScss',
+		imgLink: amelianceUseIconsScss,
+		codeLink: 'https://www.npmjs.com/package/ameliance-use-icons-scss',
+		deployLink: '',
 		videoLink: '',
 	},
 	{

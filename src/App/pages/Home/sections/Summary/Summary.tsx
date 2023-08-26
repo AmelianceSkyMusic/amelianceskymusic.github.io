@@ -35,26 +35,27 @@ export function Summary() {
 				<Typography component="p1">{t.description.part1}</Typography>
 				<Typography component="p1">{t.description.part2}</Typography>
 				<Typography component="p1">{t.description.part3}</Typography>
+				<Typography component="p1">{t.description.part4}</Typography>
 				<List type="unordered">
-					<Typography component="p1">{t.description.part4}</Typography>
+					<Typography component="p1">{t.description.part5}</Typography>
 					<ListItem>
-						<Typography component="p1">{t.description.part4List.list1}</Typography>
+						<Typography component="p1">{t.description.part5List.list1}</Typography>
 					</ListItem>
 					<ListItem>
-						<Typography component="p1">{t.description.part4List.list2}</Typography>
+						<Typography component="p1">{t.description.part5List.list2}</Typography>
 					</ListItem>
 					<ListItem>
-						<Typography component="p1">{t.description.part4List.list3}</Typography>
+						<Typography component="p1">{t.description.part5List.list3}</Typography>
 					</ListItem>
 					<ListItem>
-						<Typography component="p1">{t.description.part4List.list4}</Typography>
+						<Typography component="p1">{t.description.part5List.list4}</Typography>
 					</ListItem>
 				</List>
-				<Typography component="p1">{t.description.part5}</Typography>
 				<Typography component="p1">{t.description.part6}</Typography>
 				<Typography component="p1">{t.description.part7}</Typography>
 				<Typography component="p1">{t.description.part8}</Typography>
 				<Typography component="p1">{t.description.part9}</Typography>
+				<Typography component="p1">{t.description.part10}</Typography>
 			</Block>
 		</Section>
 	);

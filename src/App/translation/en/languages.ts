@@ -5,7 +5,8 @@ export const languages = {
 			title: 'English',
 			subTitle: '',
 			descriptions: [
-				'A1',
+				'A1+',
+				'Sufficient to read technical documentation',
 			],
 		},
 		{
