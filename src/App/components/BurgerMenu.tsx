@@ -127,6 +127,12 @@ export function BurgerMenu() {
 							</MenuItem>
 						</>
 					)}
+					<MenuDivider />
+					<MenuItem>
+						<Link href="#links" display="p1" underline={false} hover={false}>
+							{navigation.links}
+						</Link>
+					</MenuItem>
 				</Menu>
 				<Button size="medium" type="secondary" onClick={handelIconMenuClick}>
 					<MenuIcon />

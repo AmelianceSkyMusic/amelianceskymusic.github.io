@@ -7,4 +7,5 @@ export const navigation = {
 	hardSkills: 'Hard Skills',
 	projects: 'Projects',
 	hobbies: 'Hobbies',
+	links: 'Links',
 };

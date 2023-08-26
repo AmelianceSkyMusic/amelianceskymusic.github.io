@@ -7,4 +7,5 @@ export const navigation = {
 	hardSkills: 'Технічні навички',
 	projects: 'Проєкти',
 	hobbies: 'Хобі',
+	links: 'Посилання',
 };
