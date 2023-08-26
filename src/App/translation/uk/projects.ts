@@ -3,6 +3,17 @@ import { en } from '../en';
 export const projects = {
 	title: 'ПРОЄКТИ',
 	sections: {
+		radency: {
+			title: en.projects.sections.radency.title,
+			subTitle: en.projects.sections.radency.subTitle,
+			descriptions: [
+				'Тестове завдання для стажування fullstack розробника',
+				'Робота з чистим JavaScript, таблицями, бекендом',
+				'Частина перша: розробка todo додатку на чистому JavaScript. Для розв\'язання завдання був розроблений псевдо фреймворк, для роботи зі стором був використаний патерн Observable',
+				'Частина друга: переписування todo додатку на React. Для розв\'язання був розроблений компонент таблиці',
+				'Частина третя: написання бекенд частини на Nest.js ',
+			],
+		},
 		deliVery: {
 			title: en.projects.sections.deliVery.title,
 			subTitle: en.projects.sections.deliVery.subTitle,
@@ -18,6 +29,14 @@ export const projects = {
 			descriptions: [
 				'Бот чату RS School | Ukraine (The Rolling Scopes School)',
 				'Телеграм бот для допомоги модерація чату, публікації анонсів, довідки',
+			],
+			deployComment: '',
+		},
+		amelianceUseIconsScss: {
+			title: en.projects.sections.amelianceUseIconsScss.title,
+			subTitle: en.projects.sections.amelianceUseIconsScss.subTitle,
+			descriptions: [
+				'SCSS міксин для роботи з іконками',
 			],
 			deployComment: '',
 		},
