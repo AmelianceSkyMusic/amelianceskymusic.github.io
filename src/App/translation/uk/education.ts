@@ -18,7 +18,7 @@ export const education = {
 		},
 		{
 			title: 'JS/FE Pre-School',
-			subTitle: 'ГРУДЕНЬ 2022 - БЕРЕЗЕНЬ 2022 // The Rolling Scopes School',
+			subTitle: 'ГРУДЕНЬ 2021 - БЕРЕЗЕНЬ 2022 // The Rolling Scopes School',
 			descriptions: [
 				'Підготовчий курс до JavaScript/Front-end',
 				'На курсі вивчили початкові основи JS, HTML, CSS, git. Спробували розробити власний сайт, гру, попрацювати з RestAPI. Більше 5-ти персональних проєктів',

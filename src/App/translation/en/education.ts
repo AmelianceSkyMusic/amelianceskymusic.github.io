@@ -33,7 +33,7 @@ export const education = {
 		},
 		{
 			title: 'Basics of QA Manual',
-			subTitle: 'AUG 2021 - AUG 2022 // QATestLab',
+			subTitle: 'AUG 2020 // QATestLab',
 			descriptions: [
 				'A month-long course on the basics of QA manual testing',
 			],
