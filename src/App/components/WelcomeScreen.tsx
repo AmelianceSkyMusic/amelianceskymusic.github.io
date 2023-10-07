@@ -7,11 +7,10 @@ import { useRecoilState } from 'recoil';
 import { Backdrop } from '~/ameliance-ui/components/Backdrop';
 import { Block } from '~/ameliance-ui/components/blocks';
 import { Button } from '~/ameliance-ui/components/Button/Button';
-import { ButtonLink } from '~/ameliance-ui/components/Button/ButtonLink';
 import { Icon } from '~/ameliance-ui/components/Icon';
-import { CheckIcon } from '~/ameliance-ui/components/icons/CheckIcon';
 import { MoonIcon } from '~/ameliance-ui/components/icons/MoonIcon';
 import { SunIcon } from '~/ameliance-ui/components/icons/SunIcon';
+import { Link } from '~/ameliance-ui/components/Link';
 import { Portal } from '~/ameliance-ui/components/Portal';
 import { Typography } from '~/ameliance-ui/components/Typography';
 import { toggleTheme } from '~/ameliance-ui/scripts/toggleTheme';
@@ -88,9 +87,7 @@ export function WelcomeScreen() {
 						</Block>
 						<Button type="primary" onClick={handleClick}>{t.continue}</Button>
 						<Typography component="p1">{t.or}</Typography>
-						{ langRecoil === 'en'
-							? <ButtonLink href="./pdf/Junior Front-end Developer _ Bobomuratov (en).pdf" type="secondary">{t.pdf}</ButtonLink>
-							: <ButtonLink href="./pdf/Junior Front-end Developer _ Bobomuratov (uk).pdf" type="secondary">{t.pdf}</ButtonLink>}
+						<Link href={`./pdf/Junior Front-end Developer _ Bobomuratov (${langRecoil}).pdf`} blank>{t.pdf}</Link>
 					</Block>
 				)}
 			</Block>
