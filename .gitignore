@@ -16,8 +16,6 @@ dist-ssr
 secrets.json
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
@@ -26,18 +24,23 @@ secrets.json
 *.sln
 *.sw?
 
-#amelianceskymusic own modules
-*.-asm-*
--asm-*
-__-asm-*
+# vscode settings
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
-*._legacy*
+# temp folders
 _legacy*
-
-*._backup*
 _backup*
-
-*._temp*
 _temp*
+_labs*
 
+# temp files
+*._legacy*
+*._backup*
+*._temp*
+*._labs*
+
+#history
 .history
+.lh
